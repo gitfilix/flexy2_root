@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <FLX- Felix Adam > -- <webkanal rat - design, code, idea, all photos> -- <twitter>
+
+# THANKS
+
+    <GRAND MASTER of WEB-Ceremony: Mirza Grossniklaus - webkanal would never come to existence without his passionate Support, help and and HTML-5- drill>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

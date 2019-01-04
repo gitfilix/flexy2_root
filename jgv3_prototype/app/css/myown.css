@@ -1,0 +1,79 @@
+
+.header{
+    position: relative;
+    background: url("../pix/jgbg_1200.jpg") no-repeat scroll center center /cover ;
+    display: table;
+    height: 800px;
+    width: 100%;
+}
+
+/*Menu toggle*/
+#menu-toggle{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#sidebar-wrapper{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    z-index: 200;
+    width: 250px;
+    margin-right:-250px ;
+    overflow-x: auto;
+    background:#444444;
+    transition: all 0.4s ease-in;
+}
+
+#sidebar-wrapper.active{
+    margin-right: 0;
+    transition: all 0.4s ease-in;
+    width: 250px;
+}
+
+.text-vertical-center{
+    color: #00b3ee;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.about{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.portfolio-item img{
+    padding-top: 3rem;
+}
+
+
+.usp{
+    background: url("../pix/jgpix2_600.jpg") no-repeat center center/ cover;
+    color: #00b3ee;
+    display: table;
+    height: 400px;
+    width: 100%;
+}
+.usp h1{
+    font-size: 6rem;
+}
+
+
+
+/*--animateme--*/
+#animateme{
+    transition: transform 0.8s ease-in;
+}
+
+.start{
+    opacity: 0.1;
+    transform: scale(0.25, 0.25);
+}
+
+.zap{
+    opacity: 1.0;
+    transform: scale(1.2, 1.2);
+}

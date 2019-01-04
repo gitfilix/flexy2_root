@@ -1,0 +1,96 @@
+/*alle deklarationen mit folgeder kaskadierung: .tpl1-skin0 (abstand) und css selector*/
+
+/* SKINS Template 1 - Skin 0 */
+/*-Skin 0 ICE on Concrete-------------------------------------*/
+
+.tpl1-skin0 .tpl1-layout{
+	font-family: 'Open Sans', verdana, sans-serif;
+	color:#7DDCFA;
+	background:#222;
+	}
+
+.tpl1-skin0 .tpl1-title h1{
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size:3.6em;
+	letter-spacing:0.3em;
+	color:#7DDCFA;
+	background:#222;
+	/*background:#4C4C4C;*/
+	text-align:right;
+	}
+
+
+.tpl1-skin0 .tpl1-lead{
+	/*-webkit-box-shadow: inset 0 0 5px 5px #888;
+	-moz-box-shadow: inset 0 0 5px 5px #888;*/
+	background:#333;
+	padding-top:1em;
+	border-top: #D4D4D4 1px solid;
+	}
+
+.tpl1-skin0 .tpl1-lead p{
+	text-align:left;
+	color:#DADADA;
+	padding-left:1em;
+	font-size:1.1em;
+	line-height:1.6em;
+	
+	}
+
+.tpl1-skin0 .tpl1-figcapture{
+/*	-webkit-box-shadow: inset 0 0 5px 5px #888;
+	-moz-box-shadow: inset 0 0 5px 5px #888;*/
+	text-align:right; 
+	border-top:1px solid #DDD;
+	background:#222;
+	padding-top:1em; 
+	padding-bottom:2em;
+	margin-top:2em; 
+	padding-right:1em;  
+	margin-bottom:0 !important;
+	}
+
+/*The snowwhite Lightbox*/
+
+.tpl1-skin0 .tpl1-lb-background{
+	background-color:#3B3B3B !important;
+	}
+
+
+.tpl1-skin0 .tpl1-lb-title{
+	background:#2E2E2E;
+	font-size:1.6em;
+	border: 1px solid #7DDCFA;
+	padding:0.2em;
+	color:#7DDCFA;
+	}
+
+
+.tpl1-skin0 .tpl1-buttonstyle{
+	margin-right:0.4em;
+	font-family: 'Open Sans', verdana, sans-serif;
+	padding:0.8em;
+	background-color:#111;
+	color:#7DDCFA;
+	font-weight:100;
+	font-size:1.1em;
+	border: 1px solid #7DDCFA;
+	border-radius:0.4em;
+	}
+
+
+.tpl1-skin0 .tpl1-lead-lb{
+	padding:0.4em;
+	background:#F3F3F3;
+	color:#8C8C8C;
+	font-weight:100;
+	line-height:1.6em;
+	font-size:1.1em;
+	border: 1px solid #444;
+	}
+
+/*
+.tpl1-skin0 div > h1{
+	color:blue;	
+}
+*/

@@ -1,0 +1,153 @@
+
+/*CSS adjustments for photography --*/
+/*----------------------------------*/
+
+
+/*until 1024 ipad landscape */
+
+/*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {*/
+@media screen and (max-width: 1024px){
+	body{
+		/*blau*/
+		/*background:#33F;*/
+	}
+
+	#inner-wrap{
+		/*margin: 0 auto;*/
+		width:920px !important;
+		max-width:920px;
+	}
+	
+	/*Service nav is horizontally */
+	.servicenav ul li{
+		display:block;
+		padding-top: 1.4em;
+		margin-bottom:0.5em;
+		/*absolute pixel here*/
+		width:120px;
+		font-size:1.1em;
+		color:#E9E9E9;
+		padding:0.5em !important;
+		border: 1px solid #139A92;
+		background:#444;
+	}
+	
+	.servicenav ul li a:link{
+		border: none;
+		-moz-transition:all 0.3s ease-in;
+		-webkit-transition:all 0.3s ease-in;
+		transition:all 0.3s ease-in;
+	}
+	
+	.servicenav ul li a:hover{
+		color:#00f9fc;
+		border-bottom: none;
+		-moz-transition:all 0.3s ease-in;
+		-webkit-transition:all 0.3s ease-in;
+		transition:all 0.3s ease-in;
+		
+	}
+
+	
+	.active{
+		color:#00f9fc !important;
+		border: 1px solid #00f9fc !important;
+		font-weight:400;
+		background:#111 !important;
+		-moz-transition:all 0.3s ease-in;
+		-webkit-transition:all 0.3s ease-in;
+		transition:all 0.3s ease-in;
+	} 
+
+
+
+	/*text adjustments*/
+	.textbox{
+		margin-right:0 !important;
+		background:rgba(33, 33, 33, 0.4);
+		padding-left:1em;
+	}
+	
+	.textbox h2{
+		color:#E9E9E9;
+		font-size:1.6em;
+		letter-spacing:0.1em;
+		font-weight:200;
+		text-transform:capitalize;
+	}
+	
+	.textbox h3{
+		color:#DDD;
+		font-size:1.1em;
+		letter-spacing:0.0em;
+		font-weight:300;
+	}	
+		
+	.textbox p{
+		padding-top:1em;
+		font-size:1em;
+		color:#19d3c8;
+		font-weight:300;
+		line-height:1.6em;
+		word-spacing:normal;
+	}
+
+	.webform input{
+		height: 2.6em;
+		width:80%;
+		/*max-width:50%;*/
+		margin:0;
+		padding-right:1em;
+		border:#19d3c8 1px dotted;
+	}
+
+	.webform textarea{
+		width:85%;
+		max-width:85%;
+		margin:0;
+		resize: none;
+  		overflow: auto;
+		color:#222;
+	}
+	
+	#submit-btn{
+		font-weight:200;
+		letter-spacing:0.1em;
+		background:#999;
+		margin-top:50px;
+		width:85%;
+	}	
+	
+	
+}
+
+
+
+
+/*I pad portrait format*/
+@media screen and (device-width: 768px) and (device-height: 1024px)  and (orientation:portrait){
+	
+	body{/*rot*/
+		background:#F33;
+	}
+
+	#inner-wrap{
+	margin: 0 auto;
+	max-width:700px;
+	/*transparent background for content*/
+	background: rgba(25, 25, 25, 0.3);
+	}
+	
+	.logo h1{
+	font-family:'Gill Sans';
+	padding-left:0;
+	display:block;
+	letter-spacing:0.2em;
+	font-size:1.9em;
+	 text-shadow: 1px 1px #444;
+	/*text-shadow: 0 -1px 1px #333;*/
+	color:#F2F2F2;
+	font-weight:200;
+	}
+	
+}

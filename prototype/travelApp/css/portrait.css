@@ -1,0 +1,16 @@
+
+#fs-inner,#lightbox{
+	display:none !important;	
+}	
+	
+#rotate{
+	display:block;	
+}
+
+body{
+	background-image: url(../img/bg2.jpg) !important;	
+}
+
+#navigBar{
+	display:none;
+}

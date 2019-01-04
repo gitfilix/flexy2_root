@@ -1,0 +1,16 @@
+
+RewriteEngine on
+RewriteBase /schmuck-und-kunst
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^atelier-schief.ch [NC]
+RewriteRule ^(.*)$ http://www.atelier-schief.ch/schmuck-und-kunst/$1 [L,R=301]
+
+
+# remove index.cfm from root of Mandant
+# if Filename NOT index.cfm exist
+RewriteCond %{REQUEST_FILENAME} !-f
+# if Directory NOT exist
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .? index.cfm/%{REQUEST_URI} [QSA,L]
+

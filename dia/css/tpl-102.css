@@ -1,0 +1,45 @@
+
+
+*{
+	box-sizing:border-box;
+	}
+	
+.tpl-102 .bigtitel{
+	font-size:3.2em;
+	letter-spacing:-0.04em;
+	font-family: 'Open Sans', sans-serif  !important;
+	font-weight:700;
+	border-top:1px solid ##000000;
+	padding-top:10px;
+	height:50%;
+	box-sizing:border-box;
+	}
+
+.tpl-102 .untertitel{
+	border-top:1px solid ##000000;
+	padding-top:10px;
+	font-size:2em;
+	color:##6A6A6A;
+	font-family: 'Playfair Display', serif !important;
+	font-weight:200;
+	box-sizing:border-box;
+	height:50%
+	}
+	
+.tpl-102 .fliesstext{
+	font-family: 'Playfair Display', serif  !important;
+	font-size:1.3em;
+	line-height:1.6em;
+	color:##444;
+	}	
+	
+.tpl-102 .fliesstext p{
+	margin-top:-1%;
+	padding-left:120px;
+}
+
+.tpl-102 .redbutton{
+	background: #8d2a03;
+	width:60px;
+	height:60px;
+	}	

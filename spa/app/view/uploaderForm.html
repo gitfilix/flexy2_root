@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="twelve uploaderTitle">
+            <h2>Upload your Pictures</h2>
+        </div>
+    </div>
+    <div class="row formstyle">
+        <form id="uploadForm" action="" method="post" enctype="multipart/form-data">
+            <div class="six columns">
+                <h3>1. Select an Album -or:</h3>
+                <select id="albumList" name="albumList" >
+                    <option value="new">a new Album</option>
+                </select>
+                <div id="newAlbumOnUpload">
+                    <h3>add a new Album</h3>
+                    <input required="required" type="text" name="newAlbumTitle" id="newAlbumTitle" value="a new Album" />
+                </div>
+                <h3>2. choose your Images</h3>
+                <input type="file" multiple="multiple"  name="uploadFotos" id="uploadFotos" value="your Photos" />
+                <h3>3. Upload</h3>
+                <input type="button" id="uploadSubmit" value="Upload Pictures" />
+                <br />
+                <br />
+            </div>
+            <div class="six columns">
+                <div id="previewUploadImages">
+                    <h3>Preview</h3>
+                    <div></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

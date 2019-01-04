@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pano_anim_test</title>
+</head>
+<style>
+html{
+	height:100%;
+	width:100%}
+
+body{
+	background:url(pix/beachpano_part2_3.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+	height:100%;
+	width:100%;
+	}
+
+#viewport{
+	position:relative;
+	height:100%;
+	width:100%;
+	}
+	
+
+#hello{
+	position:absolute;
+	top:10%;
+	left:10%;
+	background:rgba(98,174,192,0.72);
+	color:rgba(255,241,155,1.00);
+	}	
+	
+#boat{
+	position:absolute;
+	top:60%;
+	left:40%;
+	animation: boatfloat 2s;
+	animation-delay: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation: boatfloat 2s;
+	}
+	
+/*animation*/
+
+@-webkit-keyframes boatfloat{
+	0%{
+		left:40%;
+		top:60%;
+		}
+		
+	100%{
+		left:60%;
+		top:60%;
+		}
+	}
+
+@keyframes boatfloat{
+	0%{
+		left:40%;
+		top:60%;
+		}
+		
+	100%{
+		left:40%;
+		top:60%;
+		}
+	}
+
+</style>
+
+
+<body>
+<div id="viewport">
+
+	<div id="hello">
+		<h1>Reif für die Insel?</h1>
+		<p>dann buchen Sie noch heute</p>
+	</div>
+	<div id="boat">
+		<img src="pix/beachpano_boat.png">
+	</div>
+</div>
+
+</body>
+</html>

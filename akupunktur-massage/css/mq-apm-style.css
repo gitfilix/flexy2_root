@@ -1,0 +1,418 @@
+
+
+/*1. CSS adjustments for Media Queries --------------------------*/
+/*---------------------------------------------------------------*/
+
+
+/*until 1024 ipad landscape */
+
+/*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {*/
+@media screen and (max-width: 1024px){
+	body{
+		/*blau*/
+		/*background:#33F;*/
+	}
+
+	
+
+
+/*1. Navigation adjustments ----------------------------------------*/
+/*---------------------------------------------------------------*/
+	
+	/*Service nav is horizontally */
+	.servicenav ul li{
+		font-size:1em;
+		margin-right: 2em;
+		border: 1px solid #999;
+		padding:0.3em;
+		}
+	
+	.subnav li{
+		margin-right:1em;
+		padding:0.3em;
+		}
+
+	#flower{
+		width:85%;
+		max-width:90%;
+		height:auto;
+		}
+
+
+
+/*1. text adjustments--  ----------------------------------------*/
+/*---------------------------------------------------------------*/
+
+	.topadress{
+		margin-right:1em;
+		padding:0.6em !important;
+		background:#dde7dc;
+		border-left: 1px solid #777;
+		}
+	
+	.topadress address{
+		font-size:0.8em;
+		}	
+	.textbox{
+		margin-right:1em;
+		background:rgba(33, 33, 33, 0.4);
+		padding-left:1em;
+	}
+	
+	.textbox h2{
+		font-size:1.6em;
+		letter-spacing:0.1em;
+		font-weight:200;
+		text-transform:capitalize;
+	}
+	
+	.textbox h3{
+		font-size:1.1em;
+		letter-spacing:0.0em;
+		font-weight:300;
+	}	
+		
+	
+	.sliderbox {
+		position:absolute;
+		right:0;
+		bottom:10px;
+		width:40%;
+		padding:0.7em;
+	}
+
+	.sliderbox strong{
+		font-size:1.2em;
+		letter-spacing:0.08em;
+		font-family: 'Cinzel', serif;
+		}
+	
+	.slidertext{
+		font-size:1em;
+		margin-top:0.5em;
+		line-height:1.4em;
+		color:#333;
+		}
+
+
+/*1. WebFormular ------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+	.webform input{
+		height: 2.6em;
+		width:80%;
+		/*max-width:50%;*/
+		margin:0;
+	}
+
+	.webform textarea{
+		width:82%;
+		max-width:82%;
+		margin:0;
+		resize: none;
+  		overflow: auto;
+	}
+	
+	#submit-btn{
+		font-weight:200;
+		letter-spacing:0.1em;
+		width:82%;
+	}	
+	
+	
+}
+
+/*1. Navigation adjustments for small screens -------------------*/
+/*---------------------------------------------------------------*/
+@media screen only and (max-width: 770px){
+
+	
+	/*Service nav is horizontally */
+	.servicenav ul li{
+		font-size:0.9em;
+		margin-right: 0.5em !important;
+		border: 1px solid #999;
+		padding:0.3em;
+		}
+	
+	.subnav li{
+		font-size:0.9em;
+		margin-right:0.5em !important;
+		padding:0.3em;
+		}
+
+	.subnav li a{
+		font-size:0.9em;
+		font-weight: 200;
+		letter-spacing:0em;
+    	padding: 0.5em;
+		}
+
+	#flower{
+		width:85%;
+		max-width:85%;
+		height:auto;
+		}
+
+	}
+
+
+/*I pad portrait format*/
+@media screen and (device-width: 768px) and (device-height: 1024px)  and (orientation:portrait){ 
+
+/*@media screen and (max-width: 767px){	*/
+	
+	.logo h2,.logo .h2{
+		padding-top:1.4em;
+		font-size:0.9em;
+		color:#3c5b3f;
+		font-weight:400;
+		letter-spacing:0.04em;
+	}
+	
+	/*small flower in portrait mode -sorry daisy !
+
+	#flower{
+		width:70%;
+		}		*/
+	
+	.topadress{
+		margin-right:0em;
+		padding:10% !important;
+		background:#dde7dc;
+		border-left: 1px solid #777;
+		}
+
+	.topadress address{
+		font-size:0.8em;
+		color:#444;
+		line-height:1.2em !important;
+		}
+
+
+	.servicenav ul li{
+		font-size:1em;
+		margin-right: 1em;
+		padding:0.4em;
+		}
+		
+	.underline{
+		width:93% !important;
+		}
+
+	.sliderbox {
+		display:none;
+		}
+		
+	#right-space{
+		display:none;
+		}
+
+	
+	.content h3,
+	.content h1{
+		font-size:1.6em;
+		letter-spacing:0.04em;
+		font-weight:400;
+		/*margin-top:0.5em;*/
+		}
+	
+	
+	.content h4,
+	.content h2{
+		
+		font-size:1.1em;
+		letter-spacing:0.06em;
+		font-weight:400;
+		}
+	
+	.fliesstext{
+		padding-top:1em;
+		padding-bottom:1.6em;
+		font-size:1.1em;
+		color:#222;
+		font-weight:400;
+		line-height:1.6em;
+		}
+}
+
+
+
+
+/* PHONE 600px */
+	/*@media only screen and (max-width: 450px) {*/
+@media handheld, only screen and (max-width: 600px) and (min-device-width : 320px)  {
+	/* ausblenden der normalen nav in der phone-view  */
+	
+	body{
+		/*background:#1C7431;*/
+		}
+	
+	#inner-wrap{
+		margin:0;
+		width:100%;
+		max-width:100%;
+		}
+		
+		
+	.logo h2, .logo .h2 {
+		padding-top:0.5em;
+		font-size:1.1em;
+		line-height:1.4em;
+		}
+		
+	.underline{
+		width:90%;
+		max-width:90% !important;
+		}
+	
+	.mobile-10{
+		width:10% !important;
+		}
+	
+	.mobile-80{
+		width:80% !important;
+		}
+		
+	.topadress{
+		display:block;
+		width:87%;
+		margin-top:1em;
+		margin-left:2.5em;
+		padding:1.4em;
+		padding-right:0.3em;
+		font-size:1.2em;
+		}
+
+	.topadress address a{
+		margin-top:1.5em;
+		/*font-size:1.3em;*/
+		color:#333 !important;
+		padding-top:0.3em;
+		padding-bottom:0.3em;
+		padding-right:0.3em;
+		background:#FBFBFB;
+		border-bottom: 1px solid #999;
+		}
+		
+		
+		.topadress address a:before{
+		content: 'tel: '
+		}
+		
+	#flower{
+		display:none;
+		}	
+	/*no slider info*/
+	.sliderbox{
+		display:none;
+		}
+	
+	/*display header-mobile only*/
+	.flex-pix{
+		display:none;
+		}
+	
+	.header-mobile{
+		display:block;
+		padding-left:3em;
+		padding-right:3em;
+		}
+	
+	.header-mobile img{
+		max-width:100%;
+		height:auto;	
+		}
+	
+		
+	/*navigation untereinander*/
+	.servicenav{
+		padding-top:0.1em !important;
+		}
+	
+	.servicenav ul li{
+		display:block;
+		text-align:center;
+		margin-top:1.5em;
+		font-size: 1.4em;
+		}
+	
+	.subnav {
+		padding-top:0 !important;
+		}
+		
+	.subnav li {
+	    display: block;
+	    font-size: 1.2em;
+	    margin-right:2.4em;
+	    margin-top: 1.5em;
+    	padding: 0.3em;
+    	text-align: center;
+		}
+	
+	
+	/*content*/
+	.content {
+		border-top: 1px solid #82a67d;
+		}
+
+	#PixPos_right{
+		width:100%;
+		max-width:100%;
+		margin-bottom: 2em;
+		}
+	
+	#PixPos_right img {
+		width:100%;
+		max-width:100%;
+		}
+	
+	#PixPos_left{
+		width:100%;
+		max-width:100%;
+		margin-bottom: 2em;
+		}
+	
+	#PixPos_left img {
+		width:100%;
+		max-width:100%;
+		}
+	
+	.fliesstext{
+		font-size:1.1em;
+		}
+	.fliesstext iframe{
+		width:100%;
+		max-width:100% !important;
+		}
+		
+	.footer p{
+		display:none;
+		}
+	
+	.footertext{
+		font-size:1.1em;
+		padding-left:2em;
+		padding-bottom:1em;
+		line-height:1.8em;
+		color:#333;
+		}
+		
+	.footertext a{
+    	color:#3E754E !important;
+		background:#FBFBFB;
+		border-bottom: 1px solid #3E754E;
+		}
+		
+		
+	.mobile-wk{
+		width:80% !important;
+		max-width:80% !important;
+		margin-bottom:2em;
+		}
+			
+	.author{
+		font-size:1em;
+		padding-left:1em;
+		margin-bottom:2em;}
+}

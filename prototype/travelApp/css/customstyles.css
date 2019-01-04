@@ -1,0 +1,452 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;	
+}
+
+#navigBar{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:200;
+	width:100%;
+	background-color:#333;
+	color:#fff;
+	height:50px;
+	-webkit-transform: translateY(-50px);
+	-moz-transform: translateY(-50px);
+	transform: translateY(-50px);
+}
+
+
+#navigBar ul li{
+	float:left;
+	padding-right:20px;
+}
+
+#navigBar ul li a{
+	color:white;
+}
+
+.hidden{
+	display:none;	
+}
+
+video {
+  -webkit-transform-style: preserve-3d;
+}
+
+
+#lightbox{
+	white-space:normal;
+	position:absolute;
+	top:-2000px;
+	left:-0;
+	z-index:1000;
+	height:100%;
+	width:100%;
+	margin:0;
+	overflow:hidden;
+		
+	
+	MozTransform: 'translateY(-2000px)';
+	WebkitTransform: 'translateY(-2000px)';
+	transform: 'translateY(-2000px)';
+
+}
+
+#lightbox2{
+	white-space:normal;
+	position:absolute;
+	top:-2000px;
+	right:0;
+	z-index:1000;
+	height:100%;
+	width:33%;
+	margin:0;
+	overflow:hidden;
+
+	MozTransform: 'translateY(-2000px)';
+	WebkitTransform: 'translateY(-2000px)';
+	transform: 'translateY(-2000px)';
+
+}
+
+.full-trans{
+	background-color:rgba(255,255,255,0.70);
+	right:0 !important;
+	z-index:1000;
+	height:100% ;
+	width:33%!important;
+	margin:0 !important;
+	}
+
+.full-black{
+	background-color:black;	
+	color:white;
+}
+
+.full-white{
+	background-color:white;	
+	color:#333;
+}
+
+.full-white div{
+	color:#333;
+}
+
+.centered80white{
+	border-radius:2em;
+	padding:5%;
+	margin:5%;
+	height:90% !important;
+	width:90% !important;
+	background-color:rgba(255,255,255,0.8);	
+}
+
+.centered80black{
+	border-radius:2em;
+	padding:5%;
+	margin:5%;
+	height:90% !important;
+	width:90% !important;
+	background-color:rgba(0,0,0,0.8);	
+}
+
+.flip{
+	cursor: pointer;	
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	/*.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}*/
+
+.flip-container, .front, .back {
+	
+	overflow-y:scroll;
+	-webkit-overflow-scrolling: touch;
+	padding:5px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.back {
+	-webkit-backface-visibility:hidden; /* Chrome and Safari */
+	-moz-backface-visibility:hidden; /* Firefox */
+	-ms-backface-visibility:hidden; /* Internet Explorer */
+	backface-visibility:hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+.ftScrollerlVerticalWithSwipe ul,
+.ftScrollerlVertical ul,
+.ftScrollerlHorizontalWithSwipe ul,
+.ftScrollerlHorizontal ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer{
+	-webkit-transform: translateY(280px);
+	-moz-transform: translateY(280px);
+	transform: translateY(280px);
+	height:200px;
+	
+	padding:20px;
+	background-color:#ddd;
+}
+
+.footer .swiper-container,
+.footer .swiper-wrapper,
+.footer .swiper-slide{
+	height:90%;	
+	
+	color:#333;
+}
+
+.footer .swiperImage{
+	height:100%;
+	width:40%;
+	margin-right:0.3em;
+	background-image:url('/mirza-in-progress/upload/magazine/The-Big-Bang-Theory.jpg');
+	background-size:cover;
+	float:left;
+}
+
+
+
+ /* iscoll */
+.wrapper {
+	position: relative;
+	z-index: 20;
+	height: 100%;
+	width: 100%;
+	background: #ccc;
+	overflow: hidden;
+	-ms-touch-action: none;
+}
+
+.scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width:3000px;
+	height: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+.scroller ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.scroller li {
+	width: 300px;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: #fafafa;
+	overflow: hidden;
+	font-size:0.2em;
+	padding-right:1em;
+}
+
+
+.readMore { 
+	position: absolute; 
+	bottom: 0;
+	
+	left: 0;
+	width: 100%; 
+	text-align: center; 
+	margin: 0; 
+	padding: 0px 0; 
+	color:#ccc;
+	font-size:0.5em !important;
+	
+}
+
+.overflow{
+	overflow-x:hidden;
+	overflow-y:auto;
+	-webkit-overflow-scrolling:touch;
+}
+
+.overflow .textFadeOut{
+	display:block !important;
+	position: absolute; 
+	bottom: 0.6em; 
+	left: 0;
+	width: 100%; 
+	text-align: center; 
+	margin: 0; 
+	padding: 0.5em 0 !important;  
+	
+	/* "transparent" only works here because == rgba(0,0,0,0) */ 
+	/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, #f4f4f4));*/
+	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(231,231,231,0)),color-stop(1, rgba(231,231,231,100)));
+	background-image: -moz-linear-gradient(center top , rgba(231, 231, 231, 0), #e7e7e7);
+	background-image: -ms-linear-gradient(top, transparent, #e7e7e7);
+	background-image: -o-linear-gradient(top, transparent, #e7e7e7);	
+}
+
+
+
+
+@media screen and (orientation: portrait) and (max-width:767px){
+	#lightbox>div>div{	
+		width:95% !important;
+		margin:0 auto;
+		height:100%;
+	}	
+}
+
+@keyframes animatedBackgroundx {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+@-webkit-keyframes animatedBackgroundx {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+@-ms-keyframes animatedBackgroundx {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+@-moz-keyframes animatedBackgroundx {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+#navi{
+	position:absolute;
+	height:100%;
+	left:0;
+	top:0;
+	width:100%;	
+	
+}
+
+.navigator{
+	display:none;	
+	position:absolute;
+	z-index:10;
+	background-color:darkred;
+	color:#e7e7e7;
+	padding:0.5em;
+	border:1px solid #333;
+	border-radius:5px;
+}
+
+.navigator.enabled{
+	display:block !important;	
+	opacity:1
+}
+
+#pageMap{
+	background-color:rgba(0,0,0,0.8);
+	border-radius:10px;
+	padding:4em;
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	
+}
+
+#pm{
+	position:relative;
+}
+
+#pageMap h1{
+	color:white;
+	font-weight:bold;
+	margin-bottom:0.2em;
+}
+
+#pageMap .sitemap-chapter{
+	float:left;	
+	padding:0 0.2em 0 0.2em;
+	
+}
+#pageMap .sitemap-chapter a{
+	color:white;	
+	
+}
+#pageMap span{
+	font-weight:bold;color:#ccc;
+}
+
+#pageMap .sitemap-subchapter-act a,
+#pageMap .sitemap-chapter-act a{
+	color:red !important;	
+}
+
+
+
+@media screen and (min-width:768px){
+
+	.reveal .slide-background.present {
+		/*background-size:100%;*/
+		background-repeat:no-repeat;
+		background-size:cover;
+		/*-webkit-animation: animatedBackgroundx 30s linear infinite;
+		-webkit-animation-direction:alternate;
+		-moz-animation:animatedBackgroundx 30s linear infinite;
+		-moz-animation-direction:alternate;
+		animation: animatedBackgroundx 30s linear infinite;
+		animation-direction:alternate;
+		*/
+	}
+
+}
+
+#progressBar {
+	width: 100%;
+	height: 22px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+#progressBar div {
+	height: 100%;
+	color: #333;
+	text-align: right;
+	line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+	width: 0;
+	text-align:center;
+	background-color: #0099ff;
+}
+
+.vidControlBtn{
+	width:50px;
+	height:30px;
+	line-height:30px;
+	border-radius:5px;
+	border:1px solid grey;
+	margin:10px;
+	float:left;	
+}
+
+.vidControlSlider{
+	width:300px;
+	height:30px;
+	line-height:30px;
+	border-radius:5px;
+	border:1px solid grey;
+	margin:10px;
+	float:left;	
+}
+
+.vidControlInfo{
+	width:180px;
+	height:30px;
+	line-height:30px;
+	font-weight:bold;
+	margin:10px;
+	float:left;	
+}

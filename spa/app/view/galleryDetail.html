@@ -1,0 +1,26 @@
+<div class="swiper-container" style="height: 100%;">
+    <div class="swiper-wrapper" style="height: 100%;">
+        {{#each images}}
+        <div id="img-slide" class="swiper-slide" style=" background: #111 url({{imgpath}}) center center no-repeat; background-size: contain; position:relative;" >
+            <div class="close gal-btn">
+                <a>X</a>
+            </div>
+            <div class="info gal-btn">
+                <a>i</a>
+            </div>
+
+            <div id="imgdetails" class="img-caption">
+                <h2>Image Caption: {{imgCaption}}</h2>
+                <div class="img-caption-detail">
+                    <p>File Name: {{imgtitel}}
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="swiper-pagination"></div>
+    <button class="swiper-button-prev"><span>&lsaquo;</span> Pix</button>
+    <button class="swiper-button-next">Pix <span>&rsaquo;</span></button>
+</div>

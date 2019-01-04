@@ -1,0 +1,119 @@
+/* CSS Document */
+
+/* absolute positions of div elems*/
+
+.wrapper{
+	position:relative;
+	width:1024px;
+	height:768px;
+	/*border:1px solid #333;*/
+	font-family: 'Lato', sans-serif;
+	}
+	
+	
+#logo{
+	position:absolute;
+	top:25px;
+	left:20px;
+	width:250px;
+	/*background:#444;*/
+	/*background:#212629; /*anthrazit*/
+	}
+	
+#logo img{
+	/*box-shadow: 0px 0px 7px #fff;*/
+	}
+
+
+.topright{
+	position:absolute;
+	top:0;
+	width:700px;
+	margin-right:20px;
+	left:300px;
+	height:100px;
+	}
+	
+	
+.yellowline{
+	position:absolute;
+	top:100px;
+	left:50px;
+	height:1px;
+	width:950px;
+	border-bottom: 1px solid #e0c058;
+	}
+	
+#title{
+	position:absolute;
+	top:150px;
+	left:50px;
+	width:250px;
+	font-size:2em;
+	font-weight:200;
+	letter-spacing:0.1em;
+	color:#c4a052;
+	}
+	
+#subtitle{
+	position:absolute;
+	top:200px;
+	left:50px;
+	width:250px;
+	font-size:1.2em;
+	font-weight:200;
+	letter-spacing:0.08em;
+	padding-top:36px;
+	color:#e0c058;
+	}
+
+#dingbat{
+	position:absolute;
+	top:310px;
+	left:50px;
+	width:250px;
+	text-align:center;
+	font-size:2.4em;
+	font-weight:200;
+	color:#c4a052;
+	text-shadow: 0 0 10px #fff08f;
+	}
+	
+#textbox{
+	position:absolute;
+	top:350px;
+	left:50px;
+	width:250px;
+	height:380px;
+	margin-bottom:17px;
+	font-size:1em;
+	line-height:1.8em;
+	font-weight:300;
+	color:#e0c058;
+	background:#616060;
+	padding:10px;
+	border-top:#333 1px solid;
+	}
+
+	
+#big_pic{
+	position:absolute;
+	top:150px;
+	left:400px;
+	height:600px;
+	border-left: 1px solid #333;
+	/*background:#212629; /*anthrazit*/
+	background:#232323;
+	}	 
+	
+	
+#menue{
+	position:absolute;
+	top:150px;
+	left:400px;
+	height:600px;
+	}
+	
+	
+	
+	

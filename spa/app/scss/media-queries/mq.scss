@@ -1,0 +1,1231 @@
+//--------------------------Media Querries  ---/
+// ---------------------- my breackbpoints
+
+$phone-min-width:             320px;
+$phone-max-width:             767px;
+$tablet-min-width:            768px;
+$tablet-max-width:           1024px;
+$desktop-width:              1025px;
+$desktop-huge:               1800px;
+$orientation-Portrait:   "portrait";
+$orientation-Landscape: "landscape";
+
+
+
+
+// mixins --------------------------------
+
+@mixin  tooSmall{
+  @media(max-width: 310px) {
+    @content;
+  }
+}
+
+// Phone Hochformat
+@mixin phoneportrait {
+  @media(min-width: #{$phone-min-width}) and (max-width: #{$phone-max-width}) and (orientation:#{$orientation-Portrait}){
+    @content;
+  }
+}
+
+// Phone Querformat
+@mixin phonelandscape {
+  @media(min-width: #{$phone-min-width}) and (max-width: #{$phone-max-width}) and (orientation: #{$orientation-Landscape}){
+    @content;
+  }
+}
+
+// Tablet Hochformat
+@mixin  tablethoch{
+  @media(min-width: #{$tablet-min-width}) and (max-width: #{$tablet-max-width}) and (orientation: #{$orientation-Portrait}){
+    @content;
+  }
+}
+
+// Tablet Querformat
+@mixin  tabletquer{
+  @media(min-width: #{$tablet-min-width}) and (max-width: #{$tablet-max-width}) and (orientation: #{$orientation-Landscape}){
+    @content;
+  }
+}
+
+// Screen over 1025 px
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// HUGE Screens for decent people with fullHD or more
+@mixin desktopBig {
+  @media  (min-width:  #{$desktop-huge}){
+    @content;
+  }
+}
+
+// sö test
+//.title-gal:after{
+//  font-size: 12px;
+//  color: #A3A;
+//  position: absolute;
+//  top:10px;
+//
+//  @include tooSmall {
+//    content: "much too small, kolleg!";
+//  }
+//  @include phoneportrait {
+//    content: "phone portrait";
+//  }
+//
+//  @include phonelandscape {
+//    content: "phone landscape";
+//  }
+//
+//  @include  tablethoch{
+//    content: "Tablet hoch";
+//  }
+//
+//  @include  tabletquer{
+//    content: "Tablet quer";
+//    color: #F3C113;
+//  }
+//  @include desktop{
+//    content: "Desktop";
+//  }
+//  @include desktopBig{
+//    color: #22BB22;
+//    content: "HUGE Desktop, lets waste some space, baby!";
+//  }
+//}
+//
+
+
+// Containers ----------------------------
+#ContainerContent{
+  display: block;
+  padding-top: 50px;
+  @include phoneportrait {
+    padding-bottom:0;
+  }
+
+  @include phonelandscape {
+    padding-bottom:0;
+  }
+
+  @include  tablethoch{
+    padding-top: 50px;
+    padding-bottom:0;
+  }
+
+  @include  tabletquer{
+    padding-top: 50px;
+    padding-bottom:70px;
+  }
+
+  @include desktop{
+    padding-bottom:70px;
+  }
+
+  @include desktopBig{
+    padding-bottom:70px;
+  }
+}
+
+#ContainerFooter{
+  display: block;
+  height:70px;
+  @include phoneportrait {
+    visibility: hidden;
+  }
+
+  @include phonelandscape {
+    visibility: hidden;
+  }
+
+  @include  tablethoch{
+    visibility: hidden;
+  }
+
+  @include  tabletquer{
+    visibility: visible;
+  }
+
+  @include desktop{
+    visibility: visible;
+  }
+
+  @include desktopBig{
+    visibility: visible;
+  }
+}
+
+// Title bar
+.title-gal{
+  width: 20%;
+
+  @include phoneportrait {
+    width: 43%;
+  }
+  @include phonelandscape {
+    width: 40%;
+  }
+  @include  tablethoch{
+    width: 40%;
+  }
+  @include  tabletquer{
+    width: 45%;
+  }
+  @include desktop{
+    width: 47%;
+  }
+}
+
+.title-gal h1{
+  font-size: 1rem;
+  white-space: nowrap;
+  display: inline-block;
+  @include tooSmall {
+    background: #F33 !important;
+    font-size: 0.5rem;
+    content: "much too small, kolleg!";
+  }
+  @include phoneportrait {
+    padding-top: 0.3rem;
+    font-size: 1.15rem;
+    line-height: 1.1rem;
+  }
+  @include phonelandscape {
+    padding-top: 0.3rem;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+  @include  tablethoch{
+    padding-top: 0.15rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+  @include  tabletquer{
+    padding-top: 0.15rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+  @include desktop{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  @include desktopBig{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
+
+#BtnThemeChange{
+  margin-right: 1rem;
+  @include phoneportrait{
+    margin-right: 0.7rem;
+  }
+}
+
+#BtnMenuToggler{
+  margin-left: 1rem;
+  @include phoneportrait{
+    margin-left: 0.7rem;
+  }
+}
+
+//---------------------------Splash Screen ---/
+
+.splash-content{
+  left: 50%;
+  top: 40%;
+
+  @include phoneportrait {
+    left: 50%;
+    top: 40%;
+  }
+
+  @include phonelandscape {
+    left: 50%;
+    top: 40%;
+  }
+
+  @include  tablethoch{
+
+  }
+
+  @include  tabletquer{
+
+  }
+
+  @include desktop{
+
+  }
+}
+
+.splash-content h1 {
+  font-size: 4rem;
+  @include phoneportrait {
+    font-size: 3rem;
+  }
+
+  @include phonelandscape {
+    font-size: 3rem;
+  }
+
+  @include  tablethoch{
+
+  }
+
+  @include  tabletquer{
+
+  }
+
+  @include desktop{
+    font-size: 6rem;
+  }
+
+}
+
+
+.splash-content h2 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: -18px;
+  @include phoneportrait {
+    margin-top: -1px;
+    font-size: 0.8rem;
+  }
+
+  @include phonelandscape {
+    margin-top: -11px;
+    font-size: 0.8rem;
+  }
+
+  @include  tablethoch{
+    margin-top: -12px;
+    font-size: 0.9rem;
+  }
+
+  @include  tabletquer{
+    margin-top: -12px;
+    font-size: 0.9rem;
+  }
+
+  @include desktop{
+    margin-top: -18px;
+    font-size: 1rem;
+  }
+
+}
+
+
+.splash-content h3 {
+  padding-top: 40px;
+  font-size: 1rem;
+  @include phoneportrait {
+    padding-top: 40px;
+    font-size: 1rem;
+  }
+
+  @include phonelandscape {
+    padding-top: 40px;
+    font-size: 1rem;
+  }
+
+  @include  tablethoch{
+    padding-top: 60px;
+    font-size: 1rem;
+  }
+
+  @include  tabletquer{
+    padding-top: 30px;
+    font-size: 1rem;
+  }
+
+  @include desktop{
+    padding-top: 40px;
+    font-size: 1.6rem;
+  }
+}
+
+
+/* splash display loading featurese */
+
+#featureList{
+  bottom:0;
+  right: 5px;
+  @include phoneportrait {
+    display: none;
+  }
+
+  @include phonelandscape {
+    display: none;
+  }
+
+  @include  tablethoch{
+      display: block;
+  }
+
+  @include  tabletquer{
+    display: none;
+  }
+
+  @include desktop{
+    display: block;
+  }
+
+  @include desktopBig{
+    display: inline;
+  }
+}
+
+
+#showTests li{
+  color: #AEE;
+  border-top: 1px solid #999;
+  display: block;
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 0.7rem;
+
+  @include phoneportrait {
+    display: none;
+  }
+
+  @include phonelandscape {
+    display: none;
+  }
+
+  @include  tablethoch{
+    font-size: 0.6rem;
+  }
+
+  @include  tabletquer{
+    font-size: 0.6rem;
+  }
+
+  @include desktop{
+    font-size: 0.8rem;
+  }
+
+  @include desktopBig{
+    display: inline;
+  }
+
+}
+
+//-------------------- VIEWS
+// start View
+
+.center{
+  top: 43%;
+
+  @include phoneportrait {
+    top: 45%;
+  }
+
+  @include phonelandscape {
+    top: 30%;
+  }
+
+  @include  tablethoch{
+    top:40%;
+  }
+
+  @include  tabletquer{
+    top:45%;
+  }
+
+  @include desktop{
+    top:45%;
+  }
+
+}
+
+.center h1{
+  font-size: 2.4rem;
+  @include phoneportrait {
+    font-size: 2.4rem;
+  }
+
+  @include phonelandscape {
+    font-size: 2rem;
+  }
+
+  @include  tablethoch{
+    font-size: 2.8rem;
+  }
+
+  @include  tabletquer{
+    font-size: 2.8rem;
+  }
+
+  @include desktop{
+    font-size: 4.4rem;
+  }
+}
+
+.center h2{
+  font-size: 1.2rem;
+
+  @include phoneportrait {
+    font-size: 1.2rem;
+    margin-right: 2em;
+  }
+
+  @include phonelandscape {
+    font-size: 1rem;
+  }
+
+  @include  tablethoch{
+    font-size: 1.2rem;
+    margin-right: 8rem;
+  }
+
+  @include  tabletquer{
+    font-size: 1.2rem;
+    margin-right: 8rem;
+  }
+
+  @include desktop{
+    font-size: 1.8rem;
+    margin-right: 10rem;
+  }
+}
+
+
+
+//-----------------------------menu off-canvas /
+
+.menu-list{
+  //font-size: 1rem;
+  @include phoneportrait {
+    font-size: 0.9rem;
+  }
+
+  @include phonelandscape {
+    font-size: 0.8rem;
+  }
+
+  @include  tablethoch{
+    font-size: 1rem;
+  }
+
+  @include  tabletquer{
+    font-size: 1.1rem;
+
+  }
+
+  @include desktop{
+    font-size: 1rem;
+
+  }
+}
+
+
+
+.ttmenu{
+  @include phoneportrait {
+    font-size: 0.9rem;
+  }
+
+  @include phonelandscape {
+    font-size: 0.8rem;
+  }
+
+  @include  tablethoch{
+    font-size: 1.2rem;
+  }
+
+  @include  tabletquer{
+    font-size: 1.2rem;
+
+  }
+  @include desktop{
+    font-size: 1rem;
+  }
+}
+// ----------------------- Content Article ---/
+
+
+.two-thirds.column{
+  width: 100%;
+  @include phoneportrait {
+    width: 100%;
+  }
+
+  @include phonelandscape {
+    width: 100%;
+  }
+
+  @include  tablethoch{
+    width: 100%;
+  }
+
+  @include  tabletquer{
+    width: 65.3333333333%;
+  }
+
+  @include desktop{
+    width: 65.3333333333%;
+  }
+}
+
+// --------------------Teasers
+.teaser{
+  display: none;
+
+  @include  tablethoch{
+    display: none;
+  }
+  @include  tabletquer{
+    display: block;
+  }
+
+  @include desktop{
+    display: block;
+  }
+  @include  desktopBig{
+    display: block;
+  }
+}
+
+.caption p{
+  font-size: 0.9rem;
+}
+
+// ---------------------Template:  Default
+
+.articleDefault h2 {
+  font-size: 2.6rem;
+  padding-right: 1rem;
+  @include phoneportrait {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  @include phonelandscape {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  @include  tablethoch{
+    font-size: 2.8rem;
+    padding-right: 0.5rem;
+  }
+
+  @include  tabletquer{
+    font-size: 2.6rem;
+    padding-right: 0.5rem;
+  }
+
+  @include desktop{
+    padding-top: 4.4rem;
+    font-size: 3.4rem;
+    padding-right: 0;
+  }
+}
+
+.articleDefault h3{
+  text-align: right;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  @include phoneportrait {
+    font-size:1.8rem;
+    padding-bottom: 1.2rem;
+  }
+
+  @include phonelandscape {
+    font-size:1.8rem;
+    padding-bottom: 1.2rem;
+  }
+
+  @include  tablethoch{
+    font-size:1.8rem;
+    padding-bottom: 1.6rem;
+  }
+
+  @include  tabletquer{
+    font-size:1.8rem;
+    padding-bottom: 1.6rem;
+  }
+
+  @include desktop{
+    padding-top: 0.6rem;
+    font-size:1.8rem;
+    padding-bottom: 1.6rem;
+  }
+
+  @include desktopBig{
+    padding-top: 0.6rem;
+    padding-bottom: 1.6rem;
+    font-size:2.2rem;
+    letter-spacing: 0.2rem;
+    padding-right: 0;
+  }
+}
+
+
+
+.articleDefault h4{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-top: 1.6rem;
+  @include phoneportrait {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    padding-top: 1rem;
+  }
+
+  @include desktop{
+    font-size: 1.4rem;
+  }
+
+  @include desktopBig{
+    font-size: 1.6rem;
+  }
+}
+
+
+.articleDefault p{
+
+  @include phoneportrait {
+    font-size: 1.1rem;
+    line-height:1.6rem;
+    font-weight: 400;
+  }
+
+  @include phonelandscape {
+    font-size: 1.1rem;
+    line-height:1.6rem;
+    font-weight: 400;
+  }
+
+  @include  tablethoch{
+    font-size: 1.4rem;
+    line-height:2rem;
+    font-weight: 300;
+  }
+
+  @include  tabletquer{
+    font-size: 1.4rem;
+    line-height:2rem;
+    font-weight: 300;
+  }
+
+  @include desktop{
+    font-size: 1.3rem;
+    line-height:2.2rem;
+    font-weight: 200;
+  }
+
+  @include desktopBig{
+    font-size: 1.3rem;
+    line-height:2.4rem;
+    font-weight: 300;
+  }
+
+}
+/* -------------Template:  TextTwoCols ---*/
+
+.articleRight h3, .articleLeft h3{
+  font-size: 2.4rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+
+  @include desktop{
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.8rem;
+    font-weight: 100;
+  }
+  @include desktopBig{
+    font-size: 2.8rem;
+    line-height: 2.4rem;
+    font-weight: 100;
+  }
+}
+
+
+.articleRight h4{
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+
+  @include desktop{
+    font-size: 1.6rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+  }
+  @include desktopBig{
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+  }
+}
+
+
+.articleLeft h4{
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+
+  @include desktop{
+    font-size: 1.6rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+  }
+  @include desktopBig{
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+  }
+}
+
+
+
+.articleLeft p, .articleRight p{
+  @include phoneportrait {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 200;
+  }
+
+  @include phonelandscape {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 200;
+  }
+
+  @include  tablethoch{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 200;
+  }
+
+  @include  tabletquer{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 200;
+  }
+
+  @include desktop{
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    font-weight: 300;
+  }
+  @include desktopBig{
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 100;
+  }
+
+}
+
+// ------------------------- Template BG-Prominent
+
+.asidetext h2{
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  @include phoneportrait {
+
+  }
+
+  @include phonelandscape {
+
+  }
+
+  @include  tablethoch{
+
+  }
+
+  @include  tabletquer{
+
+  }
+
+  @include desktop{
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  @include desktopBig{
+    font-size: 2.6rem;
+    letter-spacing: 0.1rem;
+
+  }
+}
+
+.asidetext h3{
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  @include phoneportrait {
+
+  }
+
+  @include phonelandscape {
+
+  }
+
+  @include  tablethoch{
+
+  }
+
+  @include  tabletquer{
+
+  }
+
+  @include desktop{
+    font-size: 1.3rem;
+  }
+
+  @include desktopBig{
+    font-size: 1.3rem;
+    font-weight: 200;
+  }
+}
+
+.asidetext p{
+  font-size: 1rem;
+  line-height: 1.4rem;
+
+
+  @include  tablethoch{
+    font-size: 1.2rem;
+  }
+
+  @include  tabletquer{
+    font-size: 1.2rem;
+  }
+
+  @include desktop{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+
+  @include desktopBig{
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+}
+
+
+
+// ----------------------- Gallery Overview ---/
+
+
+//table head limited in small viewports -Creator
+.theadalbum td:nth-child(2){
+  @include phoneportrait {
+    display: none;
+  }
+
+  @include phonelandscape {
+    display: none;
+  }
+
+  @include  tablethoch{
+    display: none;
+  }
+
+  @include  tabletquer{
+    display: block;
+  }
+
+  @include desktop{
+    display: block;
+  }
+
+}
+
+// font of td-list album
+.listsinglealbum{
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  @include phoneportrait {
+    font-size:1rem;
+    font-weight: 400;
+  }
+
+  @include phonelandscape {
+    font-size: 1.2rem;
+  }
+
+  @include  tablethoch{
+    font-size: 1.4rem;
+  }
+
+  @include  tabletquer{
+    font-size: 1.4rem;
+  }
+
+  @include desktop{
+    font-size: 1.6rem;
+    font-weight: 100;
+  }
+
+  @include desktopBig{
+    font-size: 2rem;
+    font-weight: 100;
+  }
+}
+
+// table-list limited in small viewports
+.listsinglealbum td:nth-child(3){
+  @include phoneportrait {
+    display: none;
+  }
+
+  @include phonelandscape {
+    display: none;
+  }
+
+  @include  tablethoch{
+    display: none;
+  }
+
+  @include  tabletquer{
+    display: table-cell;
+  }
+
+  @include desktop{
+    display: table-cell;
+  }
+
+}
+
+.imgfader{
+  @include phoneportrait {
+    width: 50px;
+  }
+
+  @include phonelandscape {
+    width: 50px;
+  }
+
+  @include  tablethoch{
+    width: 100px;
+  }
+
+  @include  tabletquer{
+    width: 100px;
+  }
+
+  @include desktop{
+    width: 120px;
+  }
+}
+
+.listsinglealbum img{
+  @include phoneportrait {
+    max-width: 50px;
+  }
+
+  @include phonelandscape {
+    max-width: 50px;
+  }
+
+  @include  tablethoch{
+    max-width: 100px;
+  }
+
+  @include  tabletquer{
+    max-width: 100px;
+  }
+
+  @include desktop{
+    max-width: 120px;
+  }
+}
+
+
+
+//------------------------------ Gallery Detail
+
+.swiper-button-prev, .swiper-button-next{
+  @include phoneportrait {
+    display: none;
+  }
+
+  @include phonelandscape {
+    display: none;
+  }
+
+  @include  tablethoch{
+    display: none;
+  }
+
+  @include  tabletquer{
+    display: none;
+  }
+
+  @include desktop{
+    display: inline;
+    width: 5rem;
+  }
+
+  @include  desktopBig{
+    display: inline;
+    font-size: 1.5rem;
+    width: 5.5rem;
+  }
+
+}
+
+//------------------------------ Gallery Upload
+
+.uploaderTitle h2{
+  font-size: 2.6rem;
+  padding-right: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+  @include phoneportrait {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  @include phonelandscape {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  @include  tablethoch{
+    font-size: 2.8rem;
+    padding-right: 0.5rem;
+  }
+
+  @include  tabletquer{
+    font-size: 2.6rem;
+    padding-right: 0.5rem;
+  }
+  @include desktop{
+    padding-top: 2rem;
+    font-size: 3.4rem;
+    padding-right: 1rem;
+  }
+
+  @include desktopBig{
+    padding-top: 2rem;
+    font-size: 4rem;
+    padding-right: 1rem;
+  }
+}
+
+.formstyle input,select{
+  width: 80%;
+  height:2.4rem;
+  @include phoneportrait {
+    height:3rem;
+  }
+
+  @include phonelandscape {
+    height:3rem;
+  }
+
+  @include  tablethoch{
+    height:2.6rem;
+  }
+
+  @include  tabletquer{
+    height:2.6rem;
+  }
+
+  @include desktop{
+    height:3rem;
+  }
+
+  @include desktopBig{
+
+  }
+}
+
+.formstyle h3{
+  @include phoneportrait {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  @include phonelandscape {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  @include  tablethoch{
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  @include  tabletquer{
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  @include desktop{
+    font-size: 1.6rem;
+    line-height: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  @include desktopBig{
+    font-size: 1.8rem;
+    line-height: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.4rem;
+  }
+}
+
+//-------------------------------- Footer
+
+
+
+
+
+
+/*---*/
+
+h1{
+
+  @include phoneportrait {
+
+  }
+
+  @include phonelandscape {
+
+  }
+
+  @include  tablethoch{
+
+  }
+
+  @include  tabletquer{
+
+  }
+
+  @include desktop{
+
+  }
+
+  @include desktopBig{
+
+  }
+
+}
+
+//---------------  Footer
+
+.footerfeedback{
+  display: none;
+  color: #D3D3D3;
+  letter-spacing: 0.1rem;
+  @include desktopBig{
+    font-size: 0.8rem;
+    line-height: 1rem;
+    display: block;
+  }
+}

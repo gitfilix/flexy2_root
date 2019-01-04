@@ -1,0 +1,331 @@
+body {
+  background: #151515;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#ContainerMenuBar {
+  background: #231111; }
+
+.menubar {
+  background: #231111; }
+
+.menubarlinks {
+  color: #B3B3B3;
+  background: #555555;
+  border: 1px solid #490000; }
+
+.menubarlinks:hover {
+  color: #333333;
+  background: #EBEBEB; }
+
+.menubarlinks a {
+  color: #B3B3B3; }
+
+.menubarlinks a:hover {
+  color: #333333; }
+
+.title-gal h1 {
+  color: #9f0000; }
+
+.title-gal h1:hover {
+  color: #a8a8a8; }
+
+/*--------------- Off-Canvas Navigation LEFT --- */
+#navWrapper {
+  background: #222222; }
+
+#navContent {
+  border: 1px solid #565656; }
+
+.nav-title h2 {
+  border-top: 1px solid #8b2424;
+  color: #9f0000; }
+
+.menu-list li a {
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.8);
+  color: #B3B3B3;
+  background: #292929; }
+
+.menu-list li a:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #9f0000;
+  box-shadow: inset 0 -1px #8b2424; }
+
+/* ----------------- Theme Toggler Menu RIGHT ---*/
+#ContainerThemeToggler {
+  background: #222222; }
+
+#ttwrapper {
+  border: 1px solid #565656;
+  background: #222222; }
+
+.ttmenu {
+  background: #222222; }
+
+.tttitle h2 {
+  background: #222222;
+  border-top: 1px solid #8b2424;
+  color: #9f0000; }
+
+.ttmenu ul li a {
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.8);
+  color: #B3B3B3;
+  background: #292929; }
+
+.ttmenu ul li a:hover {
+  box-shadow: inset 0 -1px #8b2424;
+  color: #9f0000;
+  background: rgba(0, 0, 0, 0.8); }
+
+/*------------------------ VIEW: Home View --- */
+.center {
+  background: rgba(250, 250, 250, 0.2);
+  border-top: 1px solid #9f0000; }
+
+.center h1 {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 2px 3px 4px #151515;
+  color: #EEEEEE; }
+
+.center h2 {
+  background: #151515;
+  font-family: "neuton", "courier", serif;
+  color: #9f0000; }
+
+/*----------------- VIEW: Gallery overview ---*/
+#galleryOverviewContainer {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.gallery-title h1 {
+  font-family: "neuton", "courier", serif;
+  color: #C2C2C2;
+  border-bottom: 1px solid #9f0000; }
+
+.theadalbum {
+  color: #C2C2C2; }
+
+.listsinglealbum {
+  color: #7e7e7e;
+  border-top: 1px solid #565656;
+  background: #151515;
+  border-bottom: 2px solid #490000; }
+
+.listsinglealbum:hover {
+  background: #292929;
+  border-bottom: 2px solid #490000;
+  color: #EEEEEE;
+  border-bottom: 2px solid #8b2424; }
+
+/*--------------- ---VIEW Gallery Detail: pix ---*/
+#galleryDetailContainer {
+  color: #9f0000; }
+
+.img-caption {
+  background: rgba(200, 200, 200, 0.3);
+  border-top: 1px solid #9f0000; }
+
+.img-caption h2 {
+  font-family: "neuton", "courier", serif;
+  color: #151515; }
+
+.img-caption-detail {
+  background: rgba(200, 200, 200, 0.8); }
+
+.img-caption-detail p {
+  color: #9f0000; }
+
+.gal-btn a {
+  color: #B3B3B3;
+  background: none;
+  border: 1px solid #490000; }
+
+.gal-btn a:hover {
+  color: #151515;
+  background: #EEEEEE;
+  border: 1px solid #333333; }
+
+.swiper-button-prev {
+  font-family: "neuton", "courier", serif;
+  color: #777777;
+  border: 1px solid #7e7e7e;
+  background: none;
+  transition: all 0.25s ease-out; }
+  .swiper-button-prev span {
+    color: #8b2424; }
+
+.swiper-button-prev:hover {
+  border: 1px solid #a8a8a8; }
+  .swiper-button-prev:hover span {
+    color: #EEEEEE; }
+
+.swiper-button-next {
+  font-family: "neuton", "courier", serif;
+  color: #777777;
+  border: 1px solid #7e7e7e;
+  background: none;
+  transition: all 0.25s ease-out; }
+  .swiper-button-next span {
+    color: #8b2424; }
+
+.swiper-button-next:hover {
+  border: 1px solid #a8a8a8; }
+  .swiper-button-next:hover span {
+    color: #EEEEEE; }
+
+/*-------------------------- VIEW Uploader Form ---*/
+.uploaderTitle h2 {
+  font-family: "neuton", "courier", serif;
+  color: #C2C2C2;
+  border-bottom: 1px solid #9f0000; }
+
+#uploadForm {
+  background: #231111;
+  color: #A2A2A2; }
+
+.formstyle input, select {
+  background: #292929;
+  border: 1px solid #490000;
+  border-radius: 3px;
+  color: #a8a8a8; }
+
+.formstyle input:hover {
+  background: #490000;
+  border: 1px solid #9f0000;
+  color: #a8a8a8; }
+
+.formstyle h3 {
+  color: #a8a8a8; }
+
+#uploadSubmit {
+  border: 1px solid #151515;
+  background: #292929;
+  color: #a8a8a8; }
+
+#uploadSubmit:hover {
+  border: 1px solid #9f0000;
+  background: #151515;
+  color: #9f0000; }
+
+#previewUploadImages h3 {
+  color: #9f0000; }
+
+#uploadThanks h2, h3, p {
+  color: #C2C2C2; }
+
+#toTheGaleriesBtn {
+  color: #9f0000;
+  background: #151515; }
+
+#toTheGaleriesBtn {
+  color: #9f0000; }
+
+/*------------------------ VIEW article view  ---*/
+/*Big title*/
+.articleDefault h2 {
+  font-family: "neuton", "courier", serif;
+  color: #C2C2C2;
+  border-bottom: 1px solid #9f0000; }
+
+.articleDefault h3 {
+  color: #A2A2A2;
+  border-top: 1px solid #A2A2A2; }
+
+.articleDefault h4 {
+  color: #EEEEEE; }
+
+.articleDefault p {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #A2A2A2; }
+
+.articleRight h3 {
+  font-family: "neuton", "courier", serif;
+  color: #A2A2A2;
+  background: #151515; }
+
+.articleRight h4 {
+  color: #9f0000; }
+
+.articleRight p {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #A2A2A2; }
+
+.articleLeft h3 {
+  font-family: "neuton", "courier", serif;
+  color: #A2A2A2;
+  background: #151515; }
+
+.articleLeft h4 {
+  color: #9f0000; }
+
+.articleLeft p {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #A2A2A2; }
+
+.asidetext {
+  background: rgba(200, 200, 200, 0.3); }
+
+.asidetext h2 {
+  background: #151515;
+  letter-spacing: 0.1rem;
+  color: #9f0000; }
+
+.asidetext h3 {
+  color: #9f0000;
+  background: #151515; }
+
+.asidetext p {
+  color: #EEEEEE; }
+
+.teaserbox {
+  border: 1px solid #490000;
+  background: #151515; }
+
+.teaserbox h3 {
+  color: #a8a8a8; }
+
+.caption {
+  background: rgba(200, 200, 200, 0.3); }
+
+.caption p {
+  color: #292929; }
+
+.linkToGal a {
+  color: #777777;
+  border-bottom: 0 solid #490000; }
+
+.linkToGal a:hover {
+  color: #9f0000;
+  border-bottom: 1px solid #9f0000; }
+
+/*------------------------------ VIEW Footer ---*/
+#footer {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-top: 2px solid #151515;
+  background: #231111;
+  color: #7e7e7e; }
+
+.adress {
+  border-right: 1px solid #444444; }
+
+#footer a {
+  color: #A2A2A2;
+  border-bottom: 0 solid #444444; }
+
+#footer a:hover {
+  color: #9f0000;
+  border-bottom: 1px solid #9f0000; }
+
+/* ------------------------------ Splash screen ---*/
+.splash-content h1 {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888; }
+
+.splash-content h2 {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #8b2424; }
+
+.splash-content h3 {
+  color: #9f0000; }
+
+.splash-content p {
+  font-family: "neuton", "courier", serif;
+  color: #888; }

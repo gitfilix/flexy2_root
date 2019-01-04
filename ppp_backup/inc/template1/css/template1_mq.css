@@ -1,0 +1,92 @@
+
+/*4 Mobiele view*/
+
+@media screen and (max-width: 767px) {
+	.desc_aside{
+		margin-left:2em;
+		margin-right:2em !important;
+		padding-top:1.6em;
+		border-top:#666 1px solid;
+		padding-bottom: 2em;
+		border-bottom:double 4px #333333;
+		background:#FEFEFE;
+		
+		/*background:#DEDEDE;*/
+		margin-bottom:3em;
+		}
+	
+	
+	.desc_text{
+		margin-right:2em !important;
+		padding-left:5px;
+		padding-right:5px;
+		font-size:0.9em;
+		line-height: 1.3em;
+		background:#FEFEFE;
+		color:#444; 
+		}
+	
+	.row_line{
+		margin-bottom:1em;
+		padding-bottom:0;
+		border-bottom: 0;
+		}
+		
+		
+	.gallery_container {
+		margin-left: 2em;
+		margin-right: 2em !important;
+		padding-left: 2em;
+		padding-right: 2em;
+		}
+
+	.teaserdown {
+		background: none repeat scroll 0 0 #E8E8E8;
+		border-top: 2px solid #444444;
+		float: left;
+		margin-left: 2em;
+		margin-top: 0;
+		width: 20%;
+		}
+		
+	/*navigation*/
+	
+	.servicenav {
+		float: right;
+		margin-right:0;
+		padding-bottom: 0.1em;
+		padding-right: 2em;
+		}
+		
+		
+	.servicenav li {
+		display: inline;
+		float: left;
+		font-size: 0.9em;
+		letter-spacing: 0.06em;
+		list-style-type: none;
+		padding-left: 1em;
+		}	
+	
+	
+	.subnav {
+		float: right;
+		padding-right: 1em;
+		padding-top: 2em;
+		}
+	
+		
+		/*no teasers*/
+		
+	.teaserdown{
+		display:none !important;
+		}	
+		
+		
+	 .loginbutton {
+    	margin-right: 2em;
+    	}	
+		
+	
+	}
+	

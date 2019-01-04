@@ -1,0 +1,717 @@
+
+/*---------------------------------------------------------------*/
+/* CSS Document Flexy     */
+/* MANDANT Specific styles*/
+/*---------------------------------------------------------------*/
+
+/*-----------------
+Mandant Colors
+-------------------
+
+Color A: #dde7dc (hellgrün)
+
+Color B: #3c5b3f (Festes grün)
+
+Color C: #2c3d2c (Festes grün 2)
+
+Color D: #82a67d (militärgrün)
+
+Color E: #dde7dc (leichtes BG-Grün)
+
+*/
+
+
+
+/*1. general styles ---------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+
+
+/* =Typography
+-----------------------------------------------------------------*/
+
+body{
+	font-family: 'Muli', sans-serif;
+	font-size: 100.01%;
+	background:#666;
+	}
+
+
+/* =Outer Wrapper
+-----------------------------------------------------------------*/
+#outer-wrap{
+	/*margin-top:1.5em;*/
+	}
+
+/* Inner Wrapper 1024 pixel 
+-----------------------------------------------------------------*/
+
+#inner-wrap{
+
+	margin: 0 auto;
+	max-width:1024px;
+	background:#fBfBfB;
+	border:#222 1px solid;
+	}
+
+
+
+
+/* 2.Logo styles ----------------------------------------------*/
+/*-------------------------------------------------------------*/
+.logo{
+	padding-left:3em;
+	}
+
+.logo h1,.logo .h1{
+	font-family: 'Cinzel', serif;
+	font-weight:300;
+	letter-spacing:0.1em;
+	font-size:1.8em;
+	color:#222;
+	padding-bottom: 1em;
+	
+	}
+	
+.logo h2,.logo .h2{
+	padding-top:4.6em;
+	font-size:1.2em;
+	color:#3c5b3f;
+	font-weight:400;
+	letter-spacing:0.04em;
+	}
+
+
+.underline{
+	margin-top: -1.6em;
+	/*max-width:70%;*/
+  	width:66%;
+	border-top:#3c5b3f 1px solid;
+	}
+
+.topadress{
+	margin-right:1em;
+	padding:1.4em;
+	padding-right:0.3em;
+	background:#dde7dc;
+	border-left: 1px solid #777;
+	}
+
+.topadress address{
+	font-size:0.9em;
+	color:#444;
+	line-height:1.6em;
+	}
+	
+.topadress address a{
+	color:#444;
+	line-height:1.6em;
+	text-decoration:none;
+	}
+	
+#flower{
+	width:90%;
+	max-width:90%;
+	height:auto;
+	
+	}
+
+
+/*3. SERVICE Nav styles -----------------------------------------*/
+/*---------------------------------------------------------------*/
+	
+.servicenav{
+	font-family: 'Cinzel', serif;
+	padding-left:3em;
+	padding-top:2.6em;
+	}
+
+
+.servicenav ul li{
+	margin-right:4em;
+	display:inline;
+	padding:0.4em;
+	border:#DDD 1px solid;
+	text-align:right;
+	font-size:1em;
+	letter-spacing:0.1em;
+	font-weight:200;
+	color:#444;
+	background:#f4f4f4;
+	
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	}
+	
+	
+.servicenav ul li a:link{
+	text-decoration:none;
+	color:#444;
+	}
+	
+.servicenav ul li a:visited{
+	color:#444;
+	}	
+	
+.servicenav ul li:hover{
+	color:#222;
+	background:#e1eae2;
+	border:#222 1px solid;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	}
+
+
+
+
+.servicenav ul li a:link:visited{
+	color:#444;
+	}
+
+.servicenav ul li:visited:hover{
+	color:#000;
+	background:#e1eae2;
+	border:#222 1px solid;
+	}
+
+ /*active state*/
+.active{
+	color:#EEE !important;
+	background:#dde7dc !important;
+	border:#444 1px solid !important;
+	}
+
+/*.active a{
+	color:#EEE !important;
+	}
+*/
+
+/*4. SUB Navigation styles -----------------------------------------*/
+/*------------------------------------------------------------------*/
+	
+
+.subnav{
+	padding-top:2em;
+	padding-bottom:2em;
+	padding-left:3em;
+	}
+
+
+.subnav li{
+	margin-right:3em;
+	display:inline;
+	padding:0.4em;
+	border:#444 1px solid;
+	text-align:right;
+	font-size:0.8em;
+	letter-spacing:0.1em;
+	font-weight:200;
+	color:#444;
+	background:#f4f4f4;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	}
+
+/*.subnav a{
+	padding:0.5em;
+	text-decoration:none;
+	text-align:right;
+	font-size:1em;
+	letter-spacing:0.1em;
+	font-weight:200;
+	color:#333;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	}
+*/
+			
+.subnav li a{
+	text-decoration:none;
+	color:#444;
+	padding:0.5em;
+	text-decoration:none;
+	text-align:right;
+	font-size:1em;
+	letter-spacing:0.1em;
+	font-weight:200;
+	color:#333;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	}
+
+.subnav li:hover{
+	color:#222;
+	background:#e1eae2;
+	border:#222 1px solid;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	}
+	
+
+.subnav li:visited{
+	text-decoration:none;
+	color:#444;
+	}
+
+.subnav li:visited:hover{
+	color:#222;
+	background:#e1eae2;
+	border:#222 1px solid;
+	}
+
+/*active state ------------------------------------------------*/
+
+.sub-active{
+	color:#EEE !important;
+	background:#dde7dc !important;
+	border:#444 1px solid !important;
+	}
+
+
+/* 5. Content styles ------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.content{
+	/*background:#F1F1F1;*/
+	padding-top:0.6em;
+	border-top: 1px solid #333;
+	margin-bottom:2em;
+	}
+
+
+.content h3,
+.content h1{
+	font-family: 'Muli', sans-serif;
+	color:#B3B3B3;
+	font-size:1.5em;
+	letter-spacing:0.04em;
+	font-weight:400;
+	/*margin-top:0.5em;*/
+	}
+
+
+.content h4,
+.content h2{
+	padding-top:1.6em;
+	padding-bottom: 2em;
+	font-family: 'Muli', sans-serif;
+	color:#777;
+	font-size:1.1em;
+	letter-spacing:0.06em;
+	font-weight:400;
+	}
+
+.fliesstext{
+	padding-top:1em;
+	padding-bottom:1.6em;
+	font-size:1em;
+	color:#222;
+	font-weight:400;
+	line-height:1.6em;
+	}
+
+
+.fliesstext a{
+	color:#3E754E;
+	text-decoration:none;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	}
+
+
+.fliesstext a:hover{
+	color:#EEE;
+	background:#222;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	}
+
+.fliesstext strong {
+	font-weight: 700;
+	letter-spacing: 0.5px;
+} 
+
+
+/* content picture position 0 */
+#PixPos_left{
+	font-weight:300;
+	letter-spacing:0.04em;
+	float:left;
+	width:260px;
+	height:auto;
+	margin-right:1em;
+	background:#444444;
+	color:#E2E2E2;
+	margin-top:1.4em;
+	padding-bottom:0.5em;
+	/*border-bottom: 2px solid #DDD;*/
+	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 3px 5px #333;
+	}
+/*
+.image-desc-box{
+	margin-top:10px;
+	margin-left:10px;
+	}
+*/
+
+#PixPos_left p{
+	font-size:0.9em;
+	padding-left:10px;
+	line-height:1.1em;
+	}
+
+#PixPos_left img{
+	float:left;
+	width:260px;
+	max-width:100%;
+	height:auto;
+	padding-bottom:0.5em;
+	}
+
+
+/* position 1 */
+#PixPos_right{
+	font-weight:300;
+	letter-spacing:0.04em;
+	float:right;
+	/*absolute pixel ! weissdergeierwarum*/
+	width:260px;
+	max-width:100%;
+	height:auto;
+	margin-left:1em;
+	background:#444444;
+	color:#E2E2E2;
+	margin-top:1.4em;
+	padding-bottom:0.5em;
+	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 3px 5px #333;
+	/*border-bottom: 2px solid #DDD;*/
+	}
+
+#PixPos_right p{
+	font-size:0.9em;
+	padding-left:10px;
+	line-height:1.1em;
+	}
+
+#PixPos_right img{
+	float:right;
+	width:260px;
+	max-width:100%;
+	height:auto;
+	padding-bottom:0.5em;
+	}
+	
+	
+/* position 3 */
+#PixPos_large img{
+	float:left;
+	width:100%;
+	max-width:100%;
+	height:auto;
+	padding-bottom:0.5em;
+	}
+
+#PixPos_large{
+	display:block;
+	/*absolute pixel ! weissdergeierwarum*/
+	background:#444444;
+	color:#E2E2E2;
+	padding-bottom:0.5em;
+	/*border-bottom: 2px solid #DDD;
+	margin-bottom:1em;*/
+	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 3px 5px #333;
+	}
+	
+#PixPos_large p{
+	font-size:0.9em;
+	padding-left:10px;
+	line-height:1.1em;
+	}
+
+
+
+	
+/*5.2 Content Webform ------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+
+input:focus {
+    outline:none;
+}
+	
+.webform{
+	/*background:#F9F9F9;*/
+	border: 1px solid #666;
+	padding-bottom:2em;
+	padding-left:1em;
+	font-size:1em;
+	color:#333;
+	}
+
+.webform h2{
+	font-size:1.6em;
+	font-weight:200;
+	letter-spacing:0.2em;
+	}
+
+.webform input{
+	font-weight:200;
+	height: 2.4em;
+	width:60%;
+	margin:0;
+	border:#999 1px solid;
+	background:#dde7dc;
+	color:#777;
+	}
+
+
+.webform input:focus{
+	background:#FBFBFB;
+	color:#2c3d2c;
+	border:#2c3d2c 1px solid;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	}
+
+
+.webform textarea{
+	font-weight:200;
+	width:62%;
+	max-width:62%;
+	margin:0;
+	background:#dde7dc;
+	display:block;
+	resize: none;
+  	overflow: auto;
+	color:#777;
+	border:#999 1px solid;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	}
+
+.webform textarea:focus{
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	background:#FBFBFB;
+	color:#111;
+	border:#111 1px solid;
+	outline-width: 0;
+	outline: none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	}
+	
+.forms label{
+	margin-bottom:1em;
+	margin-top:2em;
+	font-weight:300;
+	letter-spacing:0.1em;
+	}
+
+
+#submit-btn{
+	background:#dde7dc;
+	margin-top:4em;
+	width:62%;
+	border:#111 1px solid;
+	color:#777;
+	font-weight:200;
+	letter-spacing:0.02em;
+	-moz-transition:all 0.4s linear;
+	-webkit-transition:all  0.4s linear;
+	transition:all  0.4s linear;
+	}	
+	
+#submit-btn:hover{
+	border:#3c5b3f 1px solid;
+	color:#EEE;
+	background:#3c5b3f;
+	}	
+
+		
+/*5.3 flexslider Custom styles --------------------------------*/
+/*-------------------------------------------------------------*/
+
+
+.flex-pix{
+	width:100%;
+	max-width:100%;
+	height:auto;
+	min-height:250px;
+	overflow:hidden;
+	}
+
+/* Direction Nav */
+.flexslider{
+	position: relative;
+	border:0;
+	border-radius:0;
+	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow:  0px 3px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 3px 5px #333;
+	margin-bottom:6px;
+}
+
+
+/*-fix for flexslider hiding first iteration with fade when slides are in a div-list */
+.slides>div {
+	display: none;
+}
+
+/*5.4 flexslider Infobox  --------------------------------*/
+.sliderbox {
+	display: block;
+	position:absolute;
+	right:0;
+	bottom:1em;
+	width:30%;
+	padding:1em;
+	background-color: rgba(255, 255, 255, 0.66);
+}
+
+.sliderbox h3{
+	font-size:1.4em;
+	letter-spacing:0.08em;
+	font-family: 'Cinzel', serif;
+	}
+
+.slidertext{
+	font-size:1.1em;
+	margin-top:1em;
+	line-height:1.4em;
+	color:#333;
+	}
+	
+.slidertext b{
+	line-height:1.4em;
+	color:#222;
+	}
+	
+.sliderbox a{
+	font-size:1em;
+	padding-left:0.4em;
+	padding-right:0.4em;
+	text-decoration:none;
+	color:#19631C;
+	background:#E9E9E9;	
+	-moz-transition:all 0.4s linear;
+	-webkit-transition:all  0.4s linear;
+	transition:all  0.4s linear;
+	}
+
+
+.sliderbox a:hover{
+	-moz-transition:all 0.4s linear;
+	-webkit-transition:all  0.4s linear;
+	transition:all  0.4s linear;
+	
+	color:#179B1F;
+	background:#F4F4F4;
+	}
+
+
+.sliderbox a:hover:after{
+	content: '  > '
+	}
+
+/*5.5 Mobile header styles --------------------------------*/
+
+.header-mobile{
+	display:none;
+	}
+	
+
+/*6. Footer styles --------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.footer{
+	border-top:1px solid #888;
+	padding-top:1.5em;
+	}
+
+.bg-footer{
+	/*override kube margin- here! */
+	margin-bottom:0 !important;
+	/*background:#e8e8e8;*/
+	background:#f1f1f1;
+	}
+
+.footer p{
+	font-size:0.8em;
+	color:#666;
+	padding-left:1.2em;
+	}
+
+.footertext{
+	font-size:0.8em;
+	line-height:1.6em;
+	color:#666;
+	margin-bottom:1em;
+	}
+
+.footer a:link{
+	color:#3e754e;
+	text-decoration:none;
+	transition: color 0.3s linear, background 0.8s linear ;
+	}
+
+.footer a:hover {
+    color:#E4E4E4;
+	background:#333;
+	transition: color 0.3s linear, background 0.8s linear ;
+	}
+	
+.footer a:visited{
+	color:#3e754e;
+	transition: color 0.3s linear, background 0.8s linear ;
+	}	
+
+.footernav{
+	padding-left:1.2em;
+	font-size:0.8em;
+	color:#666;
+	}
+	
+	
+/*6.1 Webkanal styles --------------------------------------------*/	
+
+.author{
+	font-size:0.8em;
+	color:#666;
+	}
+
+.author a{
+    color: #00f9fc;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: all 0.2s linear, background 0.8s linear;
+	}
+
+.author a:hover:after {
+    content: " >";
+	}
+	
+.author a:hover {
+    color: #5df2ff;
+	background:#222;
+    letter-spacing: 0.2em;
+	transition: all 0.2s linear, background 0.8s linear;
+	}
+	

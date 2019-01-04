@@ -1,0 +1,62 @@
+/*alle deklarationen mit folgeder kaskadierung: .tpl1-skin0 (abstand) und css selector*/
+
+
+/* SKINS Template 1 - Skin 1 */
+/*-Skin 1 Black is Beautiful -------------------------------------*/
+
+.tpl1-skin1 .tpl1-layout{
+	font-family: 'Open Sans', verdana, sans-serif;
+	color:#F2F2F2;
+	background:#111;
+	}
+
+.tpl1-skin1 .tpl1-title h1{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:2.4em;
+	letter-spacing:0.3em;
+	line-height:2em;
+	color:#F2F2F2;
+	/*background:#4C4C4C;*/
+	text-align:right;
+	}
+
+
+.tpl1-skin1 .tpl1-lead{
+	padding-top:1em;
+	border-top: 1px solid #474747;
+	}
+
+.tpl1-skin1 .tpl1-lead p{
+/*	background:#2F2F2F; */
+	text-align:left;
+	color:#F2F2F2;
+	padding-left:1em;
+	font-size:1.2em;
+	line-height:1.6em;
+	}
+
+.tpl1-skin1 .tpl1-figcapture{
+	text-align:right; 
+	border-top:1px solid #474747;
+	color:#D3D3D3;
+	padding-top:1em; 
+	padding-bottom:2em;
+	/*margin-top:2em; */
+	padding-right:1em;  
+	/*margin-bottom:0 !important;*/
+	}
+
+/*The Black box */
+
+.tpl1-skin1 .tpl1-buttonstyle{
+	margin-top:1.4em;
+	margin-right:0.4em;
+	font-family: 'Open Sans', verdana, sans-serif;
+	padding:0.3em;
+	background-color:#111;
+	color:#CCC;
+	font-weight:100;
+	font-size:1.2em;
+	border: 1px solid #474747;
+	border-radius:0.2em;
+	}

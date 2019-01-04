@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+		
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<meta name="apple-touch-fullscreen" content="yes">
+				<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+		    <link rel="stylesheet" href="css/main.css">
+				<link rel="stylesheet" type="text/css" href="css/jquery.flipster.min.css" />
+				<link rel="stylesheet" href="css/styles.css">
+				<!--	for folio 1 specific -->
+				<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+				<link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+
+				<link rel="stylesheet" href="css/mag-grid.css">
+				<link rel="stylesheet" href="css/folio1.css">
+	
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body id="bdy" style="background-color:grey;">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+			<header></header>
+        <!-- Fixed size after header-->
+      <div class="content">
+            <!-- Scrollable div with main content -->
+            <div id="scrollable2">
+            	<div class="pages wrapper" style="background-color:grey;-webkit-backface-visibility: hidden;"></div>
+				<div id="bg1">&nbsp;</div> 
+				<div id="bg2">&nbsp;</div>
+            </div>
+        </div>
+        <!-- Always at the end of the page -->
+        <!--<footer>
+            footer
+        </footer> 
+ 		--> 
+		<!--<div id="chapterNav" class="nomobile" style="position:fixed;top:70px;width:30%;left:20px;z-index:1005"></div> -->
+		<div id="loading" style="position:absolute;width:100%;height:100%;overflow:hidden;z-Index:1004;text-align:center;font-size:50px;color:black;left:0;top:0;display:none;"><!--<div style="Padding-top:150px;">Please wait while loading...<br/><img src="img/ajax-loader.gif" /></div> --></div>
+		<div id="sitemap"></div>
+		<div id="dirRight" class="baloon">nächstes Kapitel<span></span></div>
+		<div id="dirLeft" class="baloon">Kapitel zurück<span></span></div>
+		<div id="dirUp" class="baloon">zurück<span></span></div>
+		<div id="dirDown" class="baloon">weiter<span></span></div>
+		<div id="layer">
+			<div id="pageSettings" class="settings">
+				<span id="pageCountInDOM"></span>
+			</div>
+			<div style="position:absolute;right:30px;top:30px;font-size:2em;background-color:white;opacity:1;border-radius:0.4em;padding:0.5em;">
+				<a href="javascript:void(0);" onClick="clearSettings();" style="color:black;text-decoration:none;">X</a>
+			</div>
+		</div>
+		<div id="webAppInfo">
+			We strongly suggest to open this app from the Appdrwaer as WebApp.<br/>
+			Make a Home-Shortcut to your desktop and open the Shortcut to get WebApp Mode!
+		</div>
+		<div id="webAppInfo2">
+			This WebApp is optimized for Ipad with iOS 5.0+<br/>
+			Please bei aware, that certain features will not be display correctly. <br/>
+			<strong>Use the iPad!</strong><br/><br/>
+			On Desktop-Devices us the arrow-keys to navigate between the Slides/Pages! Press ENTER to enter fullscreen-Mode and SPACE for navigational support!
+		</div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.flipster.js"></script>
+		<script src="js/videobg.js"></script>
+		<script src="js/iscroll4.js"></script>
+		<script src="js/pageSwipe.js"></script>
+		<script src="js/main.js"></script>
+		
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+       <!-- <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script> -->
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>F-Pix Gallery SPA by Felix Adam</title>
+	<meta name="description" content="Single Page Application Photo-Gallery F-Pix">
+	<meta name="author" content="webkanal by felix adam, veryhelpfull  mrz">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-title" content="F-Pix Gallery">
+	<link rel="shortcut icon" type="image/x-icon" href="pix/logo-128.ico" />
+	<link rel="shortcut icon" type="image/png" href="pix/Fpix_144.png" />
+	<!--all apple-diva shortcut icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="pix/Fpix_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="pix/Fpix_72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="pix/Fpix_76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="pix/Fpix_114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="pix/Fpix_120.png" />
+	<link rel="apple-touch-icon" sizes="154x154" href="pix/Fpix_144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="pix/Fpix_152.png" />
+	<link href="http://fonts.googleapis.com/css?family=Neuton:200,400%7cRaleway:400,200%7cCinzel%7cOxygen" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/swiper.css" />
+	<!-- my MAIN stylesheet for dimensions -->
+	<link rel="stylesheet" href="css/base.css" />
+	<!--dynamicly loaded Theme stylesheet: define here default theme on load -->
+	<link rel="stylesheet" id="themeCss" href="css/blue-theme.css" />
+	<!--   all  media queries goes here -->
+	<link rel="stylesheet" href="css/mq.css" />
+	<!--load lib-scripts -->
+<!--	<script src="js/jquery-1.11.js"></script>-->
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+ 	  crossorigin="anonymous"></script>
+	<script src="js/modernizr.custom.85932.js"></script>
+	<script src="js/template7.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+	<script src="js/appVars.js"></script>
+</head>
+<body>
+	<!-- Primary  VIEW:  Container Layout: bunch of lousy divs -->
+	<div id="ContainerWrapper" >
+		<!-- Menu Title Bar -->
+		<div id="ContainerMenuBar"></div>
+		<!-- Navigation Menu Container-->
+		<div id="ContainerNav"></div>
+		<!-- container Menu Theme Toggler-->
+		<div id="ContainerThemeToggler"></div>
+		<!-- Main Content Container -->
+		<div id="ContainerContent" ></div>
+		<!-- container Footer for big screen devices -->
+		<div id="ContainerFooter"></div>
+	</div>
+	<!-- Fancy Splash -Screen in outer container - removing from dom after successful app-start -->
+	<div id="splash"></div>
+	<!-- VIEW-MODEL - APP CODE (business logic) -->
+	<script src="js/fpix-app.js"></script>
+	<!-- launcher F-pix-App -->
+	<script src="js/appInit.js"></script>
+</body>
+</html>

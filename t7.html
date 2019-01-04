@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>test app framework 7</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/jquery-1.11.js"></script>
+		<script src="bower_components/template7/src/template7.js"></script>
+		
+    </head>
+   <body>
+	<script>
+		// Model
+		
+		var TestTpl7 ={
+			people: [
+				{
+					firstName: 'Fiilix Swadrowski',
+					lastName: 'Adamski'
+				},
+				{
+					firstName: 'Handelson',
+					lastName: 'Naminski'
+				},
+				]
+		}
+
+	</script>
+	<script id="templateF" type="text/template7">
+	<div>
+		here is a list of people
+		<ul>
+			{{#each people}}
+			<li>{{firstName}} {{lastName}}</li>
+			{{/each}}
+		</ul>
+	</div>
+	</script>	
+		
+	<h2>hi testcontent</h2>
+		<div id="container"></div>
+	<script>
+		function createNav(){
+			var template = $('#templateF').html();
+
+			// compile it with Template7
+			var compiledTemplate = Template7.compile(template);
+			// context model
+			// Now we may render our compiled template by passing required context
+			var TestTpl7 = {
+					people: [
+					{
+						firstName: 'Fiilix Swadrowski',
+						lastName: 'Adamski'
+					},
+					{
+						firstName: 'Handelson',
+						lastName: 'Naminski'
+					},
+					]
+				}
+			var html = compiledTemplate(TestTpl7);
+		
+		$("#container").html(html);
+			
+		console.log(html);
+		}
+		
+		createNav();
+		
+	</script>
+</body>

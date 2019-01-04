@@ -1,0 +1,574 @@
+// FLX Bright -Theme Bright and Light - like a hospital
+
+
+$primary-color:                  #d6c372 !default;
+$secondary-color:                #eaeaea !default;
+$tertiary-color:                 #bec7c7 !default;
+$font-sans:                      "Oxygen", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-serif:                     "Cinzel", serif;
+
+//Variable declaraion - Colors of theme
+$dark:                           #151515 !default;
+$darkgray:                       #292929 !default;
+$darkgray2:                      #636363 !default;
+$greymiddle:                     #82817a !default;
+$darkmiddle:                     #c9c9c9 !default;
+$brightdark:                     #DaDaDa !default;
+$brightmiddle:                   #e3e3e7 !default;
+$brightshade:                    #f2f2f2 !default;
+$brightlight:                    #F8F8F8 !default;
+$bright:                         #fdfdfd !default;
+
+$menu-background-default:        $secondary-color !default;
+$menu-background-dark:           $darkgray !default;
+$primary-fontcolor:              $darkgray2 !default;
+$secondary-fontcolor:            $darkgray !default;
+
+// Top Menue
+$linkMenuTopFontColor:          $greymiddle !default;
+$linkMenuTopColorBG:            $bright !default;
+$linkMenuTopColorBorder:        $greymiddle !default;
+$linkMenuTopFontColorHover:     $primary-color !default;
+$linkMenuTopcolorBgHover:       $dark !default;
+$linkMenuTopColorBorderHover:   $bright !default;
+$menuTopTitleColor:             $primary-fontcolor!default;
+
+//Off Canvas Navigation
+$menuBorderColor:               #bec7c7 !default;
+$menu-H-line:                   $darkgray !default;
+$menuBorderBottomColor:         $greymiddle !default;
+
+//VIEWs
+$titleFont-ColorBig:            #C2C2C2 !default;
+$titleFont-ColorLead:           $primary-fontcolor !default;
+$textFontColorBright:           #A2A2A2 !default;
+$textFontColorGray:             #777777 !default;
+$textFontColorDark:             #444444 !default;
+$transparentDark:               rgba(0,0,0,0.6) !default;
+$transparentBright:             rgba(200,200,200,0.9) !default;
+
+
+$formBgColor:                  $brightdark !default;
+$formBgColorHover:             $brightlight !default;
+$formBorderColor:              $linkMenuTopColorBorder !default;
+$formBorderColorHover:         $primary-fontcolor !default;
+
+$footerBGcolor:                $brightdark !default;
+
+
+// ----------------------------------- body --- /
+
+body{
+  background: $brightlight;
+  font-family: $font-sans;
+  font-weight: 200;
+}
+
+
+::-webkit-scrollbar-track{
+  background: $dark;
+}
+
+::-webkit-scrollbar-thumb{
+  background:$primary-color;
+}
+
+
+// -------------------------- Title- Menubar --- /
+.container{
+  background: $brightlight;
+}
+
+
+#ContainerMenuBar{
+  //background: $menu-background-default;
+  color:$primary-fontcolor;
+}
+
+
+
+.menubar{
+  //background: $menu-background-dark;
+  background: $brightlight;
+}
+// only here 1px border from titlebarsolid
+.titlebar{
+  border-bottom: 1px solid silver;
+}
+
+.menubarlinks{
+  color: $linkMenuTopFontColor;
+  background: $linkMenuTopColorBG;
+  border: 1px solid $linkMenuTopColorBorder;
+}
+
+.menubarlinks:hover{
+  color: $linkMenuTopFontColorHover;
+  background: $linkMenuTopcolorBgHover;
+  border:  1px solid $brightmiddle;
+}
+
+.menubarlinks a{
+  color: $linkMenuTopFontColor;
+}
+
+.menubarlinks a:hover{
+  color: $linkMenuTopFontColorHover;
+}
+.title-gal h1{
+  //color: $darkmiddle;
+  color: $primary-color;
+  text-shadow: 1px 1px  1px $greymiddle;
+}
+.title-gal h1:hover{
+  color: $darkgray;
+}
+
+
+/*--------------- Off-Canvas Navigation LEFT --- */
+
+#navWrapper{
+  background:$brightshade;
+}
+
+#navContent{
+  border: 1px solid $menuBorderColor;
+  background:$bright;
+  //background: $primary-color;
+}
+
+.nav-title h2{
+  //background: $menu-background-dark;
+  border-top: 1px solid $menu-H-line;
+  color: $primary-fontcolor;
+}
+
+.menu-list li a{
+  box-shadow: inset 0 -1px $darkgray;
+  color:$linkMenuTopFontColor;
+  background: $brightshade;
+}
+
+.menu-list li a:hover{
+  box-shadow: inset 0 -1px rgba(255,255,255,0.4);
+  color: $primary-color;
+  background: rgba(0,0,0,0.9);
+}
+
+/* --------------------- Theme Toggler Menu RIGHT--*/
+
+#ContainerThemeToggler{
+  background:$greymiddle;
+}
+
+#ttwrapper{
+  border: 1px solid $menuBorderColor;
+  background:$bright;
+  //background: $primary-color;
+}
+
+.ttmenu{
+  background:$bright;
+}
+
+.tttitle h2{
+  border-top: 1px solid $menu-H-line;
+  color: $primary-fontcolor;
+}
+
+.ttmenu ul li a{
+  box-shadow: inset 0 -1px $darkgray;
+  color:$linkMenuTopFontColor;
+  background: $brightshade;
+}
+
+.ttmenu ul li a:hover{
+  box-shadow: inset 0 -1px rgba(255,255,255,0.8);
+  color: $primary-color;
+  background: rgba(0,0,0,0.9);
+}
+
+
+
+/*------------------------ VIEW: Home View --- */
+
+.center{
+  background: rgba(250,250,250, 0.2);
+  border-top: 1px solid $primary-fontcolor;
+}
+
+.center h1{
+  font-family:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $brightshade;
+}
+
+.center h2{
+  background: $dark;
+  font-family:$font-serif;
+  color:$primary-color;
+}
+
+
+/*------------------------ VIEW: Gallery overview ---*/
+
+
+#galleryOverviewContainer{
+  font-family:$font-sans;
+}
+
+.gallery-title h1{
+  font-family:  $font-serif;
+  color: $titleFont-ColorBig;
+  border-bottom: 1px solid $primary-fontcolor;
+  text-shadow: 1px 1px $greymiddle;
+}
+
+.theadalbum{
+  color: $darkgray2;
+}
+
+
+.listsinglealbum{
+  color: $secondary-fontcolor;
+  border-top: 1px solid $menuBorderColor;
+  background: $menu-background-default;
+  border-bottom: 2px solid $menuBorderBottomColor;
+}
+
+
+.listsinglealbum:hover{
+  background: $linkMenuTopcolorBgHover;
+  border-bottom: 2px solid $tertiary-color;
+  color: $primary-color;
+}
+
+/*------------------ VIEW Gallery Detail: pix ---*/
+
+
+#galleryDetailContainer{
+  color: $primary-fontcolor;
+}
+
+.img-caption{
+  background:$transparentDark;
+  border-top: 1px solid $primary-fontcolor;
+}
+
+.img-caption h2{
+  font-family: $font-serif;
+  color: $dark;
+}
+
+.img-caption-detail{
+  background: $transparentBright;
+}
+
+.img-caption-detail p{
+  color: $primary-fontcolor;
+}
+
+.gal-btn a{
+  color: $linkMenuTopFontColor;
+  background: none;
+  border: 1px solid $linkMenuTopColorBorder;
+}
+
+.gal-btn a:hover{
+  color: $dark;
+  background: $bright;
+  border: 1px solid $linkMenuTopFontColorHover;
+}
+
+.swiper-button-prev{
+  font-family: $font-serif;
+  color:$textFontColorGray;
+  border: 1px solid $darkmiddle;
+  background: none;
+  transition: all 0.25s ease-out;
+  span{
+    color:$secondary-color;
+  }
+}
+
+.swiper-button-prev:hover{
+  border: 1px solid $brightshade;
+  span{
+    color:$bright;
+  }
+}
+
+.swiper-button-next{
+  font-family: $font-serif;
+  color:$textFontColorGray;
+  border: 1px solid $darkmiddle;
+  background: none;
+  transition: all 0.25s ease-out;
+  span{
+    color:$secondary-color;
+  }
+}
+
+.swiper-button-next:hover{
+  border: 1px solid $brightshade;
+  span{
+    color:$bright;
+  }
+}
+
+
+
+
+/*-------------------------- VIEW Uploader Form ---*/
+
+.uploaderTitle h1{
+  font-family:$font-serif;
+  color: $titleFont-ColorBig;
+  border-bottom: 1px solid $menuBorderBottomColor;
+  text-shadow: 1px 1px $greymiddle;
+}
+
+#uploadForm{
+  background: $brightmiddle;
+  color:$textFontColorBright;
+  //border-top:  1px solid $linkMenuTopColorBorder;
+}
+
+.formstyle{
+  //background: $darkgray;
+}
+
+
+.formstyle input,select{
+  background: $formBgColor;
+  border: 1px solid $linkMenuTopColorBorder;
+  border-radius: 3px;
+  color: $textFontColorDark;
+}
+
+.formstyle input:hover{
+  background: $formBgColorHover;
+  border: 1px solid $primary-fontcolor;
+  color:$dark;
+}
+
+
+.formstyle h3{
+  color: $primary-fontcolor;
+}
+
+#uploadSubmit{
+  border: 1px solid $dark;
+  background:$formBgColor;
+  color: $dark;
+}
+
+#uploadSubmit:hover{
+  border: 1px solid $primary-fontcolor;
+  background: $dark;
+  color: $primary-color;
+}
+
+#previewUploadImages{
+  //background: $menu-background-default;
+}
+
+#previewUploadImages h3{
+  color: $menuTopTitleColor;
+}
+
+#bubble{
+  background: $menu-background-dark;
+  color: $secondary-fontcolor;
+  border: 1px solid $brightshade;
+}
+
+
+#uploadThanks h2{
+  color: $titleFont-ColorBig;
+}
+
+#toTheGaleriesBtn{
+  color: $primary-fontcolor;
+}
+
+/*--------------------------- VIEW article view  ---*/
+
+//background for teasers
+.articlecontainer{
+  background:$secondary-color;
+}
+
+.articleDefault{
+  background: $brightshade;
+}
+
+/*Big title*/
+.articleDefault h2{
+  font-family:$font-serif;
+  color: $textFontColorDark;
+  border-bottom: 1px solid $primary-fontcolor;
+}
+
+.articleDefault h3{
+  color: $textFontColorBright;
+  border-top: 1px solid $textFontColorBright;
+}
+
+
+.articleDefault h4{
+  color: $primary-fontcolor;
+}
+
+.articleDefault p{
+  font-family: $font-sans;
+  color: $textFontColorBright;
+}
+
+.articleRight h3{
+  font-family:$font-serif;
+  color: $textFontColorBright;
+  background:$dark;
+}
+
+.articleRight h4{
+  color: $primary-color;
+  background: $transparentDark;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.articleRight p{
+  font-family: $font-sans;
+  color: $textFontColorDark;
+  background: $transparentBright;
+}
+
+.articleLeft h3{
+  font-family:$font-serif;
+  color: $textFontColorBright;
+  background: $dark;
+}
+
+.articleLeft h4{
+  color: $primary-color;
+  background: $transparentDark;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.articleLeft p{
+  font-family:$font-sans;
+  color: $textFontColorDark;
+  background: $transparentBright;
+}
+
+// ------------------------ Template BG-Prominent
+
+.asidetext{
+  background: $transparentDark;
+}
+
+.asidetext h2{
+  background: $dark;
+  color: $primary-color
+}
+
+.asidetext h3{
+  color: $bright;
+
+}
+
+
+.asidetext p{
+  color: $brightmiddle;
+}
+
+// ----- teasers
+
+
+
+.teaserbox{
+  border: 1px solid $linkMenuTopColorBorder;
+  background: $tertiary-color;
+}
+
+.teaserbox h3{
+  color: $greymiddle;
+}
+
+.caption{
+  background: $brightdark;
+}
+
+.caption p{
+  color: $darkgray2;
+  font-family: sans-serif;
+}
+
+.linkToGal a{
+  font-family: $font-serif;
+  color: $darkgray2;
+  border-bottom: 0 solid $linkMenuTopColorBorder;
+}
+
+.linkToGal a:hover{
+  color: $primary-fontcolor;
+  border-bottom: 1px solid $primary-fontcolor;
+}
+
+
+
+/* ------------------------------ VIEW Footer ---*/
+
+#footer{
+  font-family: $font-sans;
+  border-top:  1px solid $greymiddle;
+  background: $footerBGcolor;
+  color: $textFontColorDark;
+}
+
+
+.adress{
+  border-right: 1px solid $textFontColorBright;
+}
+
+#footer a{
+  color:  $darkgray;
+  border-bottom: 0 solid  $textFontColorDark;
+}
+
+#footer a:hover{
+  color: $primary-fontcolor;
+  border-bottom: 1px solid $primary-fontcolor;
+}
+
+
+
+/* ------------------------------ Splash screen ---*/
+
+.splash-content h1 {
+  font-family: $font-sans;
+  color: #888;
+}
+
+.splash-content h2{
+  font-family: $font-sans;
+  color:$menu-H-line;
+}
+
+.splash-content h3 {
+  color:$primary-fontcolor;
+}
+
+.splash-content p{
+  font-family:$font-serif;
+  color: #888;
+}
+
+
+
+
+
+
+
+

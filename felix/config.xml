@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexy_config>
+	<serverPath>felix</serverPath>
+	<mandant>32</mandant>
+	<startpageID>128</startpageID>
+</flexy_config>

@@ -1,0 +1,52 @@
+
+/*---------------------------------------------------------------*/
+/* CSS Document */
+/* APM Specific styles for crappy old IE only*/
+/*---------------------------------------------------------------*/
+
+/*test*/
+
+
+
+
+.sliderbox {
+    background-color:#E4E4E4;
+    bottom: 1em;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    width: 30%;
+}
+
+.servicenav ul li a:link {
+    color: #444444;
+    text-decoration: none !important ;
+	list-style-type:none;
+	border: 0;
+	
+}
+
+.servicenav ul li a{
+    text-decoration: none !important ;
+	}
+	
+.servicenav ul li {
+    text-decoration: none !important ;
+	list-style-type:none;
+	}
+
+
+.servicenav ul li a:active {
+    color: #444444;
+    text-decoration: none !important ;
+	list-style-type:none;
+	}
+
+ /*active state*/
+.active{
+	color:#EEE !important;
+	background:#dde7dc !important;
+	border:#444 1px solid !important;
+	text-decoration: none !important ;
+	border: 0;
+	}

@@ -1,0 +1,750 @@
+
+/*---------------------------------------------------------------*/
+/* CSS Document Flexy     */
+/* MANDANT tsm15 Specific styles*/
+/*---------------------------------------------------------------*/
+
+/*-----------------
+Mandant Colors
+-------------------
+
+Color A: #333  (background gray)
+
+Color B: #F3F3F3 (backgound white)
+
+Color C: #602833 (dark red)
+
+Color D: #
+
+*/
+
+
+
+/*1. general styles ---------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+
+
+/* =Typography
+-----------------------------------------------------------------*/
+
+
+
+.clear{
+	clear:both;
+	}
+	
+body{
+	background:#878787;
+	font-family: 'Roboto', sans-serif;
+	font-size:100.01%;
+	}
+	
+	
+#outer-wrapper{
+	margin: 0 auto;
+	background:#F3F3F3;
+	border: 1px solid #111;
+	max-width:1024px;
+	}
+
+
+
+/*header*/
+
+
+/* Acordeon styles --------------------------------------------*/
+/*------------------------------------------the panels---------*/
+
+
+.accordion{
+	background:#333;}
+
+dt{
+	margin-bottom:2em;
+	}
+
+.panel{
+	position:relative;
+	/*background:#4B4B4B;*/
+	background:#333;
+	/*height:300px;*/
+	max-height:360px;
+	/*padding-bottom:1.5em;*/
+	-webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	-ms-transition:all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	
+	}
+
+.panel h1{
+	position:absolute;
+	top:33%;
+	left:40%;
+	display:none;
+	color:#333;
+	font-size:2.9em;
+	font-weight:100;
+	letter-spacing:0.1em;
+	
+	-webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	-ms-transition:all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	}
+
+.panel:hover h1{
+	
+	-webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	-ms-transition:all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	display:block;
+	color:#A33;
+	padding:1.3em;
+	/*border-right: 1px solid #EEE;
+	border-left: 1px solid #EEE;*/
+	}
+
+.panel img{
+	opacity:1;
+	max-width:100%;
+	height:auto;
+	overflow-y:hidden;
+	-webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	-ms-transition:all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	}	
+
+.panel img:hover{
+	/*display:none;*/
+	
+	-webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	-ms-transition:all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	opacity:0;
+	}
+
+
+
+
+
+
+/* =Outer Wrapper
+-----------------------------------------------------------------*/
+
+	
+#outer-wrapper{
+	margin: 0 auto;
+	background:#F3F3F3;
+	border: 1px solid #111;
+	max-width:1024px;
+	}
+
+
+
+/* Logo styles ------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.logo{
+	padding-top:2em;
+	padding-bottom:3em;
+		padding-right:4em;
+	}
+
+.logo h1{
+	text-align:right;
+	letter-spacing:0.01em;
+	font-size:2.9em;
+	font-weight:100;
+	/*color:#888;*/
+	color:#F3F3F3;
+	}
+	
+.logo h2{
+	text-align:right;
+	font-size:1.2em;
+	font-weight:300;
+	line-height:1.4em;
+	/*color:#333;*/
+	color:#F3F3F3;
+	letter-spacing:0.12em;
+	}
+
+
+
+
+
+/*2. Themen Navigation ------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.themennav{
+	padding-top:2em;
+	font-size:1em;
+	font-weight:200;
+	margin-left:1em;
+	float:left;
+	
+	}
+	
+.themennav li{
+	display:inline;
+	list-style-type:none;
+	margin-right:1em
+	}
+	
+.themennav li a{
+	text-decoration:none;
+	color:#111; 
+	}
+	
+
+.themennav li a:link{
+	text-decoration:none;
+	}
+
+.themennav li a:hover{
+	color:#A33;
+	border-bottom:#A33 1px solid;
+	}
+
+.themennav li:visited{
+	color:#111;
+	}
+
+
+
+/*3. SERVICE Nav styles -----------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.servicenav{
+	padding-top:2em;
+	padding-bottom:2em;
+	}
+
+.servicenav ul li{
+	padding-right:2em;
+	list-style-type:none;
+	padding-top:1.4em;
+	display:inline;
+	}
+
+.servicenav ul li a{
+	text-decoration:none;
+	font-size:1.2em;
+	font-weight:200;
+	color:#444;
+	padding-top:0.4em;
+	border-top: 1px solid #F3F3F3;
+	-webkit-transition:all 0.3s ease-out;
+	-moz-transition:all 0.3s ease-out;
+	-ms-transition:all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	}
+
+.servicenav ul li a:hover{
+	color:#602833;
+	padding-top:0.2em;	
+	border-top: 1px solid #222;
+	-webkit-transition:all 0.3s ease-out;
+	-moz-transition:all 0.3s ease-out;
+	-ms-transition:all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	}
+
+
+.servicenav ul li a:visited{
+	color:#111;	
+	}
+
+
+.servicenav ul li a:visited:hover{
+	color:#A00;
+	}
+
+ /*active state*/
+.active a{
+	color:#A66 !important;
+	border-bottom:#A66 1px solid;
+	}
+
+
+
+
+/*4. SUB Navigation styles -----------------------------------------*/
+/*------------------------------------------------------------------*/
+	
+
+.subnav{
+	float:left;
+	padding-left:1em;
+	}
+
+
+.subnav li{
+	display:inline;
+	float:left;
+	font-size:0.8em;
+	letter-spacing:0.1em;
+	font-weight:300;
+	list-style-type:none;
+	}
+
+.subnav a{
+	padding:0.5em;
+	}
+
+		
+
+			
+.subnav li a:link{
+	color:#111;
+	text-decoration:none;
+	border: solid 1px #DDD;
+	-moz-transition:all 0.4s ease-in;
+	-webkit-transition:all  0.4s ease-in;
+	transition:all  0.4s ease-in;
+	}
+
+.subnav li a:hover{
+	color:#FAF6E8;
+	background:#444;
+	border: solid 1px #222;
+	-moz-transition:all 0.4s ease-in;
+	-webkit-transition:all  0.4s ease-in;
+	transition:all  0.4s ease-in;
+	}
+	
+
+.subnav li a:visited{
+	color:#111;
+	text-decoration:none;
+	border: solid 1px #DDD;
+	}
+
+.subnav li a:hover:visited{
+	color:#FAF6E8;
+	background:#444;
+	border: solid 1px #222;
+	}
+
+/*active state ------------------------------------------------*/
+.active{
+	color:#A00;
+	}
+
+
+/* 5.1 Content styles -------pannel content---------------------*/
+/*-------------------------------------------------------------*/
+
+.content{
+	hyphens: auto;
+	background:#F5F5F5;
+	padding:4em;
+	padding-top2:em;
+	margin-bottom:2em;
+	}
+	/*mit jquery in acordeon - slide-toggle function color change*/
+.content h2{
+	margin-top:1em;
+	font-size:2.4em;
+	/*color:#602833;*/
+	color:#F5F5F5;
+	
+	font-weight:100;
+	padding-top:0.4em;
+	padding-bottom:0.4em;
+	border-top: 1px solid;
+	border-top-color: #F5F5F5;
+	}
+	
+.content h3{
+	font-size:1.4em;
+	color:#333;
+	font-weight:300;
+	padding-top:0.4em;
+	padding-bottom:1em;
+	}
+
+/*	
+.content article{
+
+	font-size:1.2em;
+	font-weight:300;
+	line-height:1.6em;
+	color:#222;
+	word-wrap:break-word;
+	}
+
+*/
+	
+.content p{
+	font-size:1.1em;
+	font-weight:300;
+	color:#555;
+	line-height:1.8em;
+	word-wrap:break-word;
+	}	
+
+
+.content strong{
+	font-size:1.1em;
+	font-weight:300;
+	color:#404040;
+	line-height:1.8em;
+	word-wrap:break-word;
+	}
+/*contaner for content pix and image captiion below*/
+	
+.pix-content{
+	padding-top:0.8em;
+	padding-right:1.5em;
+	float:left;
+	max-width:50%;
+	padding-left:0 !important;
+	}
+
+.pix-content img{
+	/*background:#848484;*/
+	opacity:0;
+	width:100%;
+	height:auto;
+	}	
+	
+.pix-content figcaption{
+	color:#602833;
+	font-size:1.3m;
+	font-weight:300;
+	padding-top:1.6em;
+	padding-bottom:0.4em;
+	text-align:right;
+	line-height:1.4em;
+	border-bottom: 1px solid #222;
+	}
+
+
+.space-down{
+	padding-bottom:3em;}
+
+/* 5.3 Content Gallery styles ------------------------------*/
+/*-------------------------------------------------------------*/
+
+.gallery-content{
+	border-top:1px solid #222;
+	background:#DEDEDE;
+	}
+
+
+.gallery-content h3{
+	font-size:1.4em;
+	color:#444;
+	font-weight:300;
+	padding-top:0.4em;
+	padding-bottom:1em;
+	}
+
+
+.gallery-content h4{
+	padding-top:1em;
+	font-size:1.2em;
+	color:#555;
+	font-weight:300;
+	
+	}
+
+
+/*the box*/
+.thumbBox{
+	height:100%;
+	width:160px;
+	background-color:#333;
+	overflow:hidden;
+	float:left;
+	margin-right:2em;
+	text-align:center;
+	}
+	
+	
+.gal-thumbs{
+	opacity:0.5;
+	max-width:160px;
+	
+	transform:scale(1,1);
+	-webkit-transition: all ease-out 0.3s;
+	-moz-transition: all ease-in 0.3s;
+	transition: all ease-in 0.3s;
+	}
+
+.gal-thumbs:hover{
+	opacity:1;
+	max-width:160px;
+	transform:scale(1.2,1.2);
+	-webkit-transition: all ease-out 0.3s;
+	-moz-transition: all ease-in 0.3s;
+	transition: all ease-in 0.3s;
+	}
+
+/* 5.4 Content ServiceNAV styles ------------------------------*/
+/*-------------------------------------------------------------*/
+
+.content-service{
+	background:#F5F5F5;
+	padding:4em;
+	}
+	/*mit jquery in acordeon - slide-toggle function color change*/
+.content-service h2{
+	font-size:2.4em;
+	color:#602833;
+	font-weight:100;
+	padding-top:0.4em;
+	padding-bottom:1.6em;
+	border-top: 1px solid;
+	border-top-color: #222;
+	}
+
+.content-service h3{
+	font-size:1.6em;
+	color:#444;
+	font-weight:300;
+	padding-top:0.4em;
+	padding-bottom:1em;
+	}
+	
+.content-service article{
+	font-size:1.2em;
+	font-weight:300;
+	line-height:1.6em;
+	color:#222;
+	text-justify:inter-word;
+	}
+	
+.content-service p{
+	font-size:1.2em;
+	font-weight:300;
+	color:#555;
+	line-height:1.6em;
+	word-wrap:break-word;
+	}	
+
+.pix-content-service{
+	padding-top:0.8em;
+	padding-right:1.5em;
+	float:left;
+	max-width:50%;
+	padding-left:0 !important;
+	margin-bottom:1.8em;
+	}
+
+.pix-content-service img{
+	/*background:#848484;*/
+	width:100%;
+	height:auto;
+	}	
+	
+.pix-content-service figcaption{
+	color:#602833;
+	font-size:1.3m;
+	font-weight:300;
+	padding-top:1.6em;
+	padding-bottom:0.4em;
+	text-align:right;
+	border-bottom: 1px solid #222;
+	}
+
+
+.content-service-link{
+	padding-left:2em;
+	padding-top:2em;
+	}
+	
+.content-service-link a{
+	font-size:1.2em;
+	letter-spacing:0.06em;
+	font-weight:300;
+	color:#222;
+	padding-bottom:0.8em;
+	border-bottom: 1px solid #F5F5F5;
+	text-decoration:none;
+	-webkit-transition: all ease-out 0.3s;
+	-moz-transition: all ease-in 0.3s;
+	transition: all ease-in 0.3s;
+	}
+
+.content-service-link a:hover{
+	font-size:1.2em;
+	color:#A33;
+	border-bottom: 1px solid #222;
+	text-decoration:none;
+	-webkit-transition: all ease-out 0.3s;
+	-moz-transition: all ease-in 0.3s;
+	transition: all ease-in 0.3s;
+	}	
+
+.content-service-link a:hover:after{
+	
+	content:'  >';
+	}
+
+	
+/*5.5 Content Webform ------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+
+input:focus {
+    outline:none;
+}
+	
+.webform{
+	background:#F9F9F9;
+	border: 1px solid #666;
+	padding-bottom:2em;
+	padding-left:1em;
+	font-family: 'Roboto', sans-serif;
+	font-size:1em;
+	color:#333;
+	}
+
+.webform h2{
+	font-size:1.6em;
+	font-weight:200;
+	letter-spacing:0.2em;
+	}
+
+.webform input{
+	font-family: 'Roboto', sans-serif;
+	font-weight:200;
+	height: 2.4em;
+	width:60%;
+	margin:0;
+	border:#999 1px solid;
+	background:#e7e7e7;
+	color:#777;
+	}
+
+
+.webform input:focus{
+	background:#FBFBFB;
+	color:#111;
+	border:#111 1px solid;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	}
+
+
+.webform textarea{
+	font-family: 'Roboto', sans-serif;
+	font-weight:200;
+	width:62%;
+	max-width:62%;
+	margin:0;
+	background:#ddd;
+	display:block;
+	resize: none;
+  	overflow: auto;
+	color:#777;
+	border:#999 1px solid;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	}
+
+.webform textarea:focus{
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	background:#F2F2F2;
+	color:#111;
+	border:#111 1px solid;
+	outline-width: 0;
+	outline: none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	}
+	
+.forms label{
+	margin-bottom:1em;
+	margin-top:2em;
+	font-weight:300;
+	letter-spacing:0.1em;
+	}
+
+
+#submit-btn{
+	font-family: 'Roboto', sans-serif;
+	background:#E6E6E6;
+	margin-top:4em;
+	width:62%;
+	border:#111 1px solid;
+	color:#777;
+	font-weight:200;
+	letter-spacing:0.05em;
+	-moz-transition:all 0.4s linear;
+	-webkit-transition:all  0.4s linear;
+	transition:all  0.4s linear;
+	}	
+	
+#submit-btn:hover{
+	border:#A33 1px solid;
+	color:#111;
+	background:#F2F2F2;
+	}	
+
+		
+
+
+
+/*6. Footer styles --------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.footer{
+	margin-top:4em;
+	border-top: 1px solid #DDD;
+	padding-top:3em;
+	padding-bottom:0.5em;
+	font-size:0.8em;
+	font-weight:300;
+	letter-spacing:0.1em;
+	/*color:#3CF;*/
+	color:#555;
+	padding-left:1em;
+	}
+	
+.footer a:link{
+	color:#777;
+	text-decoration:none;
+	transition: color 0.3s linear, background 0.8s linear ;
+	}
+
+.footer a:hover {
+    color:#A00;
+	transition: color 0.3s linear, background 0.8s linear ;
+	}
+	
+.footer a:visited{
+	color:#666;
+	transition: color 0.3s linear, background 0.8s linear ;
+	}	
+
+	
+/*6.1 Webkanal styles --------------------------------------------*/	
+.author a{
+    color: #00f9fc;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: all 0.2s linear, background 0.7s linear;
+	}
+
+.author a:hover:after {
+    content: " >";
+	}
+	/*webkanal cyan*/
+.author a:hover {
+    color:#3effef;
+	background:#222;
+    letter-spacing: 0.3em;
+	transition: all 0.2s linear, background 0.8s linear;
+	}
+	

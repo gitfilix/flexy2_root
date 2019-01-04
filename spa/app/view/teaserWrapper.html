@@ -1,0 +1,27 @@
+{{#each singleentry}}
+<div class="teaserbox">
+    <h2>New Gallery</h2>
+    <h3>{{titel}}</h3>
+    <br />
+    <a href="javascript:void(0);" alt="#" onclick="goTo({{hreftarget}});">
+        <div class="fader">
+            <img src="{{imagepath}}" >
+        </div>
+        <div class="caption">
+            <p>{{createDate}}</p>
+        </div>
+    </a>
+    <br />
+    <br />
+    <div class="linkToGal">
+        <a href="javascript:void(0);" alt="#" onclick="goTo({{hreftarget}});">
+            <span>&rsaquo; </span>{{hreflabel}}
+        </a>
+    </div>
+    <!--<script>-->
+        <!--function goTo(x){-->
+            <!--application.goToAlbum(x);-->
+        <!--}-->
+    <!--</script>-->
+</div>
+{{/each}}

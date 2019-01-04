@@ -1,0 +1,109 @@
+/*alle deklarationen mit folgeder kaskadierung: .tpl1-skin0 (abstand) und css selector*/
+
+/* SKINS Template 1 - Skin 2 */
+/*-Skin 2 Snowwhite-------------------------------------*/
+
+.tpl1-skin2{
+	font-family: 'Open Sans', verdana, sans-serif;
+	/*color:#7DDCFA;*/
+	/*background:#FeFeFe;*/
+	}
+
+.tpl1-skin2 .tpl1-title h1{
+	font-family: 'Open Sans', verdana, sans-serif;
+	font-size:2.8em;
+	line-height:2em;
+	color:#863334;
+	letter-spacing:0.1em;
+	/*background:#EFEFEF;*/
+	text-shadow: 0px 2px 1px #C3C3C3;
+	font-weight:100;
+	line-height:1em;
+	border-top: 1px solid #666;
+	/*padding-bottom:1.3em;
+	border-bottom: 1px solid #E9E9E9;*/
+}
+
+
+.tpl1-skin2 .tpl1-lead{
+	padding-top:1em;
+	-moz-box-shadow: inset 0 0 2px 2px #777;
+	-webkit-box-shadow: inset 0 0 2px 2px #777;
+	box-shadow: inset 0 0 2px 2px #777;
+	border-top: #444 1px solid;
+	}
+
+
+.tpl1-skin2 .tpl1-lead p{
+	padding-left:0.5em;
+	padding-right:0.5em;
+	color:#555;
+	font-size:1.2em;
+	line-height:1.6em;
+	}
+
+
+/*The snowwhite Lightbox*/
+
+.tpl1-skin2 .tpl1-buttonstyle{
+	font-family: 'Open Sans', verdana, sans-serif;
+	padding:0.6em;
+	background-color:#FaFaFa;
+	color:#111;
+	font-weight:100;
+	font-size:1.8em;
+	border: 1px solid #8D0D0D;
+	/*-webkit-box-shadow: 3px 3px 5px 6px #DEDEDE;*/
+	}
+
+
+
+.tpl1-skin2 .tpl1-lightbox-title h1{
+	font-family: 'Open Sans', verdana, sans-serif;
+	font-size:2.8em;
+	line-height:2em;
+	color:#E1E1E1;
+	letter-spacing:0.2em;
+	padding-top:1em;
+	font-weight:100;
+	background:#353535;
+	text-align:left;
+	border-top: 1px solid #E2E2E2;
+	border-bottom: 1px solid #b3b3b3;
+}
+
+
+.tpl1-skin2 .tpl1-lightbox-lead{
+
+	text-align:left;
+	line-height:1.6em;
+	font-size:1.1em;
+	border-top: 1px solid #DDD;
+	padding-top:2em;
+	}
+
+
+
+.tpl1-skin2 .tpl1-lightbox-caption{
+	padding-top:1.8em; 
+	margin-top:3em; 
+	text-align:right; 
+	border-top:1px solid #A33;
+	background:#FCFCFC;
+	padding-bottom:1em;
+	font-size:1.2em;
+	letter-spacing:0.08em;
+	padding-right:1em;
+	}
+
+
+
+/*
+.tpl1-skin2 div{
+	background-color:steelblue;	
+}
+
+.tpl1-skin2 div > h1{
+	color:brown;	
+}
+*/

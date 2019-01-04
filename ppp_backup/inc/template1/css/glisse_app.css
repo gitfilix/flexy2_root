@@ -1,0 +1,82 @@
+.photos{cursor:pointer;}
+
+/* Glisse: Overlay */
+#glisse-overlay {
+  background: rgba(0,0,0.3);}
+
+#glisse-close{
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  position: fixed;
+  top:20px;
+  right:40px;
+  background:#222;
+  border: 1px solid #D6AD33;
+  color:#D6AD33;
+  }
+
+
+#glisse-close:hover{
+	background:#D6AD33;
+	color:#222;
+	border: 1px solid #FAF6E8;
+	}
+
+
+/* Prev/Next button */
+.glisse-next a, .glisse-prev a {
+  width: 60px;
+  height: 40px;
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  background:#333;
+  }
+
+.glisse-next a {
+  left: 50%;
+  margin-left: 60px;
+  text-decoration:none;
+  color:#E0C266;
+  text-align:center;
+  alignment-adjust:middle;
+  border: 1px solid #D6AD33;
+  }
+
+.glisse-prev a {
+  left: 50%;
+  margin-left: -80px;
+  text-decoration:none;
+  color:#E0C266;
+  text-align:center;
+  alignment-adjust:middle;
+  border: 1px solid #D6AD33;
+  }
+
+/* Legend org*/
+/*
+.glisse-legend {
+  position:fixed;
+  display:block;
+  bottom:10px;
+  left:10px;
+  color:white;
+  background:blue; }
+*/
+
+.glisse-legend {
+	position:fixed;
+	font-family: Verdana, sans-serif;
+	font-size:0.7em;
+	padding-left:0.8em;
+	padding-right:0.8em;
+	padding-top:0.4em;
+	padding-bottom:1em;
+	display:block;
+	bottom:10px;
+	left:10px;
+	color:#CCC;
+	background:#222;
+	border: 1px solid #D6AD33;
+	}

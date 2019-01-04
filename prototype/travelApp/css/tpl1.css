@@ -1,0 +1,320 @@
+@import url('tpl1-skin0.css');
+@import url('tpl1-skin1.css');
+@import url('tpl1-skin2.css');
+
+
+/*tpl1-grid---floats ----------------------*/
+/*----------------------------------------*/
+.clear{
+	clear:both
+	}
+
+.tpl1-left{
+	float:left;
+	}
+
+.tpl1-right{
+	float:right;
+	}
+
+
+.tpl1-overflow{
+	overflow-y:auto;
+	overflow-x:hidden;
+	-webkit-overflow-scrolling: touch;
+	}
+
+/*tpl1-grid---horizontal width------------*/
+/*----------------------------------------*/
+.tpl1-grid-10{
+	width:10%;
+	float:left;
+	}
+
+.tpl1-grid-20{
+	width:20%;
+	float:left;
+	}
+
+.tpl1-grid-30{
+	width:30%;
+	float:left;
+	}
+
+.tpl1-grid-34{
+	width:34%;
+	float:left;
+	}
+
+.tpl1-grid-40{
+	width:40%;
+	float:left;
+	}
+
+.tpl1-grid-50{
+	width:50%;
+	float:left;
+	}
+
+.tpl1-grid-60{
+	width:60%;
+	float:left;
+	}
+
+.tpl1-grid-66{
+	width:66%;
+	float:left;
+	}
+
+.tpl1-grid-70{
+	width:70%;
+	float:left;
+	}
+
+.tpl1-grid-80{
+	width:80%;
+	float:left;
+	}
+	
+.tpl1-grid-90{
+	width:90%;
+	float:left;
+	}	
+	
+.tpl1-grid-100{
+	width:100%;
+	float:left;
+	}
+	
+/*tpl1-grid---vertical height -----------*/
+/*---------------------------------------*/
+
+.tpl1-heigth-10{
+	height:10%;
+	}
+
+.tpl1-heigth-20{
+	height:20%;
+	}
+
+.tpl1-heigth-30{
+	height:30%;
+	}
+
+.tpl1-heigth-40{
+	height:40%;
+	}
+
+.tpl1-heigth-50{
+	height:50%;
+	}
+
+.tpl1-heigth-60{
+	height:60%;
+	}
+	
+.tpl1-heigth-70{
+	height:70%;
+	}
+	
+.tpl1-heigth-80{
+	height:80%;
+	}
+
+.tpl1-heigth-90{
+	height:90%;
+	}
+
+.tpl1-heigth-100{
+	height:100%;
+	}
+
+	
+
+/*
+.tpl1-titlebox{
+	border: 1px solid #BD1518;
+	padding:1.5em !important;
+	border-radius:1em;	
+}
+*/
+
+
+.tpl1-no-titlebox{
+	}
+	
+	
+/* LEAD Position and Styles */
+/*---------------------------------------------------------------*/
+
+/*titleposition center*/
+.tpl1-titlepos0{
+	text-align:center;
+	}
+
+/*titleposition top*/
+.tpl1-titlepos1{
+	padding-top:5%;
+	text-align:center;
+	}
+	
+/*titleposition left*/
+.tpl1-titlepos2{
+	padding-left:5%;
+	text-align:left;
+	}
+
+/*titleposition right*/
+.tpl1-titlepos3{
+	padding-right:5%;
+	text-align:right;
+	}
+	
+/*titleposition bottom*/
+tpl1-titlepos4{
+	padding-bottom:10%;
+	}
+	
+/*title styles*/
+/*
+.tpl1-title{
+	font-size:3.6em;
+	color:rgba(61,250,250,1.00);
+	letter-spacing:0.06em;
+	background:#7C7C7C;
+	}
+*/	
+.tpl1-title_big{
+	font-size:4.2em;
+	letter-spacing:0.15em;
+	text-outline:rgba(87,174,218,1.00);
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	border-bottom: 5px dashed rgba(68,68,68,1.00);
+	border-top: 5px dashed rgba(133,14,16,1.00);
+	background-color:rgba(233,223,223,0.24);
+	}	
+	
+	
+/* LEAD Position and Styles */
+/*---------------------------------------------------------------*/	
+
+/*leadposition center*/
+.tpl1-leadpos0{
+	text-align:center;
+	}
+
+/*leadposition top*/
+.tpl1-leadpos1{
+	text-align:center;
+	padding-bottom:10%;
+	}
+
+/*leadposition left*/
+.tpl1-leadpos2{
+	padding-left:5%;
+	text-align:left;
+	}
+
+/*leadposition right*/
+.tpl1-leadpos3{
+	padding-right:5%;
+	text-align:right;
+	}
+	
+/*leadposition bottom*/
+.tpl1-leadpos4{
+	text-align:right;
+	padding-right:20%;
+	padding-bottom:10%;
+	}
+
+/*
+.tpl1-lead{
+	padding-top:0.6em;
+	font-family: 'Open Sans', sans-serif;
+	border-top: #222 1px solid;
+	font-size:1.2em;
+	line-height:1.6em;
+	color:#7DDCFA;
+	background:#222;
+	}
+/*
+
+
+/*lead styles alternative */
+/*
+.tpl1-lead1{
+	background:rgba(222,217,217,0.33);
+	border-top: #666 2px solid;
+	padding-top:1.6em;
+	padding-bottom:2em;
+	font-size:2em;
+	line-height:2.8em;
+	letter-spacing: 0.04em;
+	font-family: 'Open Sans', sans-serif;
+	}
+*/
+.tpl1-button-pos{
+
+	padding-top:10%;
+	}
+
+.tpl1-buttonstyle{
+	font-size:0.9em;
+	border-bottom-color:#9DE6E3;
+	background:#333;
+	padding:0.3em;
+	color:#EEEEEE;
+	border-radius:0.3em;
+	}
+
+
+/*IMAGE ----------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+.tpl1-divimage{
+	/*background-image:url('/#session.serverpath#/upload/magazine/#img#');*/
+	background:url(../../upload/magazine/sputnik_retro_computer_clean.jpg); 
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center; 
+	height:100%; 
+	
+	}
+
+
+
+/* 0 = BIG size image*/
+/*---------------------------------------------------------------*/
+
+
+.tpl1-imgpos0{
+	padding-top:10%;
+	text-align:center;
+	}
+	
+.tpl1-imgstyle0{
+	width:100%;
+	max-width:100%;
+	-moz-box-shadow:    inset 0 0 10px #5C594D;
+   	-webkit-box-shadow: inset 0 0 10px #5C594D;
+	box-shadow:         inset 0 0 10px #5C594D;
+	}	
+
+
+
+/* 1 = SMALL size image*/
+/*---------------------------------------------------------------*/
+.tpl1-imgpos1{
+	margin:3%;
+	}
+
+.tpl1-imgstyle1{
+	width:60% !important;
+	max-width:60% !important;
+	margin-left:5%;
+	width:95%;
+	}	
+
+
+

@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*FLX STYLES */
+
+/*google fonts
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+/* Global Styles*/
+
+
+body{
+	font-family:'Roboto';
+	font-weight:100;
+	}
+
+
+.pixliquid{
+	width:100%;
+	max-width:100%;
+	height:auto;
+	}
+
+.wrapper_all{
+	border:#777 solid 1px;
+	/* */
+	/*absolute pixel angabe! muss evntuell  noch angepasst werden */
+	max-width:960px; 
+	/*max-width:1200px;*/
+	margin: 0 auto;
+	/*no padding*/
+	padding:0px; 
+	/* this is the bright version !*/
+	background:#FEFEFE;
+	}
+
+.logoflx{
+	font-family:'Roboto';
+	font-weight:100;
+	background:#00579d;
+	color:#DEDEDE;
+	font-size:1.2em;
+	letter-spacing:0.2em;
+	font-weight:100;
+	}
+
+/*loading style*/
+.logostyle{
+	padding-top:1.2em;
+	padding-bottom:1em;
+	background:#00579d;
+	color:#00579d;
+	margin-bottom:30px;
+	margin-right:30px;
+	border-bottom: solid 2px #03C;
+	border-right: solid 2px #03C;
+	border-bottom-right-radius:3em;
+	-webkit-transition: color 1500ms linear,border-bottom 1000ms linear, border-right 1000ms linear ;
+	-moz-transition: color 1500ms linear, border-bottom 1000ms linear, border-right 1000ms linear;
+	}
+	
+	
+	
+.logostyle_visible{
+	color:#E9E9E9;
+	border-bottom: solid 2px #FFF;
+	border-right: solid 2px #FFF;
+	}
+
+	
+.flx_style h1{
+	
+	font-weight:100 !important;
+	font-size:2.8em;
+	line-height:10px;
+	display: inline;
+	padding-left:10px;
+	}	
+
+.logocircle{
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	font-size:1.8em;
+	color:#F00;
+	line-height:100px;
+	text-align:center;
+	background:#FFF;
+	margin-left:10px;
+	}
+
+
+	
+.testi{
+	max-height:160px;
+	height:auto;}
+
+/*Background for Logo with radius but NO Border*/
+#logobg{
+	background:#00579d;
+	border-bottom-right-radius:60px;
+	padding-bottom:1px;
+	line-height:0 !important;
+	}
+	
+.logoblue{
+	background:#00579d;
+	color:#DEDEDE;
+	font-size:1.8em;
+	letter-spacing:0.4em;
+	}
+	
+	
+.boxtext a:link{
+	color:#0D0;
+	}	
+
+.boxtext h3{
+	font-size:1.8em;
+	color:#FFF;
+	}
+	
+/*The Box initial -grey*/
+.boxtext, .boxtext:link, .boxtext a:link{
+	background:#DDD;
+	/*color:#333; */
+	/*font-size:0.7em;*/
+	letter-spacing:0em;
+	text-decoration:none;
+	border-bottom-right-radius:20px;
+	/*box-shadow: 7px 2px 5px #777;*/
+	
+	/*background:url(../testpix/wald1_sm.jpg);*/
+	height:22em;
+	}
+	
+.boxtext:visited, .boxtext a:visited{
+	color:#AAA;
+	background:#DDD;
+	letter-spacing:0em;
+	text-decoration:none;
+	border-bottom-right-radius:20px;
+	/*background:url(../testpix/wald1_sm.jpg);*/
+	}
+	
+
+
+/*The Box hover - blue*/
+.boxtext:hover{
+	color:#FFF;
+	background:#00579d;
+	text-decoration:none;
+	box-shadow: 10px 10px 5px #888888;
+
+	-moz-transition:color 0.5s linear, background 0.5s linear;
+	-webkit-transition:color 1s linear;
+	/*background:url(../testpix/wald2_sm.jpg);*/
+	}
+
+
+/*
+.boxtext:active, .boxtext a:active, .boxtext a h3:active{
+	color:#FFF;
+	background:#00579d;
+	text-decoration:none;
+	box-shadow: 4px 4px #777;
+	border-bottom-right-radius:20px;
+	-moz-transition:color 0.5s linear;
+	-webkit-transition:color 1s linear;
+	}
+*/
+/*
+.boxtext a:link{
+	color:#DEDEDE;
+	}
+	
+.boxtext a:visited{
+	color:#444;
+	}	
+
+.boxtext a h3:link{
+	color:#444;
+	}
+	/*
+.boxtext a h3:hover{
+	-moz-transition: color 1500ms linear;
+	-webkit-transition: color 1500ms linear;
+	color:#FFF;
+	}
+/*
+
+
+
+	
+
+	

@@ -1,0 +1,456 @@
+// FLX Polaroid -Theme Bright and Light - like a day in July
+
+$primary-color:                  #bfd5cb !default;
+$secondary-color:                #abc9cf !default;
+$tertiary-color:                 #daede8 !default;
+$font-sans:                      "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-serif:                     "neuton", "courier",  serif;
+
+//Variable declaraion - Colors of theme
+$menu-background-default:        #daede8 !default;
+$menu-background-dark:           #222222 !default;
+$primary-fontcolor:              #4f6064 !default;
+$secondary-fontcolor:            #5c6484 !default;
+$dark:                           #D3D3D3 !default; //is now very bright
+$darkgray:                       #D3E3D3 !default;
+$darkmiddle:                     #7e7e7e !default;
+$brightshade:                    #daede8 !default;
+$bright:                         #e2e0d2 !default;
+
+
+// Top Menue
+$linkMenuTopFontColor:          #777 !default;
+$linkMenuTopColorBG:            $primary-color !default;
+$linkMenuTopColorBorder:        $secondary-fontcolor !default;
+$linkMenuTopFontColorHover:     #333333 !default;
+$linkMenuTopcolorBgHover:       #EBEBEB !default;
+$linkMenuTopColorBorderHover:   #2D2D2D !default;
+$menuTopTitleColor:             $primary-fontcolor !default;
+
+//Off Canvas Navigation
+$menuBorderColor:               #565656 !default;
+$menu-H-line:                   #b3bde6 !default;
+$menuBorderBottomColor:         #e2e0d2 !default;
+
+//VIEWs
+$titleFont-ColorBig:            #517464 !default;
+$titleFont-ColorLead:           #586186 !default;
+$textFontColorBright:           #446644 !default;
+$textFontColorGray:             #666666 !default;
+$textFontColorDark:             #227733 !default;
+$transparentDark:               rgba(200,200,200,0.3) !default;
+$transparentBright:             rgba(200,200,200,0.8) !default;
+
+
+$formBgColor:                   $darkgray !default;
+$formBgColorHover:              $tertiary-color !default;
+$formFontColor:                 $textFontColorDark !default;
+$formBorderColor:               $textFontColorBright !default;
+$formBorderColorHover:          $primary-fontcolor !default;
+
+
+// ----------------------------------- body --- /
+
+body{
+  background: $dark;
+  font-family: $font-sans;
+}
+
+// -------------------------- Title- Menubar --- /
+.container{
+  //background: $menu-background-default;
+}
+
+
+#ContainerMenuBar{
+  background: $menu-background-default;
+  //color:$secondary-fontcolor;
+}
+
+.menubar{
+  background: $menu-background-default;
+}
+
+.menubarlinks{
+  color: $linkMenuTopFontColor;
+  background: $linkMenuTopColorBG;
+  border: 1px solid $linkMenuTopColorBorder;
+}
+
+.menubarlinks:hover{
+  color: $linkMenuTopFontColorHover;
+  background: $linkMenuTopcolorBgHover;
+}
+
+.menubarlinks a{
+  color: $linkMenuTopFontColor;
+}
+
+.menubarlinks a:hover{
+  color: $linkMenuTopFontColorHover;
+}
+.title-gal h1{
+  color: $secondary-fontcolor;
+}
+
+/*--------------- Off-Canvas Navigation LEFT --- */
+
+#navWrapper{
+  background:$bright;
+}
+
+#navContent{
+  border: 1px solid $menuBorderColor;
+}
+
+.nav-title h2{
+  border-top: 1px solid $secondary-fontcolor;
+  color: $secondary-fontcolor;
+}
+
+.menu-list li a{
+  box-shadow: inset 0 -1px rgba(0,0,0,0.8);
+  color:$linkMenuTopFontColor;
+  background: $darkgray;
+}
+
+.menu-list li a:hover{
+  background: #fee850;
+  color: $primary-fontcolor;
+  box-shadow: inset 0 -1px $menu-H-line;
+}
+
+/* ----------------- Theme Toggler Menu RIGHT--*/
+
+#ContainerThemeToggler{
+  background:$bright;
+}
+
+#ttwrapper{
+  border: 1px solid $menuBorderColor;
+  background:$bright;
+}
+
+.ttmenu{
+  background:$bright;
+}
+
+.tttitle h2{
+  background:$bright;
+  border-top: 1px solid $secondary-fontcolor;
+  color: $secondary-fontcolor;
+}
+
+.ttmenu ul li a{
+  box-shadow: inset 0 -1px rgba(0,0,0,0.8);
+  color:$linkMenuTopFontColor;
+  background: $darkgray;
+}
+
+.ttmenu ul li a:hover{
+  box-shadow: inset 0 -1px $menu-H-line;
+  color: $primary-fontcolor;
+  background: #fee850;
+}
+
+
+
+/*------------------------ VIEW: Home View --- */
+
+.center{
+  background: rgba(250,250,250, 0.2);
+  border-top: 1px solid $primary-fontcolor;
+}
+
+.center h1{
+  font-family:$font-sans;
+  text-shadow: 2px 3px 4px $dark;
+  color: $bright;
+}
+
+.center h2{
+  background: $dark;
+  font-family:$font-serif;
+  color:$primary-fontcolor;
+}
+
+
+/*----------------- VIEW: Gallery overview ---*/
+
+
+#galleryOverviewContainer{
+  font-family:$font-sans;
+}
+
+.gallery-title h1{
+  font-family:  $font-serif;
+  color: $titleFont-ColorBig;
+  border-bottom: 1px solid $primary-fontcolor;
+}
+
+.theadalbum{
+  color: $titleFont-ColorBig;
+}
+
+
+.listsinglealbum{
+  color: $primary-fontcolor;
+  border-top: 1px solid $menuBorderColor;
+  background: $menu-background-default;
+  border-top: 1px solid $menuBorderColor;
+  border-bottom: 3px solid $menuBorderBottomColor;
+}
+
+/*--------------- ---VIEW Gallery Detail: pix ---*/
+
+
+#galleryDetailContainer{
+  color: $primary-fontcolor;
+}
+
+.img-caption{
+  background:$transparentBright;
+  border-top: 1px solid $primary-fontcolor;
+}
+
+.img-caption h2{
+  font-family: $font-serif;
+  color: $dark;
+}
+
+.img-caption-detail{
+  background: $dark;
+}
+
+.img-caption-detail p{
+  color: $primary-fontcolor;
+}
+
+.gal-btn a{
+  color: $linkMenuTopFontColor;
+  background: $linkMenuTopColorBG;
+  border: 1px solid $linkMenuTopColorBorder;
+}
+
+.gal-btn a:hover{
+  color: $dark;
+  background: $bright;
+}
+
+/*-------------------------- VIEW Uploader Form ---*/
+
+.uploaderTitle h1{
+  font-family:$font-serif;
+  color: $titleFont-ColorBig;
+  border-bottom: 1px solid $menuBorderBottomColor;
+}
+
+#uploadForm{
+  background: $menu-background-default;
+  color:$textFontColorBright;
+  //border-top:  1px solid $linkMenuTopColorBorder;
+}
+
+.formstyle{
+  //background: $darkgray;
+}
+
+
+.formstyle input,select{
+  background: $formBgColor;
+  border: 1px solid $linkMenuTopColorBorder;
+  border-radius: 3px;
+  color: $formFontColor;
+}
+
+.formstyle input:hover{
+  background: $formBgColorHover;
+  border: 1px solid $primary-fontcolor;
+  color:$formFontColor;
+}
+
+
+.formstyle h3{
+  color: $secondary-fontcolor;
+}
+
+#uploadSubmit{
+  border: 1px solid $dark;
+  background:$formBgColor;
+  color: $formFontColor;
+}
+
+#uploadSubmit:hover{
+  border: 1px solid $primary-fontcolor;
+  background: $dark;
+  color: $primary-fontcolor;
+}
+
+#previewUploadImages{
+  //background: $menu-background-default;
+}
+
+#previewUploadImages h3{
+  color: $menuTopTitleColor;
+}
+
+
+#uploadThanks h2{
+  color: $titleFont-ColorBig;
+}
+
+#toTheGaleriesBtn{
+  color: $primary-fontcolor;
+}
+
+/*------------------------ VIEW article view  ---*/
+
+.articleDefault{
+  background:$secondary-color;
+}
+
+/*Big title*/
+.articleDefault h2{
+  font-family:$font-serif;
+  color: $titleFont-ColorBig;
+  border-bottom: 1px solid $primary-fontcolor;
+}
+
+.articleDefault h3{
+  color: $textFontColorBright;
+  border-top: 1px solid $textFontColorBright;
+}
+
+
+.articleDefault h4{
+  color:$bright;
+}
+
+.articleDefault p{
+  font-family: $font-sans;
+  color: $textFontColorBright;
+}
+
+
+.articleRight h3{
+  font-family:$font-serif;
+  color: $textFontColorBright;
+  background:$secondary-color;
+}
+
+.articleRight h4{
+  color: $primary-fontcolor;
+}
+
+.articleRight p{
+  font-family: $font-sans;
+  color: $textFontColorBright;
+}
+
+.articleLeft h3{
+  font-family: $font-sans;
+  color: $textFontColorBright;
+  background: $dark;
+}
+
+.articleLeft h4{
+  color: $primary-fontcolor;
+}
+
+.articleLeft p{
+  font-family:$font-sans;
+  color: $textFontColorBright;
+}
+
+// ----- Template BG-Prominent
+
+.asidetext{
+  background: $transparentDark;
+}
+
+.asidetext h2{
+  background:$secondary-color;
+  color: $primary-fontcolor;
+}
+
+.asidetext p{
+  color: $menu-background-dark;
+}
+
+// ----- teasers
+.teaserbox{
+  border: 1px solid $tertiary-color;
+  background: $dark;
+}
+
+.teaserbox h3{
+  color: $brightshade;
+}
+
+.caption{
+  background: $transparentDark;
+}
+
+.caption p{
+  color: $menu-background-dark;
+}
+
+.linkToGal a{
+  color: $textFontColorGray;
+  border-bottom: 0 solid $linkMenuTopColorBorder;
+}
+
+.linkToGal a:hover{
+  color: $primary-fontcolor;
+  border-bottom: 1px solid $primary-fontcolor;
+}
+
+
+
+/*------------------------------ VIEW Footer ---*/
+
+#footer{
+  font-family: $font-sans;
+  border-top:  2px solid $dark;
+  background:$secondary-color;
+  color: $darkmiddle;
+}
+
+
+.adress{
+  border-right: 1px solid $textFontColorDark;
+}
+
+#footer a{
+  color:  $textFontColorDark;
+  border-bottom: 0 solid  $textFontColorDark;
+}
+
+#footer a:hover{
+  color: $primary-fontcolor;
+  border-bottom: 1px solid $primary-fontcolor;
+}
+
+
+
+/* ------------------------------ Splash screen ---*/
+
+.splash-content h1 {
+  font-family: $font-sans;
+  color: #888;
+}
+
+.splash-content h2{
+  font-family: $font-sans;
+  color:$menu-H-line;
+}
+
+.splash-content h3 {
+  color:$primary-fontcolor;
+}
+
+.splash-content p{
+  font-family:$font-serif;
+  color: #888;
+}
+

@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="twelve columns">
+            <div class="gallery-title">
+                <h1>Gallery Overview</h1>
+            </div>
+            <table id="galleryOverviewContainer">
+                <thead>
+                <tr class="theadalbum">
+                    <td colspan="2">
+                        Gallery
+                    </td>
+                    <td>
+                        Creator
+                    </td>
+                    <td>
+                        Date
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each gallery}}
+                <tr class="listsinglealbum" data-idx="{{@index}}">
+                    <td>
+                        <div class="imgfader">
+                            <img src="{{images[0].imgpath}}" alt="{{images[0].imgtitel}}" />
+                        </div>
+                    </td>
+                    <td>
+                        {{albumtitel}}
+                    </td>
+                    <td>
+                        {{creator}}
+                    </td>
+                    <td>
+                        {{createdate}}
+                    </td>
+                    {{/each}}
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

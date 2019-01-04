@@ -1,0 +1,25 @@
+<div id="navWrapper">
+    <div id="navContent">
+        <div class="nav-title">
+            <a href="#">
+                <img  src="pix/logo-f50.png" alt="logo" id="flx-logo"/>
+            </a>
+            <h2 class="animMe">MENU</h2>
+        </div>
+        <div style="clear:both"></div>
+        <div class="menu-list">
+            <ul>
+                {{#each seiten}}
+                <li>
+                    <a class="menulink" href="#" data-index="{{@index}}">
+                        {{titelNav}}
+                    </a>
+                </li>
+                {{/each}}
+                <li>
+                    <a  href="http://www.webkanal.ch" target="_blank" >Webkanal</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

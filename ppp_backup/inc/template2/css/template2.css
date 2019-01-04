@@ -1,0 +1,746 @@
+
+/*----------------------------------------*/
+/* Flexy 2 Template 2 fixed css         */
+/* CSS for TEMPLATE 2 Design FLX page  */
+/*----------------------------------- */
+
+
+/*----------------General definitions */
+/*------------------------------------*/
+
+body{
+	font-family:'Lato', sans-serif;
+	font-size:100.01%;
+	background-color:#e5e5e5;
+	}
+	
+
+.main-wrapper{
+	border:#777 solid 1px;
+	/*absolute pixel angabe! muss evntuell  noch angepasst werden */
+	max-width:1280px; 
+	/*max-width:1200px;*/
+	margin: 0 auto;
+	/*no padding*/
+	padding:0px;
+	
+	/* this is the bright version !*/
+	background:#FEFEFE;
+	}
+	
+
+.clear{
+	clear:both;
+	}
+
+
+
+/*this ist the FLX - BLuuuues - */
+/*
+blue 1 Grundfarbe logo: #00579d
+blue 2	frienly  #0081ea
+blue 3	dark #00345d
+blue 4  quite dark #004983
+*/
+/*--HEADER------- FLX Logo & Welcome  */
+/*------------------------------------*/
+
+
+	
+.flx_style h1{
+	font-family:'Lato';
+	font-weight:100 !important;
+	font-size:2.1em;
+	/*line-height:10px;*/
+	padding-left:10px;
+	letter-spacing:0.1em;
+	color:#FDFDFD;
+	
+	
+	}
+/*loading style*/
+.logostyle{
+	padding-bottom:8px;
+	background:#00579d;
+	color:#00579d;
+	margin-bottom:10px;
+	margin-right:10px;
+	border-bottom: solid 2px #03C;
+	border-right: solid 2px #03C;
+	border-bottom-right-radius:3em;
+	-webkit-transition: color 1500ms linear,border-bottom 1000ms linear, border-right 1000ms linear ;
+	-moz-transition: color 1500ms linear, border-bottom 1000ms linear, border-right 1000ms linear;
+	}
+	
+	
+	
+.logostyle_visible{
+	color:#E9E9E9;
+	border-bottom: solid 2px #FFF;
+	border-right: solid 2px #FFF;
+	}
+
+
+.logocircle{
+	width:50px;
+	height:50px;
+	border-radius:50px;
+	font-size:1.8em;
+	color:#000;
+	line-height:50px;
+	text-align:center;
+	background:#FFF;
+	margin-left:10px;
+	}
+
+
+
+/*Blue logo */
+#logobg{
+	background:#00579d;
+	border-bottom-right-radius:60px;
+	padding-bottom:1px;
+	line-height:0 !important;
+
+	}
+
+
+
+.bggray{
+	background:#343434;
+	font-size:0.8em;
+	color:#EEE;
+	}
+	
+.bggray a:link{
+	color:#CCC;
+	text-decoration:none;
+	}
+
+.bggray a:hover{
+	color:#EEE;
+	}	
+
+.bggray a:link:visited{
+	color:#CCC !important;
+	text-decoration:none;
+	}
+
+.bggray a:hover:visited{
+	color:#EEE !important;
+	}	
+	
+/*  ?WHY logoblue*/	
+.logoblue{
+	color:#DEDEDE;
+	background:#00579d;
+	font-size:0.7em;
+	}
+	
+.logoblue a:link{
+	color:#DEDEDE;
+	}
+
+.logoblue a:hover{
+	color:#FFF;
+	}	
+/*	
+.logored{
+	background:#F00;
+	color:#DEDEDE;
+	font-size:1.8em;
+	letter-spacing:0.4em;
+	}
+*/
+.boxtext h3{
+	font-size:1.8em;
+	color:#FFF;
+	}
+
+/*big Headline -now from FLEX SLider import */
+.pagetitel h2{
+	padding-left:0.82em;
+	font-size:2.8em;
+	letter-spacing:0.2em;
+	font-weight:200;
+	line-height:1.82em;
+	}
+	
+
+	
+/*----NAVIGATION -----------SeviceNav-------*/
+/*-----------------------------------------*/
+
+/*absolute wrappper arround navig*/
+.nav_wrapper{
+	border-top:#222 3px solid;
+	border-bottom:#444 1.5px solid;
+	background: -moz-linear-gradient(top, #666, #E7E8E8) repeat scroll 0 0;
+	background: -webkit-linear-gradient(top,#666, #E7E8E8) repeat scroll 0 0;
+	background: linear-gradient(top, #666, #E7E8E8) repeat scroll 0 0;
+	padding-bottom:30px;
+	padding-top:10px;
+	height:50px;
+	}
+
+
+.servicenav{
+	float:left;
+	padding-top:0.5em;
+	}
+
+.servicenav ul{
+	}
+
+.servicenav li{
+	display:inline;
+	float:left;
+	font-size:0.8em;
+	letter-spacing:0.1em;
+	list-style-type:none;
+	padding-right:0.4em;
+	}
+
+.servicenav li a{
+	padding-top:0.1em;
+	padding-left:1em;
+	padding-right:1em;
+	}	
+	
+.servicenav li a:link{
+	color:#222;
+	background:#EEE;
+	text-decoration:none;
+	border: solid 1px #00579d;
+	}
+
+.servicenav li a:hover{
+	color:#EFEFEF;
+	background:#00579d;
+	border: solid 1px #777;
+	}
+	
+.servicenav li a:active{
+	color:#222;
+	}
+	
+.servicenav li a:visited{
+	color:#222;
+	}
+
+.servicenav li a:hover:visited{
+	color:#EFEFEF;
+	background:#00579d;
+	border: dotted 1px #111;
+	}
+
+/*
+	.servicenav a:before { content: '〈  ' 
+	}	
+	.servicenav a:after { content: '  〉' 
+	}	
+*/	
+/* -------NAVIGATION ---------Themennav */
+/*-------------------------------------*/
+.themennav{
+	float:left;
+	margin-top:1em;
+	}
+	
+.themennav li{
+	display:inline;
+	margin-right:1em;
+	}
+	
+.themennav li a{
+	list-style-type:none;
+	color:#EEE !important;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom-right-radius:10px;
+	
+	}
+	
+
+.themennav li a:link{
+	text-decoration:none;
+	color:#EEE !important;
+	background: -moz-linear-gradient(top, #888, #333) repeat scroll 0 0 ;
+	background: -webkit-linear-gradient(top,#888, #333) repeat scroll 0 0 ;
+	background: linear-gradient(top, #888, #333) repeat scroll 0 0 ;
+	}
+
+.themennav li a:hover{
+	text-decoration:overline 2px solid;
+	color:#EEE;
+	background: -moz-linear-gradient(top, #00345d, #0081e9) repeat scroll 0 0 ;
+	background: -webkit-linear-gradient(top,#00345d, #0081e9) repeat scroll 0 0 ;
+	background: linear-gradient(top, #00579d, #00345d) repeat scroll 0 0 ;
+	/*background:#00579d;*/
+	border-bottom:#004983 2px solid;
+	}
+
+.themennav li:visited{
+	color:#DADADA;
+	background:#00579d;
+	}
+
+
+
+
+
+         
+/*----NAVIGATION-------------SUB nav ---*/
+/*------------------------------------*/
+
+	
+.subnav{
+	font-size:1.1em;
+	letter-spacing:1px;
+	}
+	
+.subnav li{
+	padding-top:14px;
+	list-style-type:none;
+	letter-spacing:1px;
+	border-bottom: 1.3px solid #333;
+	}	
+
+
+.subnav li:hover{
+	padding-top:14px;
+	list-style-type: decimal;
+	border-bottom: 1.3px solid #00579d;
+	}	
+
+
+.subnav li a:link{
+	color:#004983;
+	padding-top:10px;
+
+	text-decoration:none;
+	}		
+
+.subnav li a:hover{
+	color:#0081e9;
+	text-decoration: overline;
+	}		
+	
+	
+
+
+/*             flex slider properties: */
+/*http://www.woothemes.com/flexslider/*/
+/*-----------------------------------*/
+
+	.flexslider {
+		border: 0 !important;
+	}
+
+	.flexslider {
+		margin: 0px; 
+		/*do here a margin -bottom IF nav controls are on !*/
+		
+		background: #fff; border: 4px solid #fff; 
+		position: relative; 
+		-webkit-border-radius: 4px; 
+		-moz-border-radius: 4px; 
+		-o-border-radius: 4px; 
+		border-radius: 4px; 
+		/*box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		-o-box-shadow: 0 1px 4px rgba(0,0,0,.2); */
+		zoom: 1;
+		}
+
+	
+/* Control Nav - copied from flexslider and adjusted for blue template here - other nav-colors 
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 15px; height: 15px; display: block; background: #CCC; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
+.flex-control-paging li a:hover { background: #FFF;  }
+.flex-control-paging li a.flex-active { background: #0CD; cursor: default; }
+*/
+
+
+/* Show no flex slider controls*/
+flex-control-nav {
+	display:none;
+	}
+
+.flex-control-nav li{
+	display:none;
+	}
+
+
+/*----------------headerpanel- infobox*/
+/*-----------------------------------*/
+
+.headerpannel{
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	/*ausprobieren je nach textgrösse*/
+	width:300px;
+	background: rgba(153,153,153,0.5);
+	}
+	
+
+.headerpannel h4{
+	font-size:1.2em;
+	letter-spacing:0.1em;
+	line-height:0.8em;
+	padding-top:5px;
+	padding-left:5px;
+	}
+
+.headerpannel a{
+	padding-right:5px;
+	}
+
+.headertext{
+	color:#AAA;
+	font-size:0.8em;
+	padding-left:5px;
+	padding-right:5px;
+	}
+
+
+
+
+	
+	
+/*----CONTENT--------------The Box hover - grey */
+/*-------------------------------------------- */
+
+
+.contentbox{
+	margin-top:2em;
+	padding-right:10px;
+	border-right: #CECECE 1px solid;
+	
+	}
+
+.lead{
+	/*padding-left:2em;*/
+	
+	}
+	
+.lead h2{
+	font-size:2.1em;
+	font-weight:100;
+	
+	}
+
+
+.lead h5{
+	font-size:1.2em;
+	letter-spacing:0.1em;
+	font-weight:300;
+	padding-top:2em;
+	padding-bottom:1em;
+	}
+	
+	
+.contentframe{
+	float:left;
+	background:#EDEDED;
+	color:#444;
+
+	padding-top:1em;
+	border-top:#555 solid 1px;
+	
+	padding-bottom:1em;
+	border-bottom:#999 solid 2px;
+	margin-bottom:2.4em;
+	}	
+
+.fliesstext{
+	background:#DDD;
+	color:#444;
+	font-size:1em;
+	font-weight:200;
+	line-height:1.4em;
+	
+	}
+	
+.contentframe img{
+	width:250px;
+	height:auto;
+	float:left;
+	
+/*	abstand zum text rechts*/
+	padding-right:40px;
+	}
+
+
+
+
+.contentframe a:link{
+	text-decoration:none;
+	background:#F4F4F4;
+	color:#222;
+	font-size:1em;
+	padding-left:-15px;
+	}
+
+.contentframe a:hover{
+	text-decoration:none;
+	background:#FAFAFA;
+	color:#700;
+	}
+
+/*
+.pix_right{
+	float:right;
+
+	/*absolute pixel ! weissdergeierwarum
+	width:120px;
+	max-width:100%;
+	height:auto;
+	padding-left: 5px;
+	
+	}
+*/
+
+
+/* --CONTENT --------------------- Photogalery  */
+/*---------------------------------------------*/
+.photogallery{
+	color:#e8e8e8;
+	background:#999;
+	border:#333 2px solid;
+
+
+	margin-bottom:2em;
+	}
+	
+.photogallery h3{
+	font-size: 2.1em;
+	letter-spacing:0.16em;
+	padding-left:5px;
+
+	}
+
+.photogallery h4{
+	font-size:1em;
+	padding-bottom:1em;
+	
+	padding-left:5px;
+	}
+	
+/*the photo frame*/
+.gallery_pix{
+	height:150px;
+	width:150px;
+	background-color:#333;
+	overflow:hidden;
+	float:left;
+	
+	text-align:center;
+	padding-top:10px;
+	/*outer margin*/
+	margin-top: 1.4em;
+	margin-right:1.4em;
+	}
+
+
+.gallery_pix img{
+	padding-top:10px;
+	width:120px;
+	height:120px;
+	
+	}	
+
+.gallery_pix a:link{
+	background-color:#777;
+	position:relative;
+	left:2px;
+	bottom:2px;
+	}
+
+.gallery_pix a:hover{
+	background-color:#933;
+	position:relative;
+	left:5px;
+	bottom:5px;
+		
+	}
+
+
+	
+	
+	
+/* --CONTENT -----------------------  Sidebar  */
+/*--------------The grey Box with blue hover */
+
+/*if sidebar ist left- then */
+.left_sidebars{
+	margin-top:2em;
+	margin-left:1em;
+	
+	}
+
+
+.sidebar_blue{
+	margin-top:5em;
+	padding-bottom:1em;
+	max-width:95%;
+	background:#EEE;
+	border-bottom-right-radius:30px;
+	}
+
+
+.sidebar_blue:hover{
+	background:#00579d;
+	color:#FFF;
+	box-shadow: 7px 7px 5px #888888;
+	-moz-transition:color 0.5s linear, background 0.5s linear;
+	-webkit-transition:color 1s linear;
+	}
+	
+	
+.sidebar_blue h3{
+	padding-top:0.8em;
+	padding-bottom:0.4em;
+	padding-left:5px;
+	font-size:1.6em;
+	letter-spacing:0.12em;
+	}
+
+
+.boxtext{
+	font-size:0.9em;
+	padding-left:5px;
+	text-decoration:none;
+	}
+
+.sidebar_link a:link:before {
+    content: "›";	
+	}
+
+.sidebar_link a{
+	background:#FDFDFD !important;
+	margin-left:-5px;
+	}
+	
+.sidebar_link a:link{
+	color:#992222;
+	background:FEFEFE;
+	font-size:1em;
+	font-weight:400;
+	text-decoration:none;
+
+	}
+	
+.sidebar_link a:hover{
+	color:#A33;
+	background:#FEFEFE;
+	}	
+
+.sidebar_link a:link:hover:after{
+	 content: "› ›";	
+	}
+	
+	
+.box_pix{
+	float:left;
+	/*absolute pixel ! Einfachsomaldefiniert*/
+	max-width:100%;
+	width:auto;
+	height:auto;
+	
+	}
+	
+
+	
+	
+/* --CONTENT ---------------------  Teaser  */
+/*-----------------------------------------*/	
+/*	.teaser-elem{
+		background:#C7FEFF;
+		color:#666;
+		font-size:0.8em;
+		}
+	.teaser-elem h4{
+		padding-left:10px;
+		letter-spacing:0.1em;
+		
+		}
+	
+	.teaser_link:link{
+		color:#09F;
+		text-decoration:none;
+		}
+	
+	.teaser_link:hover{
+		color:#933;
+		text-decoration:underline;
+		}
+	*/
+	
+	
+	
+	
+/* --FOOTER ---------------------  */
+
+.footer_teaser{
+	background-color: #444444;
+    color: #CCCCCC;
+    padding: 18px 1em 12px;
+}
+
+/* for 4 elements must be adjusable dynamicly*/
+.teaser-elem{
+	
+		font-size:0.85em;
+		float:left;
+		color:#fff;
+		border:#999 1px solid;
+	}
+
+
+
+.teaser-elem a:link{
+	font-size:1.2em;
+	background:#999;
+	color:#FEFEFE;
+	text-decoration:none;
+	}
+
+.teaser-elem a:hover{
+	
+	background:#EEE;
+	color:#00579d;
+	text-decoration:none;
+	}	
+	
+.footerrow{
+	color:#DADADA;
+	
+    background: -moz-linear-gradient(top, #444444, #777) repeat scroll 0 0 transparent;
+	background: -webkit-linear-gradient(top,#E444444EE, #777) repeat scroll 0 0 transparent;
+	background: linear-gradient(top, #E444444EE, #777) repeat scroll 0 0 transparent;
+	
+	font-style:inherit !important;
+	font-size:0.9em;
+	
+    border-bottom: 2px solid #222;
+    border-top: 1px solid #444;
+	/*margin-top:1.2em;*/
+    margin-bottom: 0 !important;
+    padding-top: 1.1em;
+	padding-bottom:0.8em;
+	}
+
+.footerrow copy{
+	padding-left:2em;
+	font-size:0.76em;
+	}
+
+.footerrow addresse{
+	font-style:normal !important;
+	}

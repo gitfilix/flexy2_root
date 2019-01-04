@@ -1,0 +1,215 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background: #FdFdFd; }
+
+a {
+  color: #006600; }
+
+a:hover {
+  color: #4ad53f;
+  text-decoration: none; }
+
+.spacer-top {
+  margin-top: 8rem; }
+
+.haarline {
+  border-bottom: 1px solid #000000;
+  margin-bottom: 8rem; }
+
+.bigheader {
+  position: relative;
+  background: url("../pix/jgbg_1200.jpg") no-repeat scroll center center/cover;
+  display: table;
+  height: 700px;
+  width: 100%; }
+  .bigheader h1 {
+    color: #4ad53f;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 4rem; }
+  .bigheader h3 {
+    color: #FdFdFd;
+    font-family: "Source Sans Pro", sans-serif; }
+
+.frame {
+  max-width: 600px;
+  padding: 2rem;
+  background: rgba(25, 25, 25, 0.5);
+  border: 1px solid #FFF; }
+  .frame a {
+    background: #FFF; }
+  .frame a:hover {
+    background: #000;
+    color: #4ad53f; }
+
+/*Off Canvas Navigation - Menu toggle*/
+#menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 1;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+.adjust-right {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+#sidebar-wrapper {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  z-index: 200;
+  width: 300px;
+  margin-right: -300px;
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in; }
+
+#sidebar-wrapper.active {
+  margin-right: 0;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  width: 300px; }
+
+.toggle {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  color: #FdFdFd;
+  background: rgba(0, 0, 0, 0.5); }
+
+.toggle:hover {
+  color: #4ad53f; }
+
+.sidebar-nav li {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  padding-top: 2rem;
+  list-style-type: none;
+  padding-bottom: 1rem; }
+  .sidebar-nav li a {
+    color: #EFEFEF; }
+  .sidebar-nav li a:hover {
+    color: #4ad53f; }
+
+#teaser1 {
+  background: #222;
+  color: #4ad53f;
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+  #teaser1 h2 {
+    font-size: 3rem;
+    color: #FdFdFd; }
+
+.text-vertical-center {
+  color: #4ad53f;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
+.about {
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
+
+.servicebox h4 {
+  font-size: 3rem;
+  color: #444444; }
+
+.servicebox p {
+  color: #555; }
+
+.servicebox a {
+  color: #4ad53f; }
+
+.service-item img {
+  max-width: 100%; }
+
+.portfolio-item {
+  position: relative;
+  padding-top: 3rem; }
+  .portfolio-item h4 {
+    opacity: 0;
+    padding: 1.5rem;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    background: #000000;
+    color: #4ad53f; }
+  .portfolio-item span {
+    position: absolute;
+    top: 45%;
+    left: 30%; }
+  .portfolio-item img {
+    opacity: 0.6;
+    -webkit-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in; }
+
+.portfolio-item:hover {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in; }
+  .portfolio-item:hover h4 {
+    opacity: 1;
+    background: #000000;
+    color: #4ad53f; }
+  .portfolio-item:hover img {
+    opacity: 1.0;
+    -webkit-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in; }
+
+.usp {
+  background: url("../pix/jgpix2_600.jpg") no-repeat center center/cover;
+  color: #4ad53f;
+  display: table;
+  height: 400px;
+  width: 100%; }
+  .usp h1 {
+    font-size: 5rem;
+    max-width: 100%;
+    background: rgba(25, 25, 25, 0.7);
+    display: inline;
+    padding: 3rem; }
+
+footer {
+  background: #E3E3E3; }
+
+.logo h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100; }
+
+#serviceheader {
+  position: relative;
+  background: url("../pix/jgpix2_600.jpg") no-repeat scroll center center/cover;
+  display: table;
+  height: 400px;
+  width: 100%; }
+
+#galleryheader {
+  position: relative;
+  background: url("../pix/microscope_bg_1000.jpg") no-repeat scroll center center/cover;
+  display: table;
+  height: 400px;
+  width: 100%; }
+
+.subnav ul li {
+  display: inline;
+  padding-left: 2rem; }
+
+.swiper-slide img {
+  width: 100%;
+  height: auto; }
+
+.swiper-slide p {
+  padding: 2rem 0 2rem 0;
+  font-size: 1.6rem; }
+
+.swiper-button-prev {
+  color: #006600; }
+
+.swiper2 {
+  max-width: 50%; }

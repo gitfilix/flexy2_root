@@ -1,0 +1,155 @@
+{
+  "seiten":[
+    {
+      "pageTitel": "Felix Photo Gallery",
+      "titelNav": "Home",
+      "text": "a visual Compendium",
+      "template": "home",
+      "backgroundImage": "pix/flugi_01.jpg",
+      "app": "home"
+    },
+    {
+      "pageTitel": "ich bin die erste Inhalts-Seite",
+      "titelNav": "About this App",
+      "text": "kein text",
+      "template": "TextTwoCol",
+      "backgroundImage": "pix/bgglobe4.jpg",
+      "app": "",
+      "content": [
+        {
+          "title1":"Über diese App",
+          "lead1": "Lernen ist Arbeit",
+          "text1": "Diese Single Page Web-Application habe ich primär programmiert, um meine Front-End Developper Skills zu konsolidieren und zu verbessern. <br /> Das Produkt soll eine Demonstration für einen potentiellen Arbeitsgeber sein, sowie auch Freude bereiten. <br />Der Source-Code ist offen und detailiert kommentiert. Wenn man neue Web-Technologien lernen einsetzen möchte, gibt es mehrere Möglichkeiten: Blogs lesen, Tutorials nachbauen, Übungen nachvollziehen und ausprobieren, darüber reden, selber bloggen oder tweeten. <br />Oder: Man kreiert ein konkretes Projekt von der Konzeption, Template- Design, Programmierung bis zum fertigen (präsentablen) Produkt selbst. Mit richtige Inhalten und brauchbaren Funktionen. <br />Denn die <strong>'Hello World'</strong>-Examples funktionieren zwar immer -doch ein <strong>Wow-Faktor</strong> sieht anders aus.",
+          "title2": "Nebeneffekte",
+          "lead2": "aber es kann Freude bereiten",
+          "text2": "Dieses Projekt ist nicht nur Spass - programmieren ist schliesslich Arbeit- es soll jedoch auch Freude bereiten. <br />Der angenehme Nebeneffekt entsteht, wenn die funtionstüchtige Applikation auch einen Zweck erfüllt. Der primäre Zweck ist das (private) Publizieren meiner Photos. Diese App erlaubt mir, Bilder in meinem eigenen Rahmen, zu publizieren. Mit meinem gewünschten Seitenverhältnis, und dies ohne die Rechte an social Media Plattformen abtreten zu müssen. <br /> Zweitens ich kann Menschen, die ich auf meinen Reisen getroffen habe, ein kleines visuelles Feedback geben. Erinnerungen können geteilt werden. Andere können partizipieren; sie können Ihre Photos ebenfalls (mit-)teilen. <br/>Dass Freunde, ebenfalls ihre Photos sehen und teilen können, bereitet Freude. <br /><br /><strong>Too long; didn't read: </strong><br />Typing JavaScript & Sharing photos === ;-)"
+        }
+      ]
+    },
+    {
+      "pageTitel": "Funktionen & Features",
+      "titelNav": "Features",
+      "text": "Diese App beruht auf über 140 Funktionen. Den Grossteil davon habe ich selbst geschrieben und entwickelt. Primär sind diese für das Zusammenspiel von Darstellung (View), Daten (Model) und Events (Controller) verantwortlich. Sie haben folglich rein technische Funktionalität. Doch auf einige “Special- Features“ möchte ich im folgenden hinweisen.",
+      "template": "default",
+      "backgroundImage": "",
+      "app": "",
+      "content": [
+        {
+          "title1":"Image Resizing on Client",
+          "lead1": "size does matter",
+          "text1": "Moderne Mobilgeräte (nennen wir sie Händy's) verfügen über Kameras mit Auflösungen von 8 bis 16 Megapixel. Es entstehen Photos mit enormen Datenmenge pro Bild (etwa 3-5 Megabyte pro JPEG-Bild). Diese Datenmenge würden beim upload-Prozess die Netzwerk-Kapazität sehr stark belasten!<br /> Diese App verfügt über eine Resizing- sowie Komprimierungsfunktion auf dem Client.<br /> Wenn ein User ein Photo uploaden möchte, wird zuerst die Dimension des Bildes erfasst. Ist das Bildformat grösser als 1200 Pixel, so wird das Bild -bei gleichbleibenden Proportionen - in ein kleineres Format gerendert. Ebenfalls wird der JPEG-Komprimierungsfunktion nochmals ausgeführt.<br />  Erst danach wird das Bild auf den Server geladen und der dazugehörige Datenbankeintrag erstellt. Die Datenbank Album-Tabelle wird erweitert.<br /> Die Bilder sind nach diesem Prozess zwischen 80 und 260 Kilobyte gross",
+          "title2": "Browser & Device Checks",
+          "lead2": "Tell me who you are",
+          "text2": "Beim Start der Applikation wird festgestellt, ob das Client-Gerät ein Touch-Interface hat und ob es sich um ein Apple- Gerät handelt. Entsprechend wird das Menu angepasst, dass Apple-Geräte eine kleine Anleitung für die Add-to-HomeScreen-Funktionalität erhalten. Apple-User können einen Shortcut (Link) auf dem Homescreen installieren und die Gallerie als Fullscreen-App geniessen.",
+          "title3": "Themes",
+          "lead3": "User Centered Design",
+          "text3": "Das betrachten von Photos, sowie Erscheinungsbild des Graphical User Interface (GUI) sollte den Bedürfnissen des Users entsprechen. Die Diversität der Hardware-Hersteller von Endgeräten, die jeweiligen Betriebssysteme und die Browser ist sehr fragmentiert.<br /> Da die Hersteller der Hard- und Software für die jeweilige Darstellung der Schrift, der Graustufentonalität und Gammakorrektur verantwortlich sind, ergeben sich unterschiedliche Implementieren. Dies resultiert in sichtbare Darstellungsvariationen der selben gerenderten Webapplikation.<br /> Darum kann der User verschiedene Themes auswählen, die unterschiedliche Farb - und Kontrastverhältnisse bieten.<br /> Die Schriftfamilien variiren ebenfalls, damit der User für sein Gerät die optimale Leserlichkeit wählen kann. <br />",
+          "title4": "Fullscreen capability",
+          "lead4": "Viewport optimisation",
+          "text4": "Diese Web-App kann auch im Fullscreen Modus betrachtet werden, falls der Browser diese Funktionalität unterstützt. Das macht insbesondere bei einer Photogalerie durchaus Sinn. <br />Der Footer wird nie auf Mobilgeräten angezeigt um Platz zu sparen. Auf Tablets wird dieser ausschliesslich im Querformat eingeblendet sowie auf Desktop-Bildschirmen.<br />Beim Start einer Gallerie- Detail Sicht, wird der Footer ausgeblendet. Der Header-Bereich nimmt die selbe Farbe an, wie der Bild-Hintergrund. Der Fokus des Betrachters soll sich auf das Bild richten.",
+          "title5": "Responsive Design",
+          "lead5": "Mobile First, up to Full-HD",
+          "text5": "Diese Single Page Application kann auf diversen Geräten gestartet werden: Smartphones, Tablets (sogenannte Leanback-Devices), und Desktop Screens bis und mit FullHD.<br />Es sind 6 Media-Queries definiert und implementiert worden, welche die einzelnen Darstellungsformen geräte-gerecht auf dem jeweiligen Bildschirm ausgeben.<br /> Ein Beispiel: Die Galerie kann mit Touch-Gesten auf Mobiles bedient werden. Auf dem Desktop werden Click-Buttons zur Steuerung dargestellt.<br /><br /> Es lohnt sich, die App auf verschiedenen Geräten auszupropieren!"
+        }
+      ]
+    },
+    {
+      "pageTitel": "Gallerie-Applikation",
+      "titelNav": "Gallery",
+      "text": "",
+      "template": "galleryApp",
+      "backgroundImage": "",
+      "app": "galleryOverviewApp"
+    },
+    {
+      "pageTitel": "Single Page Application",
+      "titelNav": "Single Page Application",
+      "text": "Diese Web- Application ist ein Single-Page Application. Das bedeutet, es existiert nur ein HTML-File, das beim Seitenaufruf einmalig geladen wird. Dieses wird zur Laufzeit verändert. Der Inhalt wird clientseitig gerendert und in die einzelnen Templates dynamisch eingefügt.<br />",
+      "template": "default",
+      "backgroundImage": "",
+      "app": "",
+      "content": [
+        {
+          "title1":"Reduced to the Max",
+          "lead1": "Schlank ist elegant",
+          "text1": "Diese Technik erlaubt ein extrem schlankes DOM (Document Object Model).<br /> Die ganze Applikation besteht initial nur aus 5 (leeren) Div-Elementen und einem Wrapper-Element. Bei Bedarf werden vom Server per AJAX (Asynchronous JavaScript) weitere Inhalte dynamisch asynchron nachgeladen, ohne einen weiteren Seitenaufruf (Page-Request) auszuführen.<br /> Der HTML-Body ist im initialen Zustand ca. 10 Zeilen Code.",
+          "title2": "Model-View Architektur",
+          "lead2": "Modulare Trennung von Daten und Logik",
+          "text2": "Es wurde darauf geachtet, Daten (Model), View (Darstellung) und die Applikations-Logik voneinander zu trennen, um modulare Architektur zu gewährleisten. Eine (richtige) MVC-Architektur (mit Controller) kommt in der nächsten App zum Einsatz. Mit Angular-js, express-js und objektorientiert, ...- Versprochen!",
+          "title3": "Eingesetzte Techniken",
+          "lead3": "Tech Stack & Buzzwords",
+          "text3": "Um diese App zu realisieren, habe ich folgende Techniken eingesetzt: HTML-5 (100% W3C-valid), CSS-3 (mit SASS Prepocessor), JavaScript native, JQuery, animated SVG (Scalable Vector Graphics), Skeleton (Grid-System), iDangerous Swiper-js, Template7, Modernizr, JSON-Format, AJAX, GULP-Taskmanager, NPM Modules by Node-js.<br /><br />Die Views wurden mit einem Responsive Grid System realisiert; 6 Media-Queries mit SASS-Mixins: von Mobile-First, Tablet-touchoptimized, bis Full-HD-Screen. Content (Teaser-Boxen) und Schrift und Navigation verhalten sich Device-gerecht.",
+          "title4": "Framework",
+          "lead4": "Work without FrameWork ?",
+          "text4": "Es wurde absichtlich auf den Einsatz der bekannten Frameworks wie Bootstrap, Foundation oder Ionic verzichtet.<br /> Warum ?<br />  Diese Frameworks sind sehr gut programmiert und praktisch, erhöhen die Effizient, da viele Funktionen 'Out of the Box' funktionieren.<br /> Doch der Lerneffekt ist meines Erachtens viel höher, wenn jede Funktion, und die Templates sowie Media-Queries selbst geschrieben werden. <br /> <br /> Creation over Adaption!",
+          "title5": "API",
+          "lead5": "Frontend-Lappi, wo ist die API ?",
+          "text5": "Frontend-ler sind definitionsgemäss keine Backend-ler. Dennoch sollten sie über grundlegendes SQL und Datenbankknow-How verfügen. Auch diese App verfügt über einen Server, welcher die Daten aus einer Datenbank liest und speichert. Der JAVA- Application Server ColdFusion erlaubt SQL-Abfragen und das Serialisieren des Return-Recordsets in JSON-Format. Die API besteht aus zwei Files auf meinem CF-Hosting, welches DB-Queries ausführt und JSON Dateien sendet; beziehungsweise empfängt. Diese werden über HTTP-GET-Request Methoden aufgerufen. <br />So konnte eine einfache, aber richtige JSON- API realisiert werden."
+        }
+      ]
+    },
+    {
+      "pageTitel": "Upload",
+      "titelNav": "Upload",
+      "text": "",
+      "template": "uploaderApp",
+      "backgroundImage": "",
+      "app": "upload"
+    },
+    {
+      "pageTitel": "Hello Friends & Users",
+      "titelNav": "About this Gallery",
+      "text": "About this App",
+      "template": "BgProminent",
+      "backgroundImage": "pix/bgglobe2.jpg",
+      "app": "",
+      "content": [
+        {
+          "title1":"About this Gallery",
+          "lead1": "Enjoy the beauty of this world",
+          "text1": "on every Device. on every Screen. Wherever you are. One Web-App for all. (okay, I admit, it works fine on <i>most</i> devices).",
+          "title2": "To my Friends",
+          "lead2": "&laquo; Shoot for the Moon...&raquo;",
+          "text2": "&laquo; - Even if you miss, you'll land among the stars.&raquo; <br />Enjoy the beauty of this world. And share it! I took so many Pictures and I hardly never publish them online. Why? I do like the idea of sharing pictures, but I also want to keep control over canvas of my choice, the aspect-ratio and even the frame is important to me. There are a lots of Galery-Plug-ins but out there, but none did fit my needs..  I have to admit, I am rather picky... But it is about Beauty of the Picture, so it is quite a serious topic to me. So I decided to programm my own gallery, where I have Full Picture control and the ability to share. And you, my friend, can share it too. Try out, if you like. "
+        }
+      ]
+    },
+    {
+      "pageTitel": "Apple App",
+      "titelNav": "Apple Fullscreen",
+      "text": "Apple App",
+      "template": "templateImg",
+      "backgroundImage": "pix/bgglobe3.jpg",
+      "app": "",
+      "content": [
+        {
+          "title1":"Fullscreen auf Apple",
+          "lead1": "Add to Home Screen",
+          "text1": "How-To für Apple-User: Auch auf Apple-Geräten können Sie die F-Pix Gallery in einem Fullscreen -Modus geniessen.<br /> Clicken Sie auf das 'Share-' Symbol, und danach auf die Schaltfläche 'Add to HomeScreen'. <br /> Es erscheint ein Icon auf Ihrem Desktop. Fertig.",
+          "img1": "pix/aths1.png",
+          "imgcaption1": "1. Click share- Icon",
+          "img2": "pix/aths2.png",
+          "imgcaption2": "2. Add to HomeScreen. Thats's it. Enjoy FullScreen mode."
+        }
+      ]
+    },
+    {
+      "pageTitel": "About me",
+      "titelNav": "About Me",
+      "text": "gibt es hier überhaupt einen text aus",
+      "template": "BgProminent",
+      "backgroundImage": "pix/bg_waespi.jpg",
+      "app": "",
+      "content": [
+        {
+          "title1":"About Felix",
+          "lead1": "what a Web-Freak",
+          "text1": "Ich bin: Felix, Frontend- Webentwickler, CSS3-Artist, Qualitätsbefürworter, HTML-5-Templater, Teilzeitstudent, Zeitungsleser, Freidenker, RAW-Photograph, vi-textedior-Follower, Omnivore, Reisender, Taucher, Kunstsammler, progressiv, Brettspieler, Anglizismen-Verwender, Hobby-Koch, jQuery-Animator, systemunabhängig, Snowboarder, Google-abhänging, Stackoverflow-hilfsbedürftig, Tee-& Kaffeetrinker, ColdFusion- Verteidiger, Velofahrer, Neu-Bärner, Legastheniker, Jim-Jarmusch-Gutfinder, Social-media passiv, Flexy-2 Admin, copy-pastor, Texter, Jazz & Hip-Hop-Hörer, Vermeer-Verehrer, Manuell-Einsteller, ehrgeizig, Allrounder, pixel-präzis, Big-Picture Erklärer, sozial, oft unrasiert, nostalgisch, Typographie-tee-shirt träger, ausdauernd, teilweise bestechlich & humorlos.",
+          "title2": "Und warum machst Du sowas",
+          "lead2": "&laquo; Shoot for the Moon...&raquo;",
+          "text2": "aus freude. zum javascript lernen. um zu gulp-tasken, um zu webstormen, um zu sass-len, um photos zu teilen, um zu single page-appen, HTML5-templaten, und und. <br />Long story short: Markup: 306 Zeilen Code; HTML5-Responsive Templates: 8; CSS/ SCSS: 4420 Zeilen Code; JavaScript: 1105 Zeilen Code; API: 55 Zeilen SQL & 76 Zeilen CF; Stackoverflow: 541 Konsultationen; Kaffee: 321 Tassen; Telephon-Konsultation mit MRZ: 19h; "
+        }
+      ]
+    }
+  ]
+}

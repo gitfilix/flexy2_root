@@ -1,0 +1,105 @@
+pages = {
+			seiten : [
+				// this is a page object pages[0]
+				{
+					pageTitel: "Felix Gallery", // pages[0].pageTitel
+					titelNav: "Home", // pages[0].titelNav
+					text: "a visual Compendium", // pages[0].text
+					template: "home", // pages[0].template (will load id="home" script-view),
+					backgroundImage: "pix/bgstart_city1.jpg", // pages[0].backgroundImage
+					app: ""
+				},
+				// this is a page object pages[1]
+				{
+					pageTitel: "ich bin eine Inhalts-Seite", // pages[1].pageTitel
+					titelNav: "Inhalt", // pages[1].titelNav
+					text: "Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern?", // pages[1].text
+					template: "TextTwoCol", // pages[1].template (will load id="default" script-view)
+					backgroundImage: "pix/flugi_01.jpg", // pages[1].backgroundImage
+					app: "",
+					content: [
+						{
+							title1:"Big Title 1 inhalt",
+							lead1: "lead 1 um was geht es ?",
+							text1: "text1: dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleich",
+							title2: "second title inhalt ",
+							lead2: "and this is the second lead",
+							text2: "Mein Name ist Mirza und ich fahre gerne nach Indien. <br /> and some more text to fill the empty space to give some impressions.. "
+						}
+					]
+				},
+				// this is a page object pages[2]
+				{
+					pageTitel: "ich bin eine Inhalts-Seite 2", // pages[2].pageTitel
+					titelNav: "mein nerviger Freund Mirza", // pages[2].titelNav
+					text: "Mein Name ist Mirza und ich fahre gerne nach Indien. <br />Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern?", // pages[2].text
+					template: "default", // pages[2].template (will load id="default" script-view)
+					backgroundImage: "pix/kenna-7.jpg", // pages[2].backgroundImage
+					app: "",
+					content: [
+						{
+							title1:"Big Title Mirza",
+							lead1: "lead 1 um was geht es - um mirza",
+							text1: "text1: keine ahnung um was es geht in diesem text- aber er wird angezeigt ",
+							title2: "second title mirza",
+							lead2: "and this is the second lead- still no answer but mirza",
+							text2: "Mein Name ist Mirza und ich fahre gerne nach Indien. <br /> and some more text to"
+						}
+					]
+				},
+				// this is a page object pages[3]
+				// the overview and detail view are within the same page (clicking an album will load a separate view for the detail, but not change to a new page)
+				{
+					pageTitel: "ich bin die Gallerie-Applikation", // pages[3].pageTitel
+					titelNav: "Albums", // pages[3].titelNav
+					text: "", // pages[3].text
+					template: "galleryApp", // pages[3].template (will load id="galleryApp" script-view)
+					backgroundImage: "pix/feets/feets8.jpg",
+					app: "galleryOverviewApp" // partial view id app
+				},
+				{
+					pageTitel: "unter ferner liefen", // pages[4].pageTitel
+					titelNav: "Tech Stack", // pages[4].titelNav
+					text: "Yep, that"s a Singleton. Once you create an object literal in JavaScript you"ve reserved a little piece of memory and no other object will ever be just like that one. Now, depending on the scope you might have only created a local variable but if that user is sitting outside a function then it"s globally available to anyone who wants to fiddle with it. I guess the most famous Singleton probably looks like this: $. To put it another way, ever notice how you can use jQuery anywhere in your app after you"ve included it on the page...? Boom! Singleton! ", // pages[4].text
+					template: "default", // pages[4].template (will load id="galleryApp" script-view)
+					backgroundImage: "pix/feets/feets8.jpg",
+					app: "",
+					content: [
+						{
+							title1:"Big Title Tech",
+							lead1: "lead 1 to title tech",
+							text1: "about tech texts - what the hell is a singleton? <br />reserved a little piece of memory and no other object will ever be just like that one. Now, depending on the scope you might have only created a local variable but if that user is sitting outside a function then it is globally available to anyone who wants to fiddle with it. I guess the most famous Singleton probably looks like this",
+							title2: "second title techie stuff - a Singleton ",
+							lead2: "and this is the second lead of tech nerding stuff ",
+							text2: "Mein Name ist Nördi - und ich fahre gerne nach Indien. <br /> and some more text to Yep, that"s a Singleton. Once you create an object literal in JavaScript you"ve reserved a little piece of memory and no other object will ever be just like that one. Now, depending on the scope you might have only created a local variable but if that user is sitting outside a function then it"s globally available to anyone who wants to fiddle with it. I guess the most famous Singleton probably looks like this: To put it another way, ever notice how you can use jQuery anywhere in your app after you"ve included it on the page...? Boom! Singleton!"
+						}
+					]
+				},
+				{
+					pageTitel: "Upload", // pages[4].pageTitel
+					titelNav: "Upload", // pages[4].titelNav
+					text: "", // pages[4].text
+					template: "uploaderApp", // pages[4].template (will load id="galleryApp" script-view)
+					backgroundImage: "",
+					app: "upload" // partial view id app
+				},
+				{
+					pageTitel: "Ich bin ein neues TEmplate BG Prominent", // pages[2].pageTitel
+					titelNav: "neues Template", // pages[2].titelNav
+					text: "Mein Name ist Mirza und ich fahre gerne nach Indien. <br />Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel? Gerade jetzt, wo er das Ding seines Lebens gedreht hatte und mit der Beute verschwinden wollte! Hatte einer seiner zahllosen Kollegen dieselbe Idee gehabt, ihn beobachtet und abgewartet, um ihn nun um die Früchte seiner Arbeit zu erleichtern?", // pages[2].text
+					template: "BgProminent", // pages[2].template (will load id="default" script-view)
+					backgroundImage: "pix/kenna-1.jpg", // pages[2].backgroundImage
+					app: "",
+					content: [
+						{
+							title1:"very Big Title here",
+							lead1: "lead 1 um was geht es - um ein neues Template",
+							text1: "text1: keine ahnung um was es geht in diesem text- aber er wird angezeigt ",
+							title2: "second title mirza",
+							lead2: "and this is the second lead- still no answer but mirza",
+							text2: "Mein Name ist Mirza und ich fahre gerne nach Indien. <br /> and some more text to"
+						}
+					]
+				},
+			]
+		}

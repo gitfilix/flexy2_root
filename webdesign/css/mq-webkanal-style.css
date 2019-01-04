@@ -1,0 +1,509 @@
+
+/*genral styles*/
+
+
+/*1. CSS adjustments for Media Queries --------------------------*/
+/*---------------------------------------------------------------*/
+
+/*BIG SCreen -Big Image - Big font sizes*/
+@media all and (min-width: 1601px){
+	.bigimg{
+		max-width:100%;
+		max-height:700px !important;
+		}
+	
+	.uppercontent h3{
+		font-size:3.2em;
+		}
+	
+	.text-content section{
+		font-size:1.4em;
+		line-height:1.6em;
+		
+		}
+	
+	.subnav{
+		font-size:1.4em;}
+	
+	.sidebar h4{
+		font-size:2em;
+		}
+	
+	.sidebartext {
+    	font-size:1.3em;
+	}	
+	
+}
+
+/*MEDIUM Screen -MEDIUM Image - Normal font sizes*/
+@media all and (min-width: 1281px){
+	.bigimg{
+		max-width:100%;
+		max-height:600px !important;
+		}
+	
+	
+	.text-content section{
+		font-size:1.3em;
+		line-height:1.6em;
+		}
+	
+	.subnav{
+		font-size:1.4em;}
+	
+	.sidebar h4{
+		font-size:2em;
+		}
+	
+	.sidebartext {
+    	font-size:1.3em;
+
+	}	
+	
+}
+/*until 1024 ipad landscape */
+
+/* realy small Screens  Auch im POST RENDER SCRIPT ANPASSEN !!!*/
+@media screen and (max-width: 800px){
+
+	
+	#headings{
+	/*apear with jquery -flx trick**/
+		max-width: 55%;
+	}	
+	.uppercontent h3{
+		font-size:1.8em;
+	}
+	
+	.slider-desc {
+		max-width:55%;
+		}
+		
+	.slider-desc h3{
+		font-size:	1.3em;
+		letter-spacing:0.1em;
+	}
+	
+	.slider-desc h4{
+		font-size:	1.2em;
+	}
+	
+	#imagedesc{
+		font-size:1.2em;
+	}	
+	.subnav-pos{
+		top:20px;
+		right:20px;
+		}
+	
+	.subnav{
+		font-size:0.75em;
+		font-weight:lighter;
+	}
+	
+	.subnav ul li{
+		margin-left:1em;
+	}
+	
+	.subnav ul li a {
+    	border-top: 1px solid;
+		border-bottom: 1px solid;
+    	color: #F7F7F7;
+    	padding: 0.3em !important;
+		-moz-transition: transform 0.2s ease-in;
+		-webkit-transition: all 0.2s ease-in;
+		transition:transform 0.2s ease-in;
+	}
+	
+	.subnav ul li a:hover {
+    	border-top: 1px solid;
+		border-bottom: 1px solid;
+    	color:#5DF2FF;
+    	padding: 0.3em !important;
+		-moz-transition: transform 0.2s ease-in;
+		-webkit-transition: all 0.2s ease-in;
+		transition:transform 0.2s ease-in;
+	}
+	
+
+	/*Sidebar umbruch*/
+	#text-80{
+		float:none;
+		width:100%;
+	}
+	
+	#text-20{
+		float:none;
+		width:100%;
+	}
+
+
+/*Service nav is horizontally  */
+
+	.servicenav ul li{
+		font-size:1em;
+		width:8em;
+		display:block;
+		padding-top: 1.4em;
+		margin-bottom:0.5em;
+		color:#111;
+		padding:0.5em;
+		border: 1px solid #999;
+	}
+	
+	.servicenav ul li a:link{
+		border: none;
+		-moz-transition: transform 0.2s ease-in;
+		-webkit-transition: all 0.2s ease-in;
+		transition:transform 0.2s ease-in;
+	}
+	
+	.servicenav ul li a:hover{
+		color:#A33;
+		border-bottom: none;
+		-moz-transition: transform 0.2s ease-in;
+		-webkit-transition: all 0.2s ease-in;
+		transition:transform 0.2s ease-in;
+	}
+
+	.active{
+		color:#A33;
+		-moz-transition:all 0.3s ease-in;
+		-webkit-transition:all 0.3s ease-in;
+		transition:all 0.3s ease-in;
+	} 
+
+
+/*1. WebFormular -anjustments */
+
+
+	.webform input{
+		height: 2.6em;
+		width:80%;
+		/*max-width:50%;*/
+		margin:0;
+	}
+
+	.webform textarea{
+		width:82%;
+		max-width:82%;
+		margin:0;
+		resize: none;
+  		overflow: auto;
+	}
+	
+	#submit-btn{
+		font-weight:200;
+		letter-spacing:0.1em;
+		width:82%;
+	}	
+	
+	
+}
+
+
+
+
+
+/* iPad landscape ---- format*/
+@media screen and (device-width: 768px) and (device-height: 1024px)  and (orientation:landscape){
+
+	/*sidebar adjustements*/
+	.sidebar h3{
+		font-size:1.1em;
+	}
+		
+	.sidebartext {
+    	font-size: 1em;
+	}	
+	
+	.sidebar a {
+    	font-size: 1.0em;
+	}
+	
+	.subnav{
+		font-size:1.2em;
+		font-weight:lighter;
+	}
+	
+	
+	.subnav ul li a {
+   		border-top: 1px solid;
+    	color: #F7F7F7;
+    	padding: 0.3em !important;
+	}
+	
+	.subnav ul li a:hover {
+    	border-top: 1px solid;
+    	color:#5DF2FF;
+    	padding: 0.3em !important;
+	}
+
+
+	.text-content section {
+	    font-size: 1.3em;
+	    font-weight: normal;
+	    line-height: 1.6em;
+	}
+	
+	.sidebartext{
+		font-size: 1.4em;
+		line-height: 1.8em;
+	}
+	
+	.sidebar a{
+		font-size:1.4em;
+	}
+		
+	.slider-desc h3 {
+		font-size:1em;
+		font-weight:300;
+	}
+	
+	.slider-desc h4 {
+		color:#F3F3F3;
+		font-size:1em;
+		font-weight:300;
+	}
+
+	.slider-desc p{
+		font-size:0.9em;
+		line-height:1.4em;
+	}	
+
+}
+
+/*I pad portrait | format*/
+@media screen and (device-width: 768px) and (device-height: 1024px)  and (orientation:portrait){
+	
+	body{
+		width:100%;
+		height:100%;
+		position:relative;
+		overflow:auto;
+		font-family:roboto, sans-serif;
+		font-size:100.01%;
+	}
+	
+	#headings{
+		top: 70px;
+	}
+	
+	
+	#imagedesc {
+		font-weight:300;
+	}
+	
+	.subnav{
+		font-size:1em;
+		font-weight:normal;
+	}
+	
+	
+	.subnav ul li a {
+  		border-top: 1px solid;
+    	color: #F7F7F7;
+    	padding: 0.3em !important;
+	}
+	
+	.subnav ul li a:hover {
+  		border-top: 1px solid;
+    	color:#5DF2FF;
+    	padding: 0.3em !important;
+	}
+
+	.text-content section {
+	    font-size: 1.3em;
+	    font-weight: normal;
+	    line-height: 1.6em;
+	}
+
+	.slider-desc{
+		font-weight:300;
+		}
+		
+	.slider-desc h3 {
+		font-size:1em;
+		font-weight:300;
+		}
+	.slider-desc h4 {
+		color:#F3F3F3;
+		font-size:1em;
+		font-weight:300;
+		}
+	.slider-desc p{
+		font-size:0.9em;
+		line-height:1.4em;
+		}
+		
+	/*Column drop :therefore lots of space*/
+	.sidebar h4 {
+  		font-size: 2.6em;
+    	font-weight: 200;
+    	letter-spacing: 0.1em;
+	}
+
+	.sidebartext{
+		font-size: 2em;
+		line-height: 1.8em;
+	}
+	
+	.sidebar a{
+		font-size:2em;
+	}
+	
+}
+
+
+
+
+
+/* phone 480px */
+	@media only screen and (min-device-width : 320px) 
+	and (max-device-width : 480px){
+
+/*@media handheld, only screen and (max-width: 480px) {*/
+	/* ausblenden der normalen nav in der phone-view  */
+
+	.bigimg{
+		display:none;
+		}
+	
+	.mob-view-img{
+		display:block;
+		
+		}
+	
+	.mob-view-img img{
+		width:100%;
+		max-width:100%;
+		height:auto;
+		}
+	
+	#headings{
+		display:none;
+		}
+		
+	.slider-desc{
+		display:none;
+		}
+			
+	.subnav-pos{
+		position: absolute;
+    	right: 10px;
+    	top: 10px;
+		}
+	
+	.subnav{
+		font-size:1em;
+		}
+	
+	.subnav ul li {
+		display:block;
+		margin-bottom:1.2em;
+		padding:0.3em;
+		}
+		
+	.subnav ul li a{
+		background:#333;
+		border: 1px solid #CACACA;
+		}
+		
+			
+	.bigimg{
+		min-height:180px !important;
+		}
+
+	.text-content{
+		padding-top:1em;
+		/*6 to 4 em by jquery animation*/
+		padding-left:1em !important;
+		padding-right:1em;
+		padding-bottom:2em;
+		}
+		
+	.text-content h2{
+		font-size:1.5em;
+		padding-bottom:0;
+		}
+	.text-content section{
+		font-size:1em;
+		/*mit jquery auf gray animaten*/
+		/*color:#FAFAFA;*/
+		line-height:1.4em;
+		-webkit-font-smoothing: antialiased;
+		font-weight:300;
+		-moz-hyphens:auto;
+		-webkit-hyphens:auto;
+		-ms-hyphens:auto;
+		hyphens:auto;
+	}	
+	
+	.slider-desc{
+		display:none;
+		}
+		
+	.webformular-content{
+   		padding-left: 1em;
+    	padding-right: 1em;
+    	padding-top: 2em;
+		}
+		
+	.webform {
+		padding:0.5em;
+		}
+		
+	.webform input{
+		width:90%;
+		}
+		
+	.webform textarea{
+		width:92%;
+		max-width:92%;
+		}	
+		
+		/*tel link for mobiles: */
+	.webformular-content a{
+		text-decoration:none;
+		color:#5df2ff;
+		background:#333;
+		padding:0.3em;
+		text-transform:capitalize;
+		font-weight:300;
+		}
+
+	.webformular-content a:before{
+		content: 'tel: ';
+		}
+}
+
+
+
+
+/*MQ for small height- footer ausblenden*/
+
+@media all and (min-height: 650px){
+
+
+
+	/*also footer bis 570 height darstellen, danach default - disply none*/
+	#footer{
+		display:block;
+		}	
+}
+
+@media all and (max-height: 650px){
+	#footernav-pos{
+		position:absolute;
+		bottom:0.5em;
+		font-size:1.2em;
+		font-weight:200;
+		border-top: 1px solid #505050;
+		color:#777;
+		line-height:1.6em;
+	}
+	
+	#nav-list{
+		margin-top:0.5em;
+		}
+}

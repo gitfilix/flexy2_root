@@ -1,0 +1,128 @@
+*{
+	box-sizing:border-box;
+	}
+
+
+.tpl100 .very-bigtitel{
+	height:20%;
+
+	font-size:8em;
+	color:##939393;
+	letter-spacing:-0.04em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	
+	padding-top:10px;
+	box-sizing:border-box;
+	display:inline-block;
+	border-top: 1px solid ##000;
+	}
+
+
+.tpl100 .untertitel-sans{
+	height:10%;
+	padding-top:60px;
+	font-size:1.4em;
+	color:##222;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:200;
+	box-sizing:border-box;
+
+	}	
+	
+.tpl100 .fliesstext{
+	font-family: 'Playfair Display', serif;
+	font-size:1.4em;
+	line-height:1.7em;
+	color:##444;
+	height:70%;
+	overflow:auto;
+	
+	
+/*	column-gap:70px;*/
+	}	
+	
+.tpl100 .fliesstext{
+	/*padding-left:100px;	text-indent:30px;*/
+
+	-webkit-column-count:2; /* Chrome, Safari, Opera */
+	-moz-column-count:2; /* Firefox */
+	column-count:2;
+	margin-top:160px;
+}
+.tpl100 .redbutton-top{
+	background:##8d2a03;
+	width:60px;
+	height:60px;
+	top:0;
+	right:0;
+	position:absolute;
+	}	
+	
+/*Light box styles*/	
+	*{
+	box-sizing:border-box;
+	}
+
+.tpl100-lb .bg-color{
+	background-color:##350c02;
+	}
+	
+.tpl100-lb .bigtitel{
+	font-size:2.2em;
+	letter-spacing:-0.04em;
+	font-family: 'Open Sans', sans-serif  !important;
+	font-weight:200;
+	color:##FFFFFF;
+	border-top:1px solid ##DDD;
+	padding-top:60px;
+	height:20%;
+	box-sizing:border-box;
+	}
+
+.tpl100-lb .untertitel-sans{
+	font-size:1.4em;
+	color:##222;
+	font-family: 'Open Sans', sans-serif  !important;
+	font-weight:200;
+	box-sizing:border-box;
+	color:##F3F3F3;
+
+	}	
+	
+.tpl100-lb .fliesstext{
+	font-family: 'Playfair Display', serif ;
+	font-size:1.0em;
+	line-height:1.7em;
+	color:##F3F3F3;
+	overflow-y:auto;
+	height:90%;
+	text-rendering:optimizeLegibility;
+
+	}	
+	
+.tpl100-lb .fliesstext p{
+	/*padding-left:100px;*/
+}
+
+.tpl100-lb .closebutton-top{
+	background:##8d2a03;
+	top:0;
+	right:0;
+	padding:25px;
+	position:absolute;
+	color:##EAE8E8
+	}
+
+.tpl100-lb .lb-img{
+	overflow:hidden;
+	}
+
+.tpl100-lb .lb-img img{
+	width:100%;
+	}
+
+.tpl100-lb .left-pannel{
+	height:100%;
+	}
+	

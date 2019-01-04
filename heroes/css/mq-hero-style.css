@@ -1,0 +1,192 @@
+
+
+/*1. CSS adjustments for Media Queries --------------------------*/
+/*---------------------------------------------------------------*/
+
+
+/*until 1024 ipad landscape */
+
+/*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {*/
+@media only screen and (min-device-width : 320px) 
+	and (max-device-width : 480px){
+	body{
+		/*blau*/
+		background:#FFF;
+		font-size: 80.01%;
+	 	-webkit-hyphens: auto;
+	 	-moz-hyphens: auto;
+	 	-ms-hyphens: auto;
+	 	hyphens: auto;
+	}
+
+	#inner-wrap{
+		margin: 0;
+		width:100% !important;
+		max-width:100%;
+		border:0px;
+	}
+	
+.tschaga-display{
+	display:none;
+	}
+	
+#aniMe{
+	display:none;
+	}
+		
+.logo h1{
+	letter-spacing:0em !important;
+	font-size:0.8em;
+	color:#111;
+	font-weight:200;
+	}
+
+.logo h2{
+	font-size:0.6em;
+	}
+
+
+.verticalline{
+	border-left: 1px solid #111;
+	padding-left:0.2em;
+	}
+
+
+/*1. Service Navigation  ----------------------------------------*/
+/*---------------------------------------------------------------*/
+
+
+.servicenav{
+	font-family: "peachy-keen";
+	font-size:1em;
+	font-weight:200;
+	}
+
+
+.servicenav ul li{
+	font-size:0.9em;
+	padding-right:0.2em;
+	display:block;
+	padding-bottom:2em;
+	}
+	
+
+
+/*1. text adjustments--  ----------------------------------------*/
+/*---------------------------------------------------------------*/
+	
+	.heroes-overview h1 {
+    color: #0E618A;
+    font-family: "peachy-keen";
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+    padding-bottom: 2em;
+	}
+	
+	.hero-detail h1 {
+    color: #DD081A;
+    font-family: "peachy-keen";
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    margin-bottom: 2em;
+	}
+	
+	.hero-detail h2 {
+    color: #DD081A;
+    font-family: "peachy-keen";
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    margin-bottom: 2em;
+	}
+	
+	.hero-detail h3 {
+    color: #333333;
+    font-family: "peachy-keen";
+    font-size: 0.8em;
+    letter-spacing: 0em;
+	}
+	
+	.hero-detail p {
+    font-size: 0.8em;
+	}
+	
+	
+	.textbox{
+		margin-right:1em;
+		background:rgba(33, 33, 33, 0.4);
+		padding-left:1em;
+	}
+	
+	.textbox h2{
+		font-size:1.6em;
+		letter-spacing:0.1em;
+		font-weight:200;
+		text-transform:capitalize;
+	}
+	
+	.textbox h3{
+		font-size:1.1em;
+		letter-spacing:0.0em;
+		font-weight:300;
+	}	
+		
+	.textbox p{
+		padding-top:1em;
+		font-size:1em;
+		font-weight:300;
+		line-height:1.6em;
+		word-spacing:normal;
+	}
+
+	.sidebar a{
+		border: 0px;
+		text-decoration:none;
+		font-size:0.65em;
+		color:#333;
+		/*background:#333;*/
+		letter-spacing:0.05em;
+		}	
+	
+	.sidebar a:hover{
+	color:#dd081a;
+	background:#FFF;
+	border: 0px ;
+	}
+	
+	.hero-box {
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 0.5em;
+    width: 25%;
+	}
+	
+	.hero-box h3 {
+    color: #0E618A;
+    font-family: "peachy-keen";
+    font-size: 0.8em;
+    letter-spacing: 0.02em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+	
+}
+
+
+
+
+/*I pad portrait format*/
+@media screen and (device-width: 768px) and (device-height: 1024px)  and (orientation:portrait){
+	
+	body{/*rot*/
+		background:#F33;
+	}
+
+	#inner-wrap{
+	margin: 0 auto;
+	max-width:700px;
+	/*transparent background for content*/
+	background: rgba(25, 25, 25, 0.3);
+	}
+	
+	
+}

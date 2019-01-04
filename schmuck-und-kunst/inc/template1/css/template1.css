@@ -1,0 +1,742 @@
+/* CSS Document */
+
+/*Template 1 - Atelierschief Specific styles */
+
+/*logofarben grau:
+
+color1: cccccc
+color2: 999999
+*/
+/* anstatt frutier -> die  Lato sans*/
+
+/*-------------------------Global Settings   */
+/*------------------------------------------*/
+
+body{
+	font-family: 'Lato', sans-serif;
+	background:#666;
+	}
+
+
+.main-wrapper{
+	max-width:1020px;
+	padding:20px;
+	margin:20px auto;
+	border:1px solid #222; 
+	background:#F4F4F4;
+	}
+
+
+/*-------------------------Service Navigation */
+/*------------------------------------------*/
+.servicenav{
+	margin-top:1.0em;
+	float:left;
+	}
+
+.servicenav ul{
+	margin-left:0;
+
+	}
+
+.servicenav li{
+	float:left;
+	font-size:0.8em;
+	letter-spacing:0.2em;
+	list-style-type:none;
+	display:inline;
+	padding-right:1.4em;
+	}
+
+.servicenav li a{
+	padding-top:0.2em;
+	padding-left:0.3em;
+	padding-right:0.25em;
+	}	
+	
+.servicenav li a:link{
+	/*margin-bottom:0.6em;*/
+	color:#222;
+	background:#CECECE;
+	text-decoration:none;
+	border: solid 1px #CC0000;
+	}
+
+.servicenav li a:hover{
+	
+	color:#EEE;
+	background:#700;
+	letter-spacing:0.2em;
+	border: dotted 1px #444;
+	}
+	
+.servicenav li a:active{
+	color:#222;
+	border: dotted 1px #FFF;
+	}
+	
+.servicenav li a:visited{
+	color:#222;
+	text-decoration:none;
+	}
+
+.servicenav li a:hover:visited{
+	
+	color:#EEE;
+	background:#700;
+	letter-spacing:0.1em;
+	border: dotted 1px #444;
+	}
+
+
+
+
+/* ---------------------Themennav (unterhalb)*/
+/*------------------------------------------*/
+
+.themennav{
+	padding-top:1.8em;
+	margin-left:0px !important;
+	float:left; 
+	}
+	
+.themennav li{
+	font-size:1.4em;
+	font-weight:200;
+	letter-spacing:0.1em;
+	list-style-type:none;
+	color:#333;
+	display:inline;
+	margin-right:2em;
+	}
+	
+
+.themennav li a:link{
+	text-decoration:none;
+	color:#700;
+	border-top-left-radius:20px;
+	border-bottom-right-radius:20px;
+	background:#cccccc;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+
+.themennav li a:hover{
+
+	}
+
+
+.themennav_active a:link{
+	color:#F3F3F3 !important;
+	background:#833;
+	-moz-box-shadow:    inset 0 0 8px #222;
+	-webkit-box-shadow: inset 0 0 8px #222;
+   	box-shadow:         inset 0 0 8px #222;
+	
+	}
+	
+.themennav li a:visited{
+	color:#333;
+	}	
+
+.themennav li a:visited:hover{
+	color:#EEE;
+	background:#700;
+	}
+	
+	
+/*-----------------------------------Subnavig*/
+/*------------------------------------------*/
+
+
+
+.subnav{
+	padding-top:1.2em;
+	}
+
+.subnav ul{
+margin-left:0 !important;
+	
+	}
+
+.subnav li{
+	padding-bottom:2.1em;
+	font-size:1em;
+	font-weight:400;
+	letter-spacing:0.1em;
+	list-style-type:none;
+	color:#333 !important;
+	}
+	
+
+.subnav li a:link{
+	color:#700;
+	text-decoration:none;
+	border-bottom-right-radius:20px;
+	padding-right:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	}
+
+.subnav li a:hover{
+	color:#700;
+	background:#E4E4E4;
+	}
+
+
+.subnav li a:visited{
+	color:#333 !important;
+	}	
+
+
+	
+.subnav active{
+	color:#333;
+	background:#E4E4E4;
+	}
+
+	
+
+/*------------------------------Logo & header*/
+/*------------------------------------------*/
+
+#logo{
+	height:150px;
+	width:150px;
+	margin-top:1em;
+	}
+
+.topright{
+	margin-top:1em;
+	text-align:right;
+	line-height:1.2em;
+	font-weight:400;
+	}
+
+.topright a:link{
+	color:#777;
+	font-size:0.8em;
+	text-decoration:none;
+	}
+
+.topright a:hover{
+	color:#CC0000;
+	font-size:0.8em;
+	text-decoration:none;
+	}	
+	
+	
+
+
+/* Header---------------------------FLEXslider*/
+/*
+.flexslider {margin: 0; padding: 0;}
+
+/*.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} */
+
+/* Hide the slides before the JS is loaded. Avoids image jumping 
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+/*
+/* Clearfix for the .slides element */
+/*
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+*/
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+ /*
+.no-js .slides > li:first-child {display: block;}
+*/
+
+/* FlexSlider Default Theme
+*********************************/
+/*
+.flexslider {
+	margin: 0px;
+	padding-left:0px; 
+	border: 0 !important;
+	/*do here a margin -bottom IF nav controls are on !*/	
+	/*
+	position: relative; 
+		/*box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+		-o-box-shadow: 0 1px 4px rgba(0,0,0,.2); */
+	/*zoom: 1;
+	}
+/*
+.slides{
+	margin-left:0px;}
+
+.slide_img{
+	max-width:100%;
+	height:auto;
+	
+	}
+/*
+
+/* Show no flex slider controls*/
+/*
+.flex-control-nav {
+	display:none;
+	}
+*/
+/*Absolute positionierung über dem Slider für infos des sliders*/
+/*
+.slide_desc{
+	position:absolute;
+	width:250px;
+	height:120px;
+	bottom:20px;
+	right:20px;
+	background: rgba(204,204,204,0.7);
+	border-top: 1px solid #333;
+	border-bottom-right-radius:20px;
+	}	
+	
+.slide_desc h4{
+	padding-left:5px;
+	padding-top:0.6em;
+	font-size:1.6em;
+	letter-spacing:0.1em;
+	color:#444;
+	}
+	
+.slide_desc aside{
+	padding-top:1em;
+	padding-left:5px !important;
+	font-size:0.8em;
+	color:#666;
+	}	
+	
+.slide_desc a{
+	padding-bottom:10px;
+	padding-left:5px;
+	font-size:0.8em;
+	color:#444 !important;
+	text-decoration:none;
+	}
+
+.slide_desc a:hover{
+	padding-bottom:10px;
+
+	color:#700 !important;
+	text-decoration:none;
+	}	
+
+*/
+
+/* -----------------------------Header -Title*/
+/*------------------------------------------*/
+
+.title_as{
+	/*FLX Trick: pseude height & padding forced top down to bottom
+	its dirty, but it works for now*/
+	height:10px;
+	padding-top:110px !important;
+	font-weight:200!important;
+	letter-spacing:0.18em;
+	font-size:3.2em!important;
+	line-height:1.2em; 
+	}
+
+
+
+/*-------------------------------------Content*/
+/*-------------------------------------------*/
+
+.content-container{
+	/*margin-top:2em; */
+	}
+
+.lead h2{
+	font-size:1.8em;
+	font-weight:100;
+	
+	}
+	
+	
+.lead{
+	/*padding-left:2em;*/
+	font-weight:300;
+	font-size:1.2em;
+	
+	letter-spacing:0.1em;
+	line-height:1.2em;
+	padding-bottom:1.8em;
+	padding-top:1.2em;
+	}
+	
+/*
+
+.content_pix{
+	width:auto;
+	max-width:100%;
+	height:auto;
+	}
+*/	
+
+.fliesstext{
+	color:#333;
+	font-size:1em;
+	font-weight:300;
+	line-height:1.4em;
+	background:#EAEAEA;
+	border-bottom:#666 1px solid;
+	padding-left:1em;
+	}
+
+.contenthref{
+	padding-bottom:1em;
+	}
+
+.contenthref a:before{
+    content: "› ";
+	}
+
+.contenthref a:link{
+	text-decoration:none;
+	letter-spacing:0.09em;
+	color:#222;
+	font-size:1em;
+	}
+	
+.contenthref a:link:hover{
+	color:#700;	
+	
+	}
+
+.contenthref a:link:hover:after{
+    content: "› ";
+	}
+
+.contenthref a:link:visited{
+	color:#222;	
+	}
+	
+
+
+/* position 0 */
+.PixPos_left{
+	float:left;
+	/*absolute pixel ! weissdergeierwarum*/
+	width:220px;
+	max-width:100%;
+	height:auto;
+	padding-right: 5px;
+	}
+
+/* position 1 */
+.PixPos_right{
+	float:right;
+	/*absolute pixel ! weissdergeierwarum*/
+	width:220px;
+	max-width:100%;
+	height:auto;
+	padding-left: 5px;
+	}
+
+/* position 3 */
+.PixPos_large{
+	float:left;
+	/*absolute pixel ! weissdergeierwarum*/
+	width:100%;
+	max-width:100%;
+	height:auto;
+	padding-bottom:1.6em;
+	border-bottom:#666 1px solid;
+	}
+
+.pix_description{
+	font-size:0.9 em;
+	font-weight:400;
+	}
+
+
+/*--------CONTENT------------Flexslider as Gallery */
+/* Clearfix for the .slides element */
+
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	}
+	 
+html[xmlns] .slides {
+	display: block;
+	}
+	 
+* html .slides{
+	height: 1%;
+	}
+
+
+.flex_gallery{
+	max-width:100%;
+	height:480px;
+	background:#666;
+	}
+
+.flex_gallery img{
+	padding-top:1em;
+	padding-left:1em;
+	width:640px;
+	max-width:95%;
+	height:auto;
+	max-height:400px;
+	overflow-y:hidden;
+	background:#666;
+	}
+.flex_gallery h3{
+	padding-top:1em;
+	padding-bottom:2em;
+	font-size:1.3em;
+	color:#CCC;
+	letter-spacing:0.12em;
+	padding-left:1em;
+	}
+
+/*--------CONTENT------------GAllery Yoxview */
+/*------------------------------------------*/
+
+.as_gallery{
+	background:#666;
+	}
+
+.as_gallery h3{
+	font-size:1.6em;
+	padding-bottom:1em;
+	font-weight: 200;
+	color:#933;
+	background:#CCC;
+	
+	}
+	
+.as_gallery h4{
+	font-size:1.1em;
+	line-height:1.4em;
+	padding-bottom:1em;
+	font-weight: 200;
+	color:#DDD;
+	}
+
+.as_gallery .album-img{
+	width:220;
+	height:auto;
+	float:right;
+	padding-right:2em;}
+
+.imagecontainer{
+	height:220px;
+	width:90%;
+	display:block;
+	float:left;
+	margin-left:5px;
+	margin-bottom:1em;
+	border: #CCC 1px solid;
+	border-bottom-right-radius:20px;
+	}
+
+.gal-img-title{
+	text-align:left;
+	color:#DDD;
+	font-size:1.1em;
+	letter-spacing:0.1em;
+	}	
+	
+.gal-img-desc{
+	text-align:left;
+	color:#CCC;
+	font-size:0.9em;
+	}
+.gal-img-fotograph{
+	font-size:0.9em;
+	color:#AAA;
+	}
+	
+/*Thumbnail image */	
+.imagecontainer img{
+	float:left;
+	width:280px;
+	height:180px;
+	padding-right:5px;
+	opacity: 0.7;
+	-moz-transition:ease-out width 250ms;
+	}
+
+.imagecontainer img:hover{
+	width:310px;
+	height:auto;
+	opacity: 1;
+	height:180px;
+	overflow:hidden;
+	
+	}
+
+/*--------Sidebar / Teaser background classes*/
+/*------------------------------------------*/
+
+.bg{
+	
+/*	abstand gegen oben*/
+	margin-top: 1em;
+	max-width:190px;
+	
+	
+	border-top-left-radius:40px;
+	border-bottom:#222 2px solid;
+	padding-top:1em;
+	padding-bottom:1.6em;
+	}
+	
+.bg h3{
+	text-align:right;
+	font-size:1.6em;
+	letter-spacing:0.2em;
+	line-height:1.4em;
+	font-weight:200;
+	}
+
+.bg p{
+	font-size:0.8em;
+	font-weight:300;
+	padding-top:1.4em;
+	padding-left:5px;
+	padding-right:5px;
+	line-height:1.6em;
+	
+	}
+	
+.bg_pix{
+	width:100%;
+	height:auto;
+	}
+
+.bg a:link{
+	text-decoration:none;
+	background:#F4F4F4;
+	color:#700;
+	font-size:1em;
+	padding-left:1.4em;
+	}
+	
+.bg a:hover{
+	text-decoration:none;
+	background:#DDD;
+	color:#333;
+	}
+	
+.bg a:link:hover:after {
+    content: " ›";	
+	}
+	
+.bg a:link:visited{
+	background:#DDD;
+	color:#333;
+	}
+/*	
+.bg a:link:hover{
+	text-decoration:none;
+	background:#700;
+	color:#F4F4F4;
+
+	}
+*/
+	
+/*-------------------------Teaser ---color 1 */
+/*------------------------------------------*/
+	
+.red{
+	background:#700;
+	color:#DEDEDE;
+	}
+
+/*-------------------------Teaser ---color 2 */
+/*------------------------------------------*/
+.gray_one{
+	background:#DADADA;
+	color:#333;
+	-moz-transition:color 0.5s linear, background 0.7s linear;
+	-webkit-transition:color 0.5s linear, background 0.7s linear;
+	-ms-transition:color 0.5s linear, background 0.7s linear;
+	transition: color 0.5s linear, background 0.7s linear;
+	}
+
+.gray_one:hover{
+	background:#733;
+	color:#DEDEDE;
+	}
+
+/*-------------------------Teaser ---color 3 */
+/*------------------------------------------*/
+.gray_two{
+	background:#999;
+	color:#E8E8E8;
+	-moz-transition:color 0.5s linear, background 0.7s linear;
+	-webkit-transition:color 0.5s linear, background 0.7s linear;
+	-ms-transition:color 0.5s linear, background 0.7s linear;
+	transition: color 0.5s linear, background 0.7s linear;
+	}
+
+.gray_two:hover{
+	background:#733;
+	color:#DEDEDE;
+	}
+
+/*-------------------------Teaser ---color 3 */
+/*------------------------------------------*/
+.gray_three{
+	background:#C2C2C2;
+	color:777;	
+	-moz-transition:color 0.5s linear, background 0.7s linear;
+	-webkit-transition:color 0.5s linear, background 0.7s linear;
+	-ms-transition:color 0.5s linear, background 0.7s linear;
+	transition: color 0.5s linear, background 0.7s linear;
+	}
+
+.gray_three:hover{
+	background:#733;
+	color:#DEDEDE;
+	}
+/*-------------------------Teaser ---color 5 */
+/*------------------------------------------*/
+.blue{
+	background:#A0BCDA;
+	color:#E4E4E4;
+	
+	}
+
+/*----------------------------------Footer 1 */
+/*------------------------------------------*/
+	
+.footerrow{
+  /*  background: -moz-linear-gradient(top, #EEE, #C2C2C2) repeat scroll 0 0 transparent;
+	background: -webkit-linear-gradient(top,#EEE, #C2C2C2) repeat scroll 0 0 transparent;
+	background: linear-gradient(top, #EEE, #C2C2C2) repeat scroll 0 0 transparent;*/
+	
+	font-style:inherit !important;
+	font-size:0.9em;
+	
+    border-top: 1px solid #444;
+	margin-top:1.2em;
+    margin-bottom: 0 !important;
+    padding-top: 1.62em;
+	padding-bottom:1.2em;
+	}
+
+.footerrow copy{
+	padding-left:1em;
+	font-size:0.76em;
+	}
+
+.footerrow {
+	font-style:normal !important;
+	}

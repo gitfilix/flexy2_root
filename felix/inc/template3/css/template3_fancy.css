@@ -1,0 +1,165 @@
+/* CSS Document */
+
+
+/*Template 3 specific Styles*/
+
+.topnav{
+	padding-top:0.8em;
+	float:left;
+	}
+
+
+.topnav li{
+	font-size:1.1em;
+	letter-spacing:1px;
+	list-style-type:none;
+	display:inline;
+	padding-left:10px;
+	}
+
+.topnav li a{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:10px;
+	
+	}	
+	
+.topnav li a:link{
+	margin-top:1em;
+	margin-bottom:1em;
+	color:#933;
+	background:#CECECE;
+	text-decoration:none;
+	border: dotted 1.5px #CC0000;
+	}
+
+.topnav li a:hover{
+	border: solid 2px #444;
+	color:#F5F5F5;
+	background:#900;
+	letter-spacing:1px;
+	text-decoration:none;
+	}
+	
+.topnav li a:active{
+	color:#FFF;
+	letter-spacing:1px;
+	text-decoration:overline;
+	}
+	
+.topnav li a:visited{
+	color:#933;
+	letter-spacing:1px;
+	text-decoration:none;
+	}
+	
+	
+	
+.topright{
+	font-size:0.8em;
+	
+	}
+	
+	
+.topright a:link{
+	float:right;
+	text-decoration:none;
+	color:#900;
+	margin-right:10px;
+	}
+	
+	
+.sidenav{
+	font-size:1.1em;
+	letter-spacing:1px;
+	}
+	
+.sidenav li{
+	padding-top:14px;
+	list-style-type:none;
+	letter-spacing:1px;
+	border-bottom: 1.3px solid #666;
+	}	
+
+
+.sidenav li:hover{
+	padding-top:14px;
+	list-style-type: decimal;
+	border-bottom: 1.3px solid #D22;
+	}	
+
+
+.sidenav li a:link{
+	color:#C36;
+	padding-top:10px;
+
+	text-decoration:none;
+	}		
+
+.sidenav li a:hover{
+	color:#D22;
+	text-decoration: overline;
+	}		
+	
+	
+	
+.bg_red{
+	background:#831424;
+	color:#EEE;
+	}
+	
+
+.bg_red p{
+	color:#D5D5D5;
+	background:#58090E;
+	margin-left:5px;
+	margin-right:5px;
+	}
+	
+
+.bg_gray{
+	background:#686868;
+	color:#EEE;
+	
+	}
+	
+.bg_gray p{
+	background:#777;
+	color:#EEE;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+
+/* footer*/
+
+.footerrow{
+	border-top:#DEDEDE 1px solid;
+	
+	padding-top:2.2em;
+	margin-bottom:0px !important;
+	background:-moz-linear-gradient(top, #FFF, #D9D9D9) ;
+	background:-webkit-linear-gradient(top, #FFF, #D9D9D9);
+	background:-ms-linear-gradient(top, #FFF, #D9D9D9);
+	
+	border-bottom:#666 2px solid;
+	}
+	
+	
+.footercopy{
+	text-align:right;
+	padding-bottom:16px;
+	font-size:0.8em;
+	}
+
+
+.footertext{
+	font-stretch:condensed;
+	font-style:normal;
+	font-size:0.77em;
+	letter-spacing:1px;
+	}
+	
+.clear{
+	clear:both;
+	}

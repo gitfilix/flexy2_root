@@ -1,0 +1,121 @@
+
+/*----------   mq's ------------*/
+/*too small device fallback for nerds only*/
+@media (max-width: 300px){
+	body{
+		background: #000;
+		color:#AFF;
+	}
+	
+	body:after{
+		margin-top: 2em;
+		padding: 0.5em;
+		font-size: 1rem;
+		
+		border: 1px solid #A22;
+		content: "such a tiny device! This isnt ready to view big pictures...";
+	}
+	
+	.container{
+		/*display: none;*/
+		background: #007aff !important;
+	}
+
+	.titlebar{
+		background: #007aff !important;
+
+	}
+
+	.footer{
+		display: none;
+	}
+
+}
+
+
+/*fix topbar always 100%*/
+@media (min-width: 320px) {
+
+	.two.columns {
+		width: 15%
+	}
+	.eight.columns{
+		width: 60%;
+	}
+	
+	
+	.footer{
+		display: none;
+	}
+	
+	.teaser{
+		display: none;
+	}
+	
+	.theadalbum{
+		font-size: 1.2rem;
+
+	}
+	
+	.listsinglealbum{
+		font-size: 1rem;
+	}
+	
+	.listsinglealbum img{
+		max-width: 35px;
+		height: auto;
+	}
+}
+/*-----------------------Phablet ----*/
+@media (min-width: 550px) {
+	.teaser{
+		display: none;
+	}
+
+	.footer{
+		display: none;
+	}
+	
+	.teaser{
+		display: none;
+	}
+	
+	.theadalbum{
+		font-size: 1.8rem;
+	}
+	
+	.listsinglealbum{
+		font-size: 1.6rem;
+		font-weight: 200;
+	}
+	
+	.listsinglealbum img{
+		max-width: 50px;
+		height: auto;
+	}
+}
+/*-----------------------Desktop screen ----*/
+@media (min-width: 1000px) {
+	/* display teasers on the right side */
+	.teaser{
+		display: block;
+
+	}
+	/* display footer on the bottom */
+	.footer{
+		display: block;
+	}
+	
+	.listsinglealbum{
+		font-size: 2.3rem;
+	}
+	
+	.listsinglealbum img{
+		max-width: 90px;
+		height: auto;
+	}
+
+}
+
+
+

@@ -1,0 +1,31 @@
+/* CSS Document for Media-Queries*/
+/*-------------------------------------------*/
+
+/*Template 2 - Atelierschief Specific styles */
+
+/*logofarben grau:
+
+color1: cccccc
+color2: 999999
+*/
+
+
+
+@media screen only screen and (min-width: 768px) {
+	.title_as {
+    font-size: 4.2em !important;
+	color:#A33 !important;
+    padding-top: 110px !important;
+	background:#0C6;
+	}
+	
+	
+	.main-wrapper{
+	
+	padding:15px;
+	margin:20px auto;
+	border:1px solid #222; 
+	background:red !important;
+	}
+
+	}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery pageSwipe demo</title>
+	
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../pageswipe/jquery.pageswipe.js" type="text/javascript" charset="utf-8"></script>
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+	
+	<script type="text/javascript" charset="utf-8">
+	 $(document).ready(function() {
+ 	   $('.pages').pageSwipe();
+	 })
+	</script>
+	
+	<style type="text/css" media="screen">
+	 body {
+	   margin: 0;
+	   padding: 0;
+	   background-color: #444;
+	   font-family: "PT Sans";
+	 }
+	 
+	 div.page {
+	   background-color: #fff;
+	 }
+	 
+	 img{
+
+		 }
+	
+	 div.title {
+	   font-size: 60px;
+	   text-align: center;
+	   margin-top: 100px;
+	   font-weight: bold;
+	   color: #fff;
+	   margin-bottom: 10px;
+	 }
+	 
+	 div.subtitle {
+	   font-size: 30px;
+	   text-align: center;
+	   font-style: italic;
+	   color: #fff;
+	   letter-spacing: -2px;
+	 }
+	 
+	 div#frontpage {
+	   background-color: #121212;
+	 }
+	 
+	 div.article {
+	   margin: 40px 60px;
+	 }
+	 
+	 div.article h1 {
+	   font-size: 36px;
+	   font-weight: bold;
+	   text-transform: uppercase;
+	 }
+	 
+	 div.article p {
+	   line-height: 1.5em;
+	   font-size: 18px;
+	   margin-bottom: 1em;
+	 }
+	 
+	 div.article p.introduction {
+	   font-weight: bold;
+	   font-size: 20px;
+	 }
+	 
+	 div.two-columns {
+	   -webkit-column-count: 2;
+	   -webkit-column-gap: 2em;
+	 }
+	 
+	 div.two-columns p + p {
+     text-indent: 1.5em;
+   }
+   
+   div.two-columns p {
+     font-size: 16px;
+     text-align: justify;
+   }
+   
+   div.two-columns p:first-child:first-letter {
+     font-size: 1.5em;
+     line-height: 0;
+     font-weight: bold;
+   }
+   
+   div.pages {
+     -webkit-backface-visibility: hidden;
+     -webkit-perspective: 1000;
+   }
+	</style>
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400italic,400,700,700italic' rel='stylesheet' type='text/css' />
+  
+</head>
+
+<body>
+
+<div class="pages">
+  <div class="page" id="frontpage">
+    <div class="title">Our frontpage</div>
+    <div class="subtitle">Examples for creating an online magazine or book</div>
+  </div>
+  <div class="page">
+    
+    <div class="article">
+      
+      <h1 style="text-align: center">Second page</h1>
+    
+      <p class="introduction">
+        This is an introduction article for this page. You can use your own 
+        elements and styles inside your pages. Just like you are used to.
+        You can do some pretty awesome things with just html and css which will 
+        enable you to create magazine or ebook like experiences for your 
+        customers.
+      </p>
+    
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+      <p>Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+  
+    </div>
+  
+  </div>
+  
+  <div class="page" style="background-image: url(assets/mountains.jpg); background-size: cover;">
+    
+    <div style="color: #FFF; text-transform: uppercase; font-size: 80px; margin-top: 150px; font-weight: bold; letter-spacing: -2px; margin-left: 40px; line-height: .8em">This is the<br /> works</div>
+    
+    <div class="article-white" style="background-color: #FFF; margin: 40px; padding: 10px 20px; -webkit-box-shadow: rgba(0,0,0,0.1) 4px 4px 1px">
+      <div class="two-columns">
+        <p>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+        
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+        
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+        
+        <p>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+        
+        <p>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="page">
+    <div class="article">
+      
+      <h1>Like you see on Star Trek</h1>
+      
+      <div class="two-columns">
+        
+        <p>
+          Just add the article text here and it instantly looks readable
+          on the iPad. People can tap, swipe and interact with your pages
+          in an even better way than a paper magazine.
+        </p>
+        
+        <p>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+        
+        <p>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+        
+        <p>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+        
+        <p>Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
+          
+      </div>
+    
+    </div>
+  
+  </div>
+    
+</div>
+
+</body>
+</html>

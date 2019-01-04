@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tagi-API -by Felix</title>
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,300|Arvo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/tagistyles.css">
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="lib/swiper/swiper.jquery.min.js"></script>
+
+    <script>
+    //Initialize and remove Splash on domready
+
+    $(document).ready(function(){
+        $(".center h1").fadeIn(800);
+        $(".center h3").delay(1200).fadeIn("slow");
+        setTimeout(function(){
+            $("#splash").fadeOut(660, function () {
+                $("splash").remove()
+            });
+        }, 3600);
+        tagiApp();
+        // start swiper after content is loaded and parsed. it should be done with a promise but...
+        setTimeout(
+            function(){
+                startSwiper()
+            },500
+        );
+
+
+    });
+
+    // let s try a singleton
+    var tagiApp = function(){
+        // get rss feed from tagi with fancy jquery function and pack it to fullRssArray obj
+        $(function(){
+                url = 'http://www.tagesanzeiger.ch/rss.html';
+                $.ajax({
+                    type: "GET",
+                    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=1000&callback=?&q=' + encodeURIComponent(url),
+                    dataType: 'json',
+                    error: function(){
+                        alert('Unable to load feed, Incorrect path or invalid feed');
+                    },
+                    success: function(xml){
+                        // values Array of news objects
+                        fullRssArray = xml.responseData.feed.entries;
+                       displayNews(6);
+                        for (i=0; i<fullRssArray.length; i++){
+                            // Exception1 : URL Check if from tagi-blog then parse for parameter p
+                            // EX: http://blog.tagesanzeiger.ch/mamablog/?p=63375
+                            if(fullRssArray[i].link.indexOf("blog.tagesanzeiger.ch") > -1){
+                                // is blog url - special case
+                                getPparameterfromNewsObj(fullRssArray[i])
+                            }else{
+                                // normal case: getID from NewsObj Link
+                                getIDfromNewsObj(fullRssArray[i]);
+                            }
+                        }
+                    }
+                });
+            });
+
+
+        function displayNews(newsEntry){
+          console.log(fullRssArray[newsEntry])
+        }
+        // We want news- ID  for no real reason and fun:
+        //getIDfromNewsObj
+        function getIDfromNewsObj(newsEntry){
+            // search for link property of newsEntry obj
+            var linkProp = newsEntry.link;
+            // get Last Character from linkprop and if it is "/" -> remove it
+            var linkPropLenght = linkProp.length;
+            // Exception: 2 Züritip has a  trailingslash der URL ID -> remove it
+            if(linkProp.substr(linkPropLenght -1)== "/"){
+              linkProp = linkProp.substr(0,linkPropLenght -1);
+            }
+            var linkArray = linkProp.split("/");
+            // last element of linkArray => Story ID
+            var storyId = linkArray[linkArray.length -1];
+            //            console.log(storyId);
+            // triggerfunction append
+            appendLi2ul(storyId);
+
+            // test view
+            displayEntry(newsEntry);
+            getTimestamp(newsEntry);
+            getRessort(newsEntry);
+
+            getNiceLink(newsEntry);
+        }
+
+        // search link property of newsEntry in case of Blog url
+        function getPparameterfromNewsObj(newsEntry){
+            var linkPropBlog = newsEntry.link;
+            // split linkProp with delimiter "?" into array and show only index 1 of new Array
+            // 2.nd split: split again with "=" and show last index.
+            var storyIdBlog = linkPropBlog + ''.split("?"[1]);
+            var storyId = storyIdBlog+ ''.split("=")[1];
+
+            // triggerfunction append
+            appendLi2ul(storyId);
+            //
+            displayEntry(newsEntry);
+
+            getTimestamp(newsEntry);
+        }
+
+        function getTimestamp(newsEntry){
+            var articleDateFull = newsEntry.publishedDate;
+            var articleDDMMYY = articleDateFull.split(",")[1].substr(0,12);
+            var articleTimeFull = articleDateFull.substr(17,18);
+            var articleTimeHHMM = articleTimeFull.substr(0,5);
+            return articleTimeHHMM;
+            //  console.log("articleFullDate is: "+articleDateFull);
+            //  console.log("articleTimeHHMM is: "+articleTimeHHMM);
+            //  console.log("articleDay is: "+articleDDMMYY);
+        }
+
+        function getNiceDate(newsEntry){
+            // var articleDate = {};
+            var articleDateFull = newsEntry.publishedDate;
+            var articleDate = articleDateFull.split(",")[1].substr(0,12);
+            return articleDate;
+        }
+
+        function getRessort(newsEntry){
+            var FullLink = newsEntry.link;
+            var RessortTitle = FullLink.split("/")[3].toUpperCase();
+            return RessortTitle;
+            // console.log("Ressort ist " +RessortTitle);
+        }
+
+        function getNiceLink(newsEntry){
+            var EntireLink = newsEntry.link;
+            var shortLink = EntireLink.split("/")[5]+ '';
+            // REGEX HERO or DIE. XKCD :  https://xkcd.com/208/
+            return NiceLink = shortLink.replace(/-/g, ' ');
+            console.log(NiceLink);
+        }
+
+        function appendLi2ul(storyId){
+            $("<li>").html(storyId).appendTo("#idlist");
+        }
+
+
+
+
+
+        // merge all
+         function displayEntry(newsEntry, callback){
+            var contentLong = newsEntry.content;
+            var shortContent = newsEntry.contentSnippet;
+            var newsLink = newsEntry.link;
+            var newsNiceLink = getNiceLink(newsEntry);
+            var newsTitle = newsEntry.title;
+            var newsTime = getTimestamp(newsEntry);
+            var newsDate = getNiceDate(newsEntry);
+            var newsRessort = getRessort(newsEntry);
+
+//            var newsID     = getIDfromNewsObj(storyId);
+            var NewsView = $("<div class='swiper-slide'>").html("<div class='singlenews'>" +
+                                                             "<p class='newsressort'>" +"Ressort: " +newsRessort+ "</p>" +
+                                                             "<div class='newstitle'><h1>"+newsTitle +"</h1></div>"+
+                                                             "<p class='newstime'>" +"Zeit: " +newsTime+ "</p>" +
+                                                             "<p class='newsdate'>" +"Datum: " +newsDate+ "</p>" +
+
+                                                             "<p class='newscontentshort'>"+ shortContent+"</p>"+
+//                                                             "<p class='newstime'>" +"NewsID : " +newsID+ "</p>" +
+                                                             "<div class='newslinkcontainer'> " + "<p>Lesen Sie den ganzen Artikel hier: </p>" +
+//                                                            "<a href='"+newsLink+"'>"+"&#10172; "+newsNiceLink+"</a>").appendTo("#newscontair"
+                                                             "<a class='newslink' href='"+newsLink+"'>"+"&#10172; "+newsNiceLink+"</a>"+"</div>"+"</div>").appendTo(".swiper-wrapper");
+
+
+         }
+
+    };
+
+
+    function startSwiper(){
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            effect:'slide',
+            pagination: '.swiper-pagination',
+            paginationClickable: 'true',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            loop: true
+        })
+    }
+
+    </script>
+
+
+</head>
+<body>
+<!--splash screen -->
+<div id="splash">
+    <div class="center">
+        <span>
+            <h1>Felix JavaScript PlayGround</h1>
+            <h3>- Tagi API -</h3>
+        </span>
+    </div>
+    <div class="loadingweel">
+        <img src="spiffygif_84x84.gif" style="width: 42px;">
+    </div>
+</div>
+<!--app-->
+<div class="wrapper">
+    <header>
+        <h1>Tagi API App</h1>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+</body>
+</html>

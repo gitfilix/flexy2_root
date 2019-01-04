@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>fadeIn demo</title>
+<style>
+p {
+position: relative;
+width: 400px;
+height: 90px;
+background:#EEE;
+color:#4B4B4B;
+font-size:13px;
+padding:30px;
+}
+div {
+position: absolute;
+width: 400px;
+height: 265px;
+font-size: 36px;
+text-align: center;
+color: yellow;
+background: red;
+padding-top: 25px;
+top: 20px;
+left: 650px;
+display: none;
+}
+h2{
+	display:none;
+	}
+span {
+display: none;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+<body>
+<p id="selector" >
+Let it be known that the party of the first part
+and the party of the second part are henceforth
+and hereto directed to assess the allegations
+for factual correctness...
+</p>
+<div id="box">
+	<h2>Fade me in!</h2>
+	<br>
+	to look fancy!
+</div>
+<script>
+
+
+$(document).ready(function(){
+	$("#selector").animate({
+		"background-color":"#4B4B4B"
+		//height: "160px"
+		},1600, function(){
+			// callback function 1 -font color
+			$(this).animate({
+			"color":"#E2E2E2"
+			},500, function(){
+				// callback function 2 - animate size
+				$(this).animate({
+					"height":"600px"
+					},400, function(){
+						// callback function 3 -animate size width
+						$(this).animate({
+							"width":"700px"
+							},400);
+				});
+			});
+		});
+	$("#box").fadeIn(1000, function(){
+		$("h2").fadeIn(2000);
+		});
+		
+});
+
+</script>
+</body>
+</html>
+
+<!--
+
+$(document).ready(function(){
+	$("#selector").animate({
+		"background-color":"#DDD"
+		//height: "160px"
+		},1600, function(){
+			// callback function
+			$(this).animate({
+			"height":"500px"
+			},500);
+	});
+});-->

@@ -1,0 +1,23 @@
+
+/*for small devices*/
+@media only screen and (max-width: 750px) {
+	
+	body{
+		color:#F33;
+		}
+	
+	
+	.main-wrapper{
+	max-width:600px;
+	padding:20px;
+	margin:20px auto;
+	border:1px solid #222; 
+	background:#F33;
+	}
+	
+	
+	.servicenav{
+	margin-top:4.0em;
+	float:right;
+	}
+	}

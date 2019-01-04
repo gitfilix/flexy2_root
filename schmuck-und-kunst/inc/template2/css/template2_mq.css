@@ -1,0 +1,378 @@
+/* CSS Document for Media-Queries*/
+/*-------------------------------------------*/
+
+/*Template 2 - Atelierschief Specific styles */
+
+/*logofarben grau:
+
+color1: cccccc
+color2: 999999
+*/
+
+/*TABLET VIEW --------------------------------*/
+/*-------------------------------------------*/
+@media screen and (max-width: 768px) and (orientation:portrait) {
+	
+	.topright {
+   		color: #222222;
+    	font-size: 0.7em;
+    	font-weight: 400;
+    	line-height: 1.4em;
+    	margin-top: 1em;
+    	text-align: right;
+	}
+	
+	
+	
+	#logo {
+		margin-top:1em;
+		height: 80px;	
+		width: 80px;
+		float: left !important;
+		}
+		
+	/*as title replacement*/
+			
+	.title_as {
+		font-size: 2.3em !important;
+		}
+		
+		
+	.subnav li {
+		color: #333333 !important;
+		font-size: 1.1em;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+		}
+
+	.lead{
+ 	   	padding-bottom: 1em;
+ 	   	padding-top:0 !important;
+		}
+	
+	.leadtext {
+    	font-size: 1.2em;
+    	font-weight: 300;
+    	letter-spacing: 0.02em;
+    	line-height: 1.6em;
+		}
+		
+	.fliesstext{
+    	font-size: 1.2em;
+    	font-weight: 300;
+    	line-height: 1.6em;	
+		}
+	
+	
+	/*photogallery adjustments*/
+	#pix_row {
+	    max-width: 23% !important;
+		}
+	
+	#first_pix img {
+    	height: auto;
+    	opacity:1!important;
+    	padding-right: 0;
+    	width: 100%;
+		}
+	
+	#pix_row img {
+    	opacity:1!important;
+	    overflow: visible;
+	    transition: all 300ms linear 0s;
+	    width: 100%;
+		}
+	
+	
+	
+	/* no teasers at all*/
+	.bg{
+		display:none;	
+		}
+		 
+	.gray_two{
+		display:none;
+		}
+		
+	.gray_three{
+		display:none;
+		}
+		
+	 SidebarElems{
+		display:none;
+		}
+		
+		
+			
+		
+		
+}
+
+/*Phone VIEW ---------------------------------*/
+/*-------------------------------------------*/
+
+@media screen and (max-width: 767px) and (orientation:portrait) {
+	
+	
+	.topright {
+		display:none;
+		}
+	
+	#logo {
+		margin-top:1em;
+		height: 80px;	
+		width: 80px;
+		float: left !important;
+		}
+		
+	/*as title replacement*/
+	.hideme_desktop{
+		display:block;
+		font-size: 2em !important;
+		font-weight: 200 !important;
+		letter-spacing:0.1em;
+		color:#333;
+		padding-top:2em !important;
+		}
+		
+	.title_as {
+		display:none;
+		}
+		
+	/*service nav: one line*/
+	.servicenav li{
+		font-size:0.7em;
+		padding-right:0.6em;
+		}
+
+	.servicenav li a{
+		padding: 0.4em 0.25em 0.4em 0.3em;
+		}	
+	
+	
+	/*themennav - small*/
+	.themennav {
+		padding-top: 0;
+		}
+		
+	.themennav li {
+    	font-size: 0.8em;
+		padding-right:0.5em !important;
+		margin-right: 1em!important;
+		}
+	
+	/*subnav - bigger list*/
+	.subnav li {
+		border-bottom: 1px solid #CCCCCC;
+		color: #333333 !important;
+		font-size: 1em;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		list-style-type: none;
+		padding-bottom: 1em;
+		padding-top: 1em;
+		}
+	
+	
+	
+	
+	/*Content adjustments*/
+	
+		#PixPos_left {	
+		/*padding-bottom: 1em;*/
+		margin-right: 4em;
+		/*width:360px;*/
+		}
+	
+		#PixPos_left p {
+    	display: inline !important;
+   		padding-left: 1.2em;
+		font-size:1em;
+		}
+	
+		
+		#PixPos_right {	
+		/*padding-bottom: 1em;*/
+		margin-left: 4em;
+		}
+		
+		#PixPos_right p {
+    	display: inline !important;
+   		padding-left: 1.2em;
+		font-size:1em;
+		}
+	
+	
+	
+	/*gallery adjustments*/
+	
+	.yoxview ul li{
+    	margin-right: 0!important;
+		}
+	
+	#pix_row {
+	    max-width: 20% !important;
+		}
+	
+	#first_pix img {
+    	height: auto;
+    	opacity:1!important;
+    	padding-right: 0;
+    	width: 100%;
+		}
+	
+	#pix_row img {
+    	opacity:1!important;
+	    overflow: visible;
+	    transition: all 300ms linear 0s;
+	    width: 100%;
+		}
+	
+		
+	/*slider - no description*/	
+	.slide_desc{
+		display:none;
+		}	
+	
+	/* no teasers at all*/
+	.bg{
+		display:none;	
+		}
+		 
+	.gray_two{
+		display:none;
+		}
+		
+	.gray_three{
+		display:none;
+		}
+		
+	 SidebarElems{
+		display:none;
+		}
+		
+		
+	/*footer - basics*/	
+	.footerrow {
+		background:#DDDDDD;
+		border-top: 1px solid #444444;
+		color: #333333;
+		font-size:0.8em;
+		font-style: inherit !important;
+		font-weight: 400;
+		line-height: 1.5em;
+		margin-bottom: 0 !important;
+		margin-top: 1.6em;
+	
+		padding-top: 1.6em;
+	}
+	
+	.footradress{
+		padding-left:1em;
+		letter-spacing:0.1em;
+		word-spacing:0.2em;
+		color:#444;
+		}
+		
+	.author{
+		color:#333;
+		padding-left:1em;
+		}
+		
+	.copy{
+		display:none;
+		}
+	
+	.lastupdate{
+		display:none;
+		}
+		
+		
+		
+		
+}
+	
+
+
+@media screen and (max-width: 767px) and (orientation:landscape) {	
+	
+	#logo {
+		margin-top:0;
+		height: 60px;	
+		width: 60px;
+		float: left !important;
+		}
+	
+	
+	.hideme_desktop{
+		display:block;
+		font-size: 2em !important;
+		font-weight: 200 !important;
+		letter-spacing:0.1em;
+		color:#333;
+		padding-top:2em !important;
+		}
+	
+	.title_as {
+		display:none;
+		}
+		
+	.servicenav li{
+		font-size:0.7em;
+		padding-right:0.6em;
+		}
+
+	.servicenav li a{
+		padding: 0.4em 0.25em 0.4em 0.3em;
+		}	
+	
+
+	/* no teasers at all*/
+	.bg{
+		display:none;	
+		}
+		 
+	.gray_two{
+		display:none;
+		}
+		
+	.gray_three{
+		display:none;
+		}
+		
+	 SidebarElems{
+		display:none;
+		}
+		
+		
+	
+	
+}
+
+/*
+@media screen and (min-device-width : 320px) {
+		#PixPos_left {	
+		padding-bottom: 1em;
+		
+		}
+	
+		#PixPos_left p {
+    	display: inline !important;
+   		padding-left: 1em;
+		font-size:0.8em;
+		}
+	
+		
+		#PixPos_right {	
+		padding-bottom: 1em;
+		}
+		
+		#PixPos_right p {
+    	display: inline !important;
+   		padding-left: 1em;
+		font-size:0.8em;
+		}
+	
+		
+	}
+	*/

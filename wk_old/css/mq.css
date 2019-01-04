@@ -1,0 +1,572 @@
+/* ------------------------------------------------------ */
+/*------- General boxes and ratios for webkanal -------- */
+	
+	#rotatePhone{
+		display:none;
+		}
+	
+	/*#bg_wrapper{
+		width:1600px;
+		margin: 0 auto;
+		position:relative;}
+*/
+	
+	
+/*	#html_container{
+		max-width: 1280px;
+		margin: 0 auto;
+		}
+	*/
+	
+	/*start with 1280*/
+/*	#outer_wrapper{
+		max-width: 1280px;
+		margin: 0 auto;
+		}
+
+
+	#inner_wrapper{
+		max-width: 1280px;
+		margin: 0 auto;
+		}
+	*/	
+	
+	#first{
+		max-width: 1280px;
+		margin: 0 auto;
+		}	
+		
+		
+	#second{
+		max-width:1280px;
+		margin:0 auto;
+		margin-bottom:0;
+		background:#FFF;
+		}
+		
+	#lastRow{
+		max-width: 1280px;
+		margin: 0 auto;
+		}
+
+	#whitesquare{
+		background-color:#FFF !important;
+		max-height:297px;
+		}
+
+	/* initial mobile naviugation ausblenden */
+	#mobileNav{
+		display:none;	
+	}
+	
+	#footerbar{
+	/*	width:100%;
+		float:left;	*/
+	}
+	#footer{
+		width:100%;
+		max-width: 1280px;
+		margin: 0 auto;
+		/*height:50px;*/
+		/*float:left;	*/
+	}
+	
+
+
+/*---------------- Media Queries for webkanal ---------- */
+
+
+
+
+	@media only screen and (max-width: 1440px) {
+		
+	
+	}
+
+
+		/* default 1024 */
+	@media only screen and (max-width: 1280px) {
+		
+	}
+	
+		
+
+	
+	/* default 1024 */
+	@media only screen and (max-width: 1024px) {
+		
+		
+	#BlueBar{
+			width:25%;
+		}
+	/*	
+		#Header{
+			width:75%;
+			font-size:0.9em;
+		}
+		
+		*/
+		#servicenavtop{
+    	padding-right: 1em;
+		}
+		
+		.slide_desc{
+		right: 10px;
+		max-width:60% !important;
+		padding:0.8em !important;
+		font-weight:500;
+		}
+		
+		.slidertext {
+    	font-size:1em !important;
+		}
+		
+		.sidebar_right {
+  		margin-left: 2em!important;
+  		margin-right: 1em!important;
+  		margin-top: 4em;
+  		padding-bottom:2em;
+		}
+		
+		.teasertext{
+		font-size:1em;
+		}
+		
+		.sidebar_bottom h4{
+		font-size:1.2em;
+		}
+		
+		.sidebar_bottom p{
+    	font-size: 0.8em;
+		}
+		
+		.sidebar_bottom_link{
+		font-size:0.8em;
+		letter-spacing:0;
+		}
+		
+	}
+	
+
+	
+	/*SAMSung Tablet portrait*/
+	@media only screen and (max-width: 800px)  {
+		
+		.row .mq800100pro{
+		width:95%;
+		}
+
+		.logotext {
+		padding-left:0.1em;
+		font-size:1.4em;		
+		padding-top: 2.4em;
+		}
+		
+		.themennav {
+	    font-size:1.2em;
+	    margin-top:4em;
+		}
+		
+		.subnav{
+    	font-size: 0.8em;
+		font-weight:400;
+		}
+		
+		.servicenav{
+   		display: block;
+   		font-size:1em;
+		font-weight:500;
+    	
+		}
+		
+		.langnav{
+			padding-right: 1em;
+		}
+		
+		/*increase fonts -reduce paddings */
+		.content_title h2{
+		font-size:1.6em;
+		letter-spacing:0.1em;
+		padding-top: 1em;
+		margin-top:1em;
+		padding-bottom:0em;
+		}
+		
+		.content_text {
+		font-size: 1.2em;
+		font-weight: 400;
+		line-height: 1.6em;
+		margin-bottom: 3em;
+		padding-bottom: 1em;
+		padding-right: 1em;
+		padding-top: 1em;
+		}
+		
+		/*no qoutes- too little space*/
+		.quotetext{
+		display:none;
+		}
+		
+		.flexslider {
+   		 height:auto;
+		}
+		
+		/*infobox für headerpannel vergkleinern*/
+		.slide_desc{
+		right: 10px;
+		max-width:60% !important;
+		padding:0.8em !important;
+		font-weight:500;
+		padding:0.5em;
+	
+		}	
+		.slide_desc h4{
+		font-size:1.6em;
+		}
+		
+		.slidertext{
+		padding-right:5px;
+		padding-left:5px;
+		font-size:1em;
+		line-height:1.3em;
+		color:#111;
+		font-weight:400;
+		
+		}
+
+		.slide_desc a:link {
+   		 font-size: 1.1em;
+  		 padding-bottom: 0.2em;
+  		 padding-top: 0.2em;
+		}
+		/*footerteaser*/
+		
+		.sidebar_right {
+		display:none;
+		}
+		
+		.sidebar_bottom{
+			display:none;
+		}
+			
+		.sidebar_bottom_link{
+		font-size:0.8em;
+		letter-spacing:0em;
+		}
+		
+		.footerbottom address{
+		padding-top:2em;
+		font-size:0.8em;
+		padding-left:5em;
+		letter-spacing:0em;
+		}
+	}
+
+	/*Tablets 767*/
+	/*@media screen and (max-width: 767px) and (orientation:portrait) {*/
+	
+	@media screen and (max-width: 767px) AND (orientation:landscape) {
+		#rotatePhone{
+			display:block;
+			background-color:black;
+			color:white;	
+			height:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			z-index:999;
+		}
+		
+	
+	}
+	
+	@media screen and (max-width: 767px) {
+
+		/*test um jquery heigt zu überschreiben in mobile view*/
+		
+			
+		.mq800100pro{
+			width:90%;
+			}
+		
+		
+		.slide_desc{
+			display:none;
+			}
+		
+		
+		#servicenavtop {
+    		padding-right:0.2em;
+			font-size: 0.9em;
+		}
+		
+		.servicenav li{
+			padding-right:1em !important;
+		}
+		
+		.logotext {
+		font-size: 1.2em;
+		padding-top: 2em;
+		}
+		
+		.themennav {
+	    font-size: 1.2em;
+	    margin-top: 4em;
+		}
+		
+		.subnav {
+    	font-size: 0.8em !important;
+		}
+		
+
+		/*increase fonts -reduce paddings */
+		.content_title h2{
+		font-size:1.6em;
+		letter-spacing:0.1em;
+		padding-top: 2em;
+		border-top: 1px solid #333;
+		margin-top:1em;
+		padding-bottom:0em;
+		}
+	
+		.lead h3{
+		font-size:1.2em;
+		font-weight:500;
+		padding-bottom:1em;
+		}
+		
+	
+		.content_text{
+		font-size:1.2em;
+		font-weight:400;
+		line-height:1.6em;
+
+		padding-top:1em;
+		padding-right:2em;
+		padding-bottom:1em;
+		/*border-bottom:#666 solid 2px;*/
+		}
+				
+		/* sidebar ausblenden*/
+		#sidebar{
+			display:none;
+		}
+		 /* top servicenavigation ausblenden - movile nav einblenden*/
+		
+		.sidebar_bottom{
+			display:none;
+		}
+		
+		.footerbottom{
+			font-size:0.8em;
+			}
+		.footernav{
+			font-size:0.8em;
+			}
+		
+		
+		.copyright{
+			font-size:0.6em;
+			}
+	
+	}
+	
+	
+	
+	
+	/* phone 320px */
+	/*@media only screen and (max-width: 450px) {*/
+	@media handheld, only screen and (max-width: 450px) {
+		/* ausblenden der normalen nav in der phone-view  */
+		.mq450100pro{
+			width:100% !important;
+			}
+		
+		.langnav{
+			display:none;
+			}
+		
+		.servicenav{
+			display:none;
+			}
+		
+		.bluebartop{
+			display:none;
+			}
+		
+		#second{
+			display:none;
+			}
+			
+		#MainContent{
+			/*width:200% !important;*/
+			}	
+			
+		/*Mobile Navigation ON */
+		
+		#mobileNav{
+			background-color:#004984;
+			color:#FEFEFE;
+			padding-top:1em;
+			padding-left:0.8em;
+			padding-right:0.8em;	
+			display:block;
+			padding-bottom:1em;
+			/*font-size:1.4em;*/
+		}
+		
+		.mobileNav_logo{
+			letter-spacing:0.18em;
+			float:left;
+			font-weight:200;
+			font-size:1.8em;
+			}
+			
+			
+		#mobileNav a{
+			color:#333;
+			display:block;
+			text-align:right;
+			text-decoration:none;
+			font-size:1.4em;
+			letter-spacing:0.2em;
+			padding:0.4em;	
+		}
+		
+		#mobileNav a:active{
+			color:#FFF !important;		
+			background:#004984;
+			display:block;
+			text-align:right;
+			text-decoration:none;
+			letter-spacing:0.14em;
+			padding:0.4em;	
+		}
+		
+		
+		#mobileNav a:hover{
+			color:#FEFEFE;		
+			background:#004984;
+			display:block;
+			text-align:right;
+			text-decoration:none;
+		}
+		
+		#mobileNav > ul{
+			display:none;
+			
+		}
+		
+		#mobileNav > ul li{
+			padding-right:20px;
+			font-size:1.2em;
+			text-decoration:none;
+			background:#FEFEFE;
+		}
+		
+		#mobileNav > ul li a:link{
+			font-size:1em;
+			text-decoration:none;	
+		}
+		/*
+		#mobileNav > ul li a:active{
+			color:#910000;		
+			background:#004984;
+			}
+		*/
+		
+		
+		BODY{
+			padding:0;
+			margin:0;	
+		}
+		#html_container{
+			width:100% !important;	
+			max-width:100% !important;
+		}
+		
+		#BlueBar{
+		display:none;
+		}
+		
+			/*no logo*/
+			.logoimg{
+			display:none;
+			}
+			/*no quote*/
+			.quotetext{
+			display:none;
+			}
+		
+		
+		#Header{
+		display:none;
+		}
+		
+		#contentwrapper{
+		width:100%;
+		float:left;
+		}
+		
+		#MainContent{
+		width:100%;
+		clear:left;
+		}
+		
+			/*adjust content fonts & Style*/
+			.content_box{
+			margin-left:0;
+			font-size:1.2em;
+			padding-left:1em;
+			padding-right:1em;
+			}
+			
+			.content_title h2{
+				border-top: none;
+				font-size: 1.6em;
+				padding-top: 1em;
+			}
+			
+			.lead h3 {
+   				font-size: 1em;
+   				font-weight:200;
+				letter-spacing:0em;
+				padding-bottom:1em;
+			}
+			.content_text{
+				font-size: 1em;
+				line-height: 1.6em;
+				padding-right:0;
+			}
+			
+			#PixPos_right{
+				width:100%;
+				}		
+		
+			#PixPos_right img {
+				float:left !important;
+				height: auto;
+				padding-bottom: 1em;
+				padding-left:0em;
+				width: 100%;
+				max-width: 100%;
+				}
+		
+		
+		
+		#footerbar{
+		display:none;	
+		}
+		
+		#footer{
+		width:100%;
+		float:left;	
+	}		
+		
+}
+
+
+.clear{
+	clear:both;
+	}

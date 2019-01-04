@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<script src="../js/vendor/jquery-1.8.3.js"></script>
+</head>
+
+<body>
+
+
+<ul class="lush-slider flat shadow-c" style="width:1000px; height: 500px;">
+    <li class="lush">
+        <div class="big-wood" data-slide-in="at 500 from left use swing during 1000" data-slide-out="at 500 to right use swing during 1000" style="top: 22px; left: 735px;">Welcome</div>
+        <div class="small-black" data-slide-in="at 500 from left use swing during 1000" data-slide-out="at 800 to right use swing during 1200" style="top: 96px; left: 735px;">to Atelier Schief</div>
+        <img src="limat_600_sw.jpg" data-slide-in="at 0 from left use swing during 1000" data-slide-out="at 2000 to fade use swing during 900" style="top: 196px; left: 0px; width: auto; height: auto;" />
+    </li>
+    <li class="lush">
+        <img src="ob15_636.jpg" data-slide-in="at 500 from left use swing during 1000" data-slide-out="at 500 to right use swing during 1000" style="top: 0px; left: 349px; width: auto; height: auto;" />
+        <div class="big-blue" data-slide-in="at 500 from left use jswing during 1000" data-slide-out="at 1500 to fade use linear during 1000" style="top: 192px; left: 0px;padding:1em;">Rundum
+            <br>- ein Kunstwerk</div>
+        <div class="block-green" data-slide-in="at 500 from left use easeOutQuint during 1200" data-slide-out="at 500 to right use swing during 1000" style="top: 400px; left: 452px; width: 60px; height: 60px; opacity: 0.6;"></div>
+        <div class="block-orange" data-slide-in="at 700 from left use easeInSine during 1000" data-slide-out="at 1500 to back use swing during 400" style="top: 132px; left: 289px; width: 60px; height: 60px; opacity: 1;"></div>
+        <div class="block-lime" data-slide-in="at 900 from left use jswing during 400" data-slide-out="at 1200 to right use easeInBounce during 1000" style="top: 459px; left: 750px; width: 40px; height: 40px; opacity: 1;"></div>
+    </li>
+</ul>
+</body>
+<script>
+$(document).ready(function(){
+  $('.lush-slider').lush({
+     baseWidth: 1000
+   , baseHeight: 500
+   , slider: {
+        carousel: true
+    }
+  })
+})
+</script>
+</html>

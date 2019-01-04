@@ -1,0 +1,160 @@
+/* CSS Document */
+
+/* GRID system for html 5 folio MAg*/
+
+/*2D responsive style*/
+html, body{
+	margin:0;
+	padding:0;
+	height: 100%;
+	font-size: 100%;
+	font-family:'Lato', sans-serif;
+	font-size:1em;
+	font-feature-settings:normal;
+	}
+
+
+
+.wrapper{
+	height:100%;
+	}
+
+
+.clear{
+	clear:both;
+	}
+
+/* Vertical: Colums from 10 to 90%*/
+/*columm 1 - */
+
+.col-10{
+	width:10%;
+	height:100%;
+	float:left;
+	}
+
+
+.col-20{
+	width:20%;
+	height:100%;
+	float:left;
+	}
+
+.col-30{
+	width:30%;
+	height:100%;
+	float:left;
+	}
+
+.col-40{
+	width:40%;
+	height:100%;
+	float:left;
+	}
+	
+.col-50{
+	width:50%;
+	height:100%;
+	float:left;
+	}
+	
+.col-60{
+	width:60%;
+	height:100%;
+	float:left;
+	}	
+	
+.col-70{
+	width:70%;
+	height:100%;
+	float:left;
+	}
+
+.col-80{
+	width:80%;
+	height:100%;
+	float:left;
+	}	
+
+
+.col-90{
+	width:90%;
+	height:100%;
+	float:left;
+	}
+
+/*columm 2/3 - 1/3 */
+
+.col-66{
+	width:66%;
+	height:100%;
+	float:left;
+	}	
+	
+.col-34{
+	width:34%;
+	height:100%;
+	float:left;
+	}
+	
+	
+/*
+.top-left{
+	height:50%; overflow:hidden;
+	}
+*/
+
+/* horizontal: - */
+/* line 50% height*/
+
+
+.line-90{
+	height:90%;
+	}
+
+.line-80{
+	height:80%;
+	}
+	
+.line-70{
+	height:70%;
+	}
+
+.line-60{
+	height:60%;
+	}
+
+.line-50{
+	height:50%;
+	}
+
+.line-40{
+	height:40%;
+	}
+
+.line-30{
+	height:30%;
+	}
+
+.line-20{
+	height:20%;
+	}
+
+.line-10{
+	height:10%;
+	}
+
+
+/*test backgrounds*/
+.violett{
+	background-color:violet;
+	}
+
+.blue{
+	background-color:steelblue;
+	}
+	
+.yellow{
+	background:#FF0;
+	}	
+

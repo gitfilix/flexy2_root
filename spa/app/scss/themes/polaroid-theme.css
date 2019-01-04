@@ -1,0 +1,288 @@
+body {
+  background: #D3D3D3;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#ContainerMenuBar {
+  background: #daede8; }
+
+.menubar {
+  background: #daede8; }
+
+.menubarlinks {
+  color: #777;
+  background: #bfd5cb;
+  border: 1px solid #5c6484; }
+
+.menubarlinks:hover {
+  color: #333333;
+  background: #EBEBEB; }
+
+.menubarlinks a {
+  color: #777; }
+
+.menubarlinks a:hover {
+  color: #333333; }
+
+.title-gal h1 {
+  color: #5c6484; }
+
+/*--------------- Off-Canvas Navigation LEFT --- */
+#navWrapper {
+  background: #e2e0d2; }
+
+#navContent {
+  border: 1px solid #565656; }
+
+.nav-title h2 {
+  border-top: 1px solid #5c6484;
+  color: #5c6484; }
+
+.menu-list li a {
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.8);
+  color: #777;
+  background: #D3E3D3; }
+
+.menu-list li a:hover {
+  background: #fee850;
+  color: #4f6064;
+  box-shadow: inset 0 -1px #b3bde6; }
+
+/* ----------------- Theme Toggler Menu RIGHT--*/
+#ContainerThemeToggler {
+  background: #e2e0d2; }
+
+#ttwrapper {
+  border: 1px solid #565656;
+  background: #e2e0d2; }
+
+.ttmenu {
+  background: #e2e0d2; }
+
+.tttitle h2 {
+  background: #e2e0d2;
+  border-top: 1px solid #5c6484;
+  color: #5c6484; }
+
+.ttmenu ul li a {
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.8);
+  color: #777;
+  background: #D3E3D3; }
+
+.ttmenu ul li a:hover {
+  box-shadow: inset 0 -1px #b3bde6;
+  color: #4f6064;
+  background: #fee850; }
+
+/*------------------------ VIEW: Home View --- */
+.center {
+  background: rgba(250, 250, 250, 0.2);
+  border-top: 1px solid #4f6064; }
+
+.center h1 {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 2px 3px 4px #D3D3D3;
+  color: #e2e0d2; }
+
+.center h2 {
+  background: #D3D3D3;
+  font-family: "neuton", "courier", serif;
+  color: #4f6064; }
+
+/*----------------- VIEW: Gallery overview ---*/
+#galleryOverviewContainer {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.gallery-title h1 {
+  font-family: "neuton", "courier", serif;
+  color: #517464;
+  border-bottom: 1px solid #4f6064; }
+
+.theadalbum {
+  color: #517464; }
+
+.listsinglealbum {
+  color: #4f6064;
+  border-top: 1px solid #565656;
+  background: #daede8;
+  border-top: 1px solid #565656;
+  border-bottom: 3px solid #e2e0d2; }
+
+/*--------------- ---VIEW Gallery Detail: pix ---*/
+#galleryDetailContainer {
+  color: #4f6064; }
+
+.img-caption {
+  background: rgba(200, 200, 200, 0.8);
+  border-top: 1px solid #4f6064; }
+
+.img-caption h2 {
+  font-family: "neuton", "courier", serif;
+  color: #D3D3D3; }
+
+.img-caption-detail {
+  background: #D3D3D3; }
+
+.img-caption-detail p {
+  color: #4f6064; }
+
+.gal-btn a {
+  color: #777;
+  background: #bfd5cb;
+  border: 1px solid #5c6484; }
+
+.gal-btn a:hover {
+  color: #D3D3D3;
+  background: #e2e0d2; }
+
+/*-------------------------- VIEW Uploader Form ---*/
+.uploaderTitle h1 {
+  font-family: "neuton", "courier", serif;
+  color: #517464;
+  border-bottom: 1px solid #e2e0d2; }
+
+#uploadForm {
+  background: #daede8;
+  color: #446644; }
+
+.formstyle input, select {
+  background: #D3E3D3;
+  border: 1px solid #5c6484;
+  border-radius: 3px;
+  color: #227733; }
+
+.formstyle input:hover {
+  background: #daede8;
+  border: 1px solid #4f6064;
+  color: #227733; }
+
+.formstyle h3 {
+  color: #5c6484; }
+
+#uploadSubmit {
+  border: 1px solid #D3D3D3;
+  background: #D3E3D3;
+  color: #227733; }
+
+#uploadSubmit:hover {
+  border: 1px solid #4f6064;
+  background: #D3D3D3;
+  color: #4f6064; }
+
+#previewUploadImages h3 {
+  color: #4f6064; }
+
+#uploadThanks h2 {
+  color: #517464; }
+
+#toTheGaleriesBtn {
+  color: #4f6064; }
+
+/*------------------------ VIEW article view  ---*/
+.articleDefault {
+  background: #abc9cf; }
+
+/*Big title*/
+.articleDefault h2 {
+  font-family: "neuton", "courier", serif;
+  color: #517464;
+  border-bottom: 1px solid #4f6064; }
+
+.articleDefault h3 {
+  color: #446644;
+  border-top: 1px solid #446644; }
+
+.articleDefault h4 {
+  color: #e2e0d2; }
+
+.articleDefault p {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #446644; }
+
+.articleRight h3 {
+  font-family: "neuton", "courier", serif;
+  color: #446644;
+  background: #abc9cf; }
+
+.articleRight h4 {
+  color: #4f6064; }
+
+.articleRight p {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #446644; }
+
+.articleLeft h3 {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #446644;
+  background: #D3D3D3; }
+
+.articleLeft h4 {
+  color: #4f6064; }
+
+.articleLeft p {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #446644; }
+
+.asidetext {
+  background: rgba(200, 200, 200, 0.3); }
+
+.asidetext h2 {
+  background: #abc9cf;
+  color: #4f6064; }
+
+.asidetext p {
+  color: #222222; }
+
+.teaserbox {
+  border: 1px solid #daede8;
+  background: #D3D3D3; }
+
+.teaserbox h3 {
+  color: #daede8; }
+
+.caption {
+  background: rgba(200, 200, 200, 0.3); }
+
+.caption p {
+  color: #222222; }
+
+.linkToGal a {
+  color: #666666;
+  border-bottom: 0 solid #5c6484; }
+
+.linkToGal a:hover {
+  color: #4f6064;
+  border-bottom: 1px solid #4f6064; }
+
+/*------------------------------ VIEW Footer ---*/
+#footer {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-top: 2px solid #D3D3D3;
+  background: #abc9cf;
+  color: #7e7e7e; }
+
+.adress {
+  border-right: 1px solid #227733; }
+
+#footer a {
+  color: #227733;
+  border-bottom: 0 solid #227733; }
+
+#footer a:hover {
+  color: #4f6064;
+  border-bottom: 1px solid #4f6064; }
+
+/* ------------------------------ Splash screen ---*/
+.splash-content h1 {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888; }
+
+.splash-content h2 {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #b3bde6; }
+
+.splash-content h3 {
+  color: #4f6064; }
+
+.splash-content p {
+  font-family: "neuton", "courier", serif;
+  color: #888; }

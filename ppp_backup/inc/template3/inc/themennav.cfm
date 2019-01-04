@@ -1,0 +1,16 @@
+<cfprocessingdirective pageencoding="utf-8" />
+	<ul>
+		<cfoutput query="getThemenNav">
+			<li><cfif urlshortcut NEQ "">
+					<a href="/#session.serverpath#/#urlshortcut#">
+						#pagetitel#
+					</a>
+				<cfelse>
+					<a href="#cgi.SCRIPT_NAME#?id=#id#">
+						#pagetitel#
+					</a>
+				</cfif>
+			</li>
+		</cfoutput>
+	</ul>
+

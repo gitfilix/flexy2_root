@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testing Bootstrap for jgv3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" />-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/jgv3_main.css" />
+    <script type="application/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!--<script type="application/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
+    <!--<script src="js/ScrollMagic.js" type="application/javascript"></script>-->
+    <!--<script src="js/scroll-styles.js" type="application/javascript"></script>-->
+</head>
+<body>
+<!--nav off canvas-->
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle nav-icon-open">MENU</a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn  adjust-right toggle nav-icon-close">&times;</a>
+            <li class="">
+                <a href="index.html"  onclick = $("#menu-close").click(); >Startseite</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Labor</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >Mitarbeiter</a>
+            </li>
+            <li>
+                <a href="service.html" onclick = $("#menu-close").click(); >Services</a>
+            </li>
+            <li>
+                <a href="gallery.html" onclick = $("#menu-close").click(); >Produkte Gallerie</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Kontakt</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Technik</a>
+            </li>
+        </ul>
+    </nav>
+<!-- Header -->
+
+    <header id="top" class="bigheader">
+        <div class="text-vertical-center">
+            <div class="center-block frame">
+                <h1>Zahntechnik Jan Gasser v.3</h1>
+                <h3>PrOTOTYPE: Super neue Homepeitsch &amp; Template</h3>
+                <br>
+                <a href="#about" class="btn btn-dark btn-lg">Diese Seite ist nur Test</a>
+                <br>
+                <small>doch es sieht auch so schon ganz kuul aus, oder?</small>
+            </div>
+        </div>
+    </header>
+
+<!-- About -->
+<div class="container-fluid">
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>PROTOTYP der neuen Homepeitsch von Jan Gasser</h2>
+                    <p class="lead">Hier kommt die wichtigste Botschaft hin <a href="#services">Services</a>.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!--second section-->
+    <section id="teaser1" class="about" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 >Technologie</h2>
+                    <p class="lead">Wir kombinieren Handwerk mit neuen Technologien um das beste Resultat zu erhalten.  <a target="_blank" href="http://join.deathtothestockphoto.com/">Services</a>.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!--Our Service Section -->
+    <section id="services" class="about" >
+        <div class="container">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Unseren Service</h2>
+                <hr class="small haarline">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 servicebox">
+                        <div class="service-item" >
+                            <img src="pix/jgpix_400q.jpg" class="img-circle" >
+                        </div>
+                        <h4>Service A</h4>
+                        <p>wir machen dies und das</p>
+                        <a href="#">Service A+</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 servicebox"  >
+                        <div class="service-item">
+                           <img src="pix/jgpix4_400q.jpg" class="img-circle" >
+                        </div>
+                        <h4>Service b</h4>
+                        <p>wir machen dies und das und das da auch noch </p>
+                        <a href="#">Service b+</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 servicebox" >
+                        <div class="service-item">
+                            <img src="pix/jgpix2_400q.jpg" class="img-circle" >
+                        </div>
+                        <h4>Service c</h4>
+                        <p>wir machen dies und das das und das da auch noch</p>
+                        <a href="#">Service c+</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 servicebox" >
+                        <div class="service-item">
+                            <img src="pix/jgpix3_400q.jpg" class="img-circle" >
+                        </div>
+                        <h4>Service d</h4>
+                        <p>wir machen dies das und das da auch noch und das</p>
+                        <a href="#">Service d+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center spacer-top">
+                    <h2>Unsere Arbeit</h2>
+                    <hr class="small haarline">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <span><h4>Präzision</h4></span>
+                                    <img class="img-portfolio img-responsive" src="pix/jgpix2_600.jpg" alt="#" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <span><h4>Präzision</h4></span>
+                                    <img class="img-portfolio img-responsive" src="pix/jgpix_600.jpg" alt="#">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <span><h4>Technik</h4></span>
+                                    <img class="img-portfolio img-responsive" src="pix/jgpix_600.jpg" alt="#">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <span><h4>Präzision</h4></span>
+                                    <img class="img-portfolio img-responsive" src="pix/jgpix2_600.jpg" alt="#">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <div>
+                        <a href="#" class="btn  btn-lg">Lesen Sie mehr über unsere Arbeit</a>
+                    </div>
+                </div>
+
+                <!-- /.col-lg-10 -->
+            </div>
+            <hr class="small haarline">
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Callout -->
+    <aside class="usp">
+        <div class="text-vertical-center">
+            <span>
+               <h1>Qualität. Präzision. Ästhetik. </h1>
+            </span>
+
+        </div>
+    </aside>
+
+    <!-- Map -->
+  <section id="contact" class="map">
+      <div class="spacer-top">
+
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2695.4778747718033!2d8.729508!3d47.50008400000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a999d363876eb%3A0x4f963db40ad5a21a!2sStadthausstrasse+71%2C+8400+Winterthur%2C+Switzerland!5e0!3m2!1sen!2sus!4v1442498345247" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <br />
+          <p>hier ist jan gasser zuhause. also seine bude</p>
+        <!--<small>-->
+            <!--<a href="https://www.google.ch/maps/place/Eigerpl.+4,+3007+Bern/@46.9412957,7.4306736,17z/data=!3m1!4b1!4m2!3m1!1s0x478e39b1b23067e1:0x33b552f790786679?hl=de"></a>-->
+        <!--</small>-->
+
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container spacer-top">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Kontaktieren Sie uns doch</strong>
+                    </h4>
+                    <p>Stadthausstrasse 71 <br /> 8400 Winterthur<br></p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li>
+                            <i class="fa fa-envelope-o fa-fw"></i>
+                            <a href="mailto:name@example.com">jangasser@igendwas.com</a>
+                        </li>
+                    </ul>
+                    <br>
+
+                    <hr class="small">
+                    <p class="text-muted">Prototype by <a href="http://www.web-kanal.ch">Web-kanal</a> for Jan Gasser v3</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!--<script type="application/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="js/jg_customs.js"></script>
+
+</body>
+</html>

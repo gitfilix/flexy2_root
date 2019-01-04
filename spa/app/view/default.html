@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row articlecontainer">
+        <div class="twelve columns">
+            <div class="row">
+                <div class="two-thirds column">
+                    <article class="articleDefault">
+                        <h2>{{pageTitel}}</h2>
+                        <p>{{text}}</p>
+                        {{#if content[0]}}
+                        <h3>{{content[0].title1}}</h3>
+                        <h4>{{content[0].lead1}}</h4>
+                        <p>{{content[0].text1}}</p>
+                        <h3>{{content[0].title2}}</h3>
+                        <h4>{{content[0].lead2}}</h4>
+                        <p>{{content[0].text2}}</p>
+                        <h3>{{content[0].title3}}</h3>
+                        <h4>{{content[0].lead3}}</h4>
+                        <p>{{content[0].text3}}</p>
+                        <h3>{{content[0].title4}}</h3>
+                        <h4>{{content[0].lead4}}</h4>
+                        <p>{{content[0].text4}}</p>
+                        <h3>{{content[0].title5}}</h3>
+                        <h4>{{content[0].lead5}}</h4>
+                        <p>{{content[0].text5}}</p>
+                        {{else}}
+                        <p>no content</p>
+                        {{/if}}
+                    </article>
+                </div>
+                <div id="teasercontainer" class="one-third column teaser" >
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

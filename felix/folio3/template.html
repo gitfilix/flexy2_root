@@ -1,0 +1,80 @@
+<html>
+    <head>
+	<style type="text/css">
+	html, body {
+		height:100%;
+		padding:0;
+		margin:0;
+	}
+	header{
+		width: 100%;
+		background: yellow;
+		position: fixed; 
+		top: 0;
+		height: 50px !important;
+		opacity:.8;
+	}
+	
+	.content {
+		position:relative;
+		height: 100%;
+		width:100%; /* Sizing - any length */
+		padding:50px 0 0px 0; /* Header height and footer height */
+		margin:0 auto 0 auto; /* Center content */
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		-o-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	
+	#scrollable2 {
+		background:green;
+		height: 100%;
+		min-width: 300px;
+		margin-left: 0;
+		margin-right: 0px;
+		overflow:auto;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		-o-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	
+	footer {
+		width: 100%;
+		background: yellow;
+		position: fixed; 
+		bottom: 0;
+		height: 30px;
+	}
+
+	</style>
+	</head>
+    <body>
+        <!-- Always on top: Position Fixed-->
+        <header>
+            header
+        </header>
+        <!-- Fixed size after header-->
+        <div class="content">
+            <!-- Scrollable div with main content -->
+            <div id="scrollable2">
+                  content-main</br>
+				 content-main</br>
+				  content-main</br>
+				   content-main</br>
+				    content-main</br>
+					 content-main</br>
+					  content-main</br>
+					   content-main</br>
+            </div>
+        </div>
+        <!-- Always at the end of the page -->
+       <!-- <footer>
+            footer
+        </footer> -->
+    </body>
+</html>
+            
