@@ -24,19 +24,19 @@ RewriteCond %{HTTP_HOST} ^flx-media.ch [NC]
 RewriteRule ^(.*)$ http://www.flx-media.ch [L,R=301]
 # certificate ssl
 RewriteCond %{HTTP_HOST} ^akupunktur-radloff.ch [NC]
-RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.akupunktur-radloff.ch/$1 [L,R=301]
 
 RewriteCond %{HTTP_HOST} ^www.akupunkturradloff.ch [NC]
-RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.akupunktur-radloff.ch/$1 [L,R=301]
 
 RewriteCond %{HTTP_HOST} ^akupunkturradloff.ch [NC]
-RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.akupunktur-radloff.ch/$1 [L,R=301]
 
 RewriteCond %{HTTP_HOST} ^www.akupunktur-imbach.ch [NC]
-RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.akupunktur-radloff.ch/$1 [L,R=301]
 
 RewriteCond %{HTTP_HOST} ^akupunktur-imbach.ch [NC]
-RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.akupunktur-radloff.ch/$1 [L,R=301]
 
 
 
