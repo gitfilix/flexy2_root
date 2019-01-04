@@ -1,0 +1,57 @@
+launch to live
+------------------
+How to get a new domain  live reminder
+
+1. 
+
+.htaccess on root
+
+RewriteCond %{HTTP_HOST} ^www.zahntechnik-gasser.ch [NC]
+RewriteRule ^(.*)$ http://www.zahntechnik-gasser.ch/$1 [L,R=301]
+
+2. 
+
+.htaccess on mandant directory
+RewriteEngine on
+RewriteBase /dentaltechnik
+
+3. web.config in root
+
+	<rule name="Imported Rule 9" stopProcessing="true">
+		<match url="^(.*)$" ignoreCase="false" />
+		<conditions logicalGrouping="MatchAll">
+			<add input="{HTTP_HOST}" pattern="^zahntechnik-gasser.ch" />
+		</conditions>
+		<action type="Redirect" url="http://www.zahntechnik-gasser.ch/{R:1}" redirectType="Permanent" />
+	</rule>
+		
+
+4. DB in table MANDANT
+
+directoryname : dentaltechnik
+
+5. DB in table MANDANTENSPRACHEN
+
+domain: zahntechnik-gasser.ch
+
+
+
+
+6. check if config.xml on mandanten-directory
+
+<?xml version="1.0" encoding="UTF-8"?>
+<flexy_config>
+	<serverPath>dentaltechnik</serverPath>
+	<mandant>77</mandant>
+	<startpageID></startpageID>
+</flexy_config>
+
+
+
+7. Centinated Domains 
+
+-> add domain in DNS Zonen www -> 195.137.172.119
+
+
+
+

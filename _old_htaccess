@@ -1,0 +1,43 @@
+RewriteEngine on
+RewriteBase /
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^atelier-schief.ch [NC]
+RewriteRule ^(.*)$ http://www.atelier-schief.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^webkanal.ch [NC]
+RewriteRule ^(.*)$ http://www.web-kanal.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.webkanal.ch [NC]
+RewriteRule ^(.*)$ http://www.web-kanal.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^zahntechnik-gasser.ch [NC]
+RewriteRule ^(.*)$ http://www.zahntechnik-gasser.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^jan.zahntechnik-gasser.ch [NC]
+RewriteRule ^(.*)$ http://www.zahntechnik-gasser.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.zahntechnik-gasser.ch [NC]
+RewriteRule ^(.*)$ http://www.zahntechnik-gasser.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^flx-media.ch [NC]
+RewriteRule ^(.*)$ http://www.flx-media.ch [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^akupunktur-radloff.ch [NC]
+RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.akupunkturradloff.ch [NC]
+RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^akupunkturradloff.ch [NC]
+RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.akupunktur-imbach.ch [NC]
+RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^akupunktur-imbach.ch [NC]
+RewriteRule ^(.*)$ http://www.akupunktur-radloff.ch/$1 [L,R=301]
+
+
+
+RewriteRule robots\.txt robots.cfm [NC]
