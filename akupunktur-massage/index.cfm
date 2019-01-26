@@ -15,7 +15,7 @@ WHERE 	mandant = #session.mandant# AND domain != ''
 <cfif ownDomain NEQ "">
 	<cfset xpath = cgi.PATH_INFO />
 	<cfif xpath EQ "/#session.serverpath#/index.cfm" OR xpath EQ "/#session.serverpath#/ch-de" OR xpath EQ "/#session.serverpath#/ch-de/">
-		<cflocation url="http://#cgi.SERVER_NAME#" addtoken="no" />
+		<cflocation url="https://#cgi.SERVER_NAME#" addtoken="no" />
 	</cfif>
 </cfif>
 
@@ -135,7 +135,7 @@ WHERE	mandant = #session.mandant#
 	<cfhtmlhead text='
 	<meta name="description" content="#pageProperties.metaDesc#">
 	<meta name="keywords" content="#pageProperties.metaKeys#">
-	<title>Praxis Akupunktur Massage | #pageProperties.metaTitel# | Cecile Imbach, Mellingen, Baden</title>
+	<title>Praxis Akupunktur Massage | #pageProperties.metaTitel# | Cecile Imbach, Mellingen</title>
 	' />		
 	</cfoutput>
 	<!--[if lt IE 9]>
