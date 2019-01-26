@@ -115,7 +115,7 @@ WHERE	mandant = #session.mandant#
 <cfoutput>
 	<link rel="shortcut icon" type="image/x-icon" href="/#session.serverpath#/favicon.ico">
 	<link rel="shortcut icon" type="image/png" href="/#session.serverpath#/favicon.png">
-	<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic|Cinzel' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,400italic|Cinzel' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' href='/#session.serverpath#/css/kube_f.css' type='text/css'>
 	<link rel='stylesheet' href='/#session.serverpath#/js/FlexSlider/flexslider.css' type='text/css'>
 	<link rel='stylesheet' href='/#session.serverpath#/css/apm-styles.css' type='text/css'>

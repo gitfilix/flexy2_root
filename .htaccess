@@ -22,9 +22,11 @@ RewriteRule ^(.*)$ http://www.zahntechnik-gasser.ch/$1 [L,R=301]
 
 RewriteCond %{HTTP_HOST} ^flx-media.ch [NC]
 RewriteRule ^(.*)$ http://www.flx-media.ch [L,R=301]
-# certificate ssl
-RewriteCond %{HTTP_HOST} ^akupunktur-radloff.ch [NC]
-RewriteRule ^(.*)$ https://www.akupunktur-radloff.ch/$1 [L,R=301]
+
+# certificate ssl for akupunktur
+# Force WWW & SSL
+RewriteCond %{HTTP_HOST} !^akupunktur-radloff.ch [NC] [NC]
+RewriteRule ^(.*)$ https://www.akupunktur-radloff.ch/$1 [L,R=301] 
 
 RewriteCond %{HTTP_HOST} ^www.akupunkturradloff.ch [NC]
 RewriteRule ^(.*)$ https://www.akupunktur-radloff.ch/$1 [L,R=301]
