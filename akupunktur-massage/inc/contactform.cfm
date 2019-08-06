@@ -76,7 +76,7 @@ function submitContactForm(){
    				 <input type="email" size="30" name="contactmail" required class="seven input-gray"  placeholder="Ihre E-Mail Adresse" id="contactmail" title="E-Mail" />
 			</li>
 			<li>
-				<label for="telnummer" class="bold">Telefonnummer&nbsp; (optional)</label>
+				<label for="telnummer" class="bold">Telephonnummer&nbsp; (optional)</label>
 				<input type="tel" size="30" name="contacttel" placeholder="Ihre Telefonnummer" id="contacttel" title="Telefonnummer" />
 			</li>
 			<li>
